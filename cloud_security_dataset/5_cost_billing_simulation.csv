@@ -1,0 +1,601 @@
+billing_id,resource_id,cloud_provider,resource_type,region,environment,owner_team,billing_month,provisioned_cost_usd,consumed_cost_usd,waste_cost_usd,waste_pct,rightsizing_recommendation
+bill-c9596552,res-8e7a52848a,GCP,ComputeEngine,us-central1,staging,data,2026-03,714.28,496.4,217.88,30.5,Monitor
+bill-d878ea46,res-8e7a52848a,GCP,ComputeEngine,us-central1,staging,data,2026-02,714.28,453.09,261.19,36.6,Monitor
+bill-a246218c,res-8e7a52848a,GCP,ComputeEngine,us-central1,staging,data,2026-01,714.28,383.51,330.77,46.3,Monitor
+bill-965ff77a,res-2ba0bbb241,AWS,CloudFront,us-east-1,staging,platform,2026-03,574.24,546.96,27.28,4.8,Consider reserved instance
+bill-32bb5ce6,res-2ba0bbb241,AWS,CloudFront,us-east-1,staging,platform,2026-02,574.24,399.95,174.29,30.4,Monitor
+bill-29761ef6,res-2ba0bbb241,AWS,CloudFront,us-east-1,staging,platform,2026-01,574.24,393.63,180.61,31.5,Monitor
+bill-2d0d63c3,res-af3191324d,GCP,GKE,us-east1,production,backend,2026-03,275.5,257.25,18.25,6.6,Consider reserved instance
+bill-cd41625f,res-af3191324d,GCP,GKE,us-east1,production,backend,2026-02,275.5,235.41,40.09,14.6,Consider reserved instance
+bill-5f347f85,res-af3191324d,GCP,GKE,us-east1,production,backend,2026-01,275.5,234.74,40.76,14.8,Consider reserved instance
+bill-cf1d9e17,res-60f0ed8701,AWS,Lambda,eu-west-1,production,security,2026-03,484.96,89.12,395.84,81.6,Downsize or terminate
+bill-acc702ad,res-60f0ed8701,AWS,Lambda,eu-west-1,production,security,2026-02,484.96,92.82,392.14,80.9,Downsize or terminate
+bill-7fa9cca2,res-60f0ed8701,AWS,Lambda,eu-west-1,production,security,2026-01,484.96,96.03,388.93,80.2,Downsize or terminate
+bill-5af11c0c,res-8981e482f7,AWS,DynamoDB,us-east-1,development,frontend,2026-03,41.43,20.75,20.68,49.9,Monitor
+bill-bed3d904,res-8981e482f7,AWS,DynamoDB,us-east-1,development,frontend,2026-02,41.43,29.98,11.45,27.6,Monitor
+bill-9fbc2874,res-8981e482f7,AWS,DynamoDB,us-east-1,development,frontend,2026-01,41.43,27.43,14.0,33.8,Monitor
+bill-b5715509,res-0d6a0ef68f,AWS,EKS,us-east-1,sandbox,devops,2026-03,668.12,467.29,200.83,30.1,Monitor
+bill-42478b6a,res-0d6a0ef68f,AWS,EKS,us-east-1,sandbox,devops,2026-02,668.12,607.3,60.82,9.1,Consider reserved instance
+bill-e3f08120,res-0d6a0ef68f,AWS,EKS,us-east-1,sandbox,devops,2026-01,668.12,640.16,27.96,4.2,Consider reserved instance
+bill-4e579c66,res-7c8e5757c5,AWS,ELB,eu-west-1,production,backend,2026-03,199.62,126.65,72.97,36.6,Monitor
+bill-623478c6,res-7c8e5757c5,AWS,ELB,eu-west-1,production,backend,2026-02,199.62,161.55,38.07,19.1,Consider reserved instance
+bill-d8a0367d,res-7c8e5757c5,AWS,ELB,eu-west-1,production,backend,2026-01,199.62,104.0,95.62,47.9,Monitor
+bill-90bf3170,res-7bf8be84c6,Azure,FunctionApp,southeastasia,development,platform,2026-03,30.52,24.65,5.87,19.2,Consider reserved instance
+bill-19e3e6f1,res-7bf8be84c6,Azure,FunctionApp,southeastasia,development,platform,2026-02,30.52,20.86,9.66,31.7,Monitor
+bill-2465d48f,res-7bf8be84c6,Azure,FunctionApp,southeastasia,development,platform,2026-01,30.52,23.83,6.69,21.9,Monitor
+bill-ec97a996,res-e6c78dd1d4,Azure,FunctionApp,southeastasia,staging,finance,2026-03,732.07,437.28,294.79,40.3,Monitor
+bill-c1dba14d,res-e6c78dd1d4,Azure,FunctionApp,southeastasia,staging,finance,2026-02,732.07,519.66,212.41,29.0,Monitor
+bill-90397e21,res-e6c78dd1d4,Azure,FunctionApp,southeastasia,staging,finance,2026-01,732.07,440.08,291.99,39.9,Monitor
+bill-22ada386,res-27b61e76ab,Azure,BlobStorage,southeastasia,development,ml,2026-03,322.52,42.93,279.59,86.7,Downsize or terminate
+bill-d19877c1,res-27b61e76ab,Azure,BlobStorage,southeastasia,development,ml,2026-02,322.52,34.41,288.11,89.3,Downsize or terminate
+bill-0910f9eb,res-27b61e76ab,Azure,BlobStorage,southeastasia,development,ml,2026-01,322.52,51.23,271.29,84.1,Downsize or terminate
+bill-6e4e0855,res-e8e6f9948e,AWS,RDS,ap-southeast-1,production,backend,2026-03,634.7,496.53,138.17,21.8,Monitor
+bill-8dd7e821,res-e8e6f9948e,AWS,RDS,ap-southeast-1,production,backend,2026-02,634.7,445.96,188.74,29.7,Monitor
+bill-d2768ad5,res-e8e6f9948e,AWS,RDS,ap-southeast-1,production,backend,2026-01,634.7,440.61,194.09,30.6,Monitor
+bill-3df36f2b,res-2944eb9249,Azure,AKS,eastus,development,platform,2026-03,96.07,70.09,25.98,27.0,Monitor
+bill-e1bf7ba7,res-2944eb9249,Azure,AKS,eastus,development,platform,2026-02,96.07,48.78,47.29,49.2,Monitor
+bill-a953fb90,res-2944eb9249,Azure,AKS,eastus,development,platform,2026-01,96.07,59.28,36.79,38.3,Monitor
+bill-2e17e320,res-ffe7d0aee3,GCP,CloudSQL,asia-east1,staging,finance,2026-03,579.06,415.03,164.03,28.3,Monitor
+bill-66274418,res-ffe7d0aee3,GCP,CloudSQL,asia-east1,staging,finance,2026-02,579.06,450.34,128.72,22.2,Monitor
+bill-82c7a7bc,res-ffe7d0aee3,GCP,CloudSQL,asia-east1,staging,finance,2026-01,579.06,549.44,29.62,5.1,Consider reserved instance
+bill-c63b508a,res-eb7b954b40,GCP,CloudSQL,europe-west1,development,frontend,2026-03,611.2,478.49,132.71,21.7,Monitor
+bill-5fd102cd,res-eb7b954b40,GCP,CloudSQL,europe-west1,development,frontend,2026-02,611.2,449.99,161.21,26.4,Monitor
+bill-21f46402,res-eb7b954b40,GCP,CloudSQL,europe-west1,development,frontend,2026-01,611.2,609.67,1.53,0.3,Consider reserved instance
+bill-d156b48c,res-245355a4b4,GCP,GKE,us-central1,production,data,2026-03,703.58,104.88,598.7,85.1,Downsize or terminate
+bill-1f812d6b,res-245355a4b4,GCP,GKE,us-central1,production,data,2026-02,703.58,86.4,617.18,87.7,Downsize or terminate
+bill-367e2509,res-245355a4b4,GCP,GKE,us-central1,production,data,2026-01,703.58,100.02,603.56,85.8,Downsize or terminate
+bill-78f419f6,res-b418bdd23c,Azure,BlobStorage,eastus,production,finance,2026-03,782.5,81.86,700.64,89.5,Downsize or terminate
+bill-ba3dad83,res-b418bdd23c,Azure,BlobStorage,eastus,production,finance,2026-02,782.5,82.67,699.83,89.4,Downsize or terminate
+bill-ec7ef69c,res-b418bdd23c,Azure,BlobStorage,eastus,production,finance,2026-01,782.5,108.54,673.96,86.1,Downsize or terminate
+bill-96d4006d,res-9bf6ab9fd1,GCP,GCSBucket,europe-west1,development,ml,2026-03,743.49,57.32,686.17,92.3,Downsize or terminate
+bill-bf8a51f2,res-9bf6ab9fd1,GCP,GCSBucket,europe-west1,development,ml,2026-02,743.49,87.75,655.74,88.2,Downsize or terminate
+bill-9c1a4085,res-9bf6ab9fd1,GCP,GCSBucket,europe-west1,development,ml,2026-01,743.49,45.82,697.67,93.8,Downsize or terminate
+bill-49f49011,res-8e6abe0bff,GCP,CloudRun,europe-west1,sandbox,finance,2026-03,183.63,133.54,50.09,27.3,Monitor
+bill-036778ef,res-8e6abe0bff,GCP,CloudRun,europe-west1,sandbox,finance,2026-02,183.63,126.43,57.2,31.1,Monitor
+bill-e88c4997,res-8e6abe0bff,GCP,CloudRun,europe-west1,sandbox,finance,2026-01,183.63,155.46,28.17,15.3,Consider reserved instance
+bill-6cdf3451,res-731183adf0,Azure,VirtualMachine,westeurope,production,platform,2026-03,724.81,448.2,276.61,38.2,Monitor
+bill-f1691d5b,res-731183adf0,Azure,VirtualMachine,westeurope,production,platform,2026-02,724.81,370.48,354.33,48.9,Monitor
+bill-cdb00b79,res-731183adf0,Azure,VirtualMachine,westeurope,production,platform,2026-01,724.81,393.93,330.88,45.7,Monitor
+bill-6cdc5d49,res-ce612a7fad,Azure,VirtualMachine,westeurope,staging,backend,2026-03,706.49,505.71,200.78,28.4,Monitor
+bill-b6149056,res-ce612a7fad,Azure,VirtualMachine,westeurope,staging,backend,2026-02,706.49,601.06,105.43,14.9,Consider reserved instance
+bill-3521583c,res-ce612a7fad,Azure,VirtualMachine,westeurope,staging,backend,2026-01,706.49,702.34,4.15,0.6,Consider reserved instance
+bill-d44eab83,res-9339bd1b32,GCP,CloudFunction,europe-west1,staging,data,2026-03,347.69,252.87,94.82,27.3,Monitor
+bill-08ce040d,res-9339bd1b32,GCP,CloudFunction,europe-west1,staging,data,2026-02,347.69,341.33,6.36,1.8,Consider reserved instance
+bill-c75d43a7,res-9339bd1b32,GCP,CloudFunction,europe-west1,staging,data,2026-01,347.69,264.59,83.1,23.9,Monitor
+bill-7a6bcab6,res-957f15962b,Azure,FunctionApp,australiaeast,production,ml,2026-03,641.47,500.05,141.42,22.0,Monitor
+bill-984dc356,res-957f15962b,Azure,FunctionApp,australiaeast,production,ml,2026-02,641.47,600.63,40.84,6.4,Consider reserved instance
+bill-209adee5,res-957f15962b,Azure,FunctionApp,australiaeast,production,ml,2026-01,641.47,442.66,198.81,31.0,Monitor
+bill-d4765763,res-e7f1cf49e9,AWS,Lambda,us-west-2,staging,ml,2026-03,372.79,242.82,129.97,34.9,Monitor
+bill-d04d2048,res-e7f1cf49e9,AWS,Lambda,us-west-2,staging,ml,2026-02,372.79,201.06,171.73,46.1,Monitor
+bill-15c6db5c,res-e7f1cf49e9,AWS,Lambda,us-west-2,staging,ml,2026-01,372.79,345.72,27.07,7.3,Consider reserved instance
+bill-5a2857e3,res-355c3d5096,AWS,DynamoDB,us-east-1,production,data,2026-03,679.71,111.58,568.13,83.6,Downsize or terminate
+bill-5149c461,res-355c3d5096,AWS,DynamoDB,us-east-1,production,data,2026-02,679.71,133.94,545.77,80.3,Downsize or terminate
+bill-0b4692a8,res-355c3d5096,AWS,DynamoDB,us-east-1,production,data,2026-01,679.71,92.27,587.44,86.4,Downsize or terminate
+bill-fdaf9867,res-938e55f151,AWS,CloudFront,ap-southeast-1,production,backend,2026-03,788.32,762.51,25.81,3.3,Consider reserved instance
+bill-e5266943,res-938e55f151,AWS,CloudFront,ap-southeast-1,production,backend,2026-02,788.32,764.96,23.36,3.0,Consider reserved instance
+bill-8ea75bb1,res-938e55f151,AWS,CloudFront,ap-southeast-1,production,backend,2026-01,788.32,703.17,85.15,10.8,Consider reserved instance
+bill-d7132aee,res-f93518575b,Azure,FunctionApp,southeastasia,staging,frontend,2026-03,775.12,527.55,247.57,31.9,Monitor
+bill-b7e79609,res-f93518575b,Azure,FunctionApp,southeastasia,staging,frontend,2026-02,775.12,585.41,189.71,24.5,Monitor
+bill-1b025529,res-f93518575b,Azure,FunctionApp,southeastasia,staging,frontend,2026-01,775.12,764.08,11.04,1.4,Consider reserved instance
+bill-b36c4af3,res-4422b36199,GCP,CloudRun,us-central1,sandbox,backend,2026-03,408.72,228.43,180.29,44.1,Monitor
+bill-4af9ccdc,res-4422b36199,GCP,CloudRun,us-central1,sandbox,backend,2026-02,408.72,303.81,104.91,25.7,Monitor
+bill-be2551a6,res-4422b36199,GCP,CloudRun,us-central1,sandbox,backend,2026-01,408.72,263.79,144.93,35.5,Monitor
+bill-c6603a2a,res-cc6a663d69,AWS,S3,us-east-1,sandbox,data,2026-03,457.89,29.09,428.8,93.6,Downsize or terminate
+bill-5d85d19c,res-cc6a663d69,AWS,S3,us-east-1,sandbox,data,2026-02,457.89,74.27,383.62,83.8,Downsize or terminate
+bill-ecf3f11c,res-cc6a663d69,AWS,S3,us-east-1,sandbox,data,2026-01,457.89,56.43,401.46,87.7,Downsize or terminate
+bill-842809da,res-dfdc9719b5,GCP,GKE,us-central1,development,devops,2026-03,574.37,397.78,176.59,30.7,Monitor
+bill-d4b1f46b,res-dfdc9719b5,GCP,GKE,us-central1,development,devops,2026-02,574.37,340.28,234.09,40.8,Monitor
+bill-361c5279,res-dfdc9719b5,GCP,GKE,us-central1,development,devops,2026-01,574.37,308.62,265.75,46.3,Monitor
+bill-674e8af6,res-8a970b9de2,AWS,EKS,ap-southeast-1,sandbox,security,2026-03,748.91,98.31,650.6,86.9,Downsize or terminate
+bill-84eeb4a0,res-8a970b9de2,AWS,EKS,ap-southeast-1,sandbox,security,2026-02,748.91,127.0,621.91,83.0,Downsize or terminate
+bill-a3d5a4d3,res-8a970b9de2,AWS,EKS,ap-southeast-1,sandbox,security,2026-01,748.91,109.9,639.01,85.3,Downsize or terminate
+bill-7544f0de,res-777b4eac0c,AWS,DynamoDB,us-east-1,development,backend,2026-03,705.29,50.57,654.72,92.8,Downsize or terminate
+bill-1334ab75,res-777b4eac0c,AWS,DynamoDB,us-east-1,development,backend,2026-02,705.29,44.99,660.3,93.6,Downsize or terminate
+bill-503278ab,res-777b4eac0c,AWS,DynamoDB,us-east-1,development,backend,2026-01,705.29,110.67,594.62,84.3,Downsize or terminate
+bill-d2ece8c0,res-d5b669f9c8,AWS,ELB,eu-west-1,development,platform,2026-03,445.91,312.76,133.15,29.9,Monitor
+bill-dc7b8c13,res-d5b669f9c8,AWS,ELB,eu-west-1,development,platform,2026-02,445.91,253.67,192.24,43.1,Monitor
+bill-6437d97e,res-d5b669f9c8,AWS,ELB,eu-west-1,development,platform,2026-01,445.91,282.32,163.59,36.7,Monitor
+bill-940e3b88,res-8b8ffe3b1e,GCP,ComputeEngine,europe-west1,staging,devops,2026-03,172.45,100.26,72.19,41.9,Monitor
+bill-ec6246ba,res-8b8ffe3b1e,GCP,ComputeEngine,europe-west1,staging,devops,2026-02,172.45,138.23,34.22,19.8,Consider reserved instance
+bill-42a90ad2,res-8b8ffe3b1e,GCP,ComputeEngine,europe-west1,staging,devops,2026-01,172.45,127.4,45.05,26.1,Monitor
+bill-8a1cd7d5,res-d1c7394082,Azure,BlobStorage,southeastasia,production,data,2026-03,664.33,502.31,162.02,24.4,Monitor
+bill-e9b5216c,res-d1c7394082,Azure,BlobStorage,southeastasia,production,data,2026-02,664.33,356.89,307.44,46.3,Monitor
+bill-2b198fd7,res-d1c7394082,Azure,BlobStorage,southeastasia,production,data,2026-01,664.33,349.9,314.43,47.3,Monitor
+bill-361a90a9,res-ed6954835e,AWS,EC2,eu-west-1,staging,finance,2026-03,345.01,294.49,50.52,14.6,Consider reserved instance
+bill-89548639,res-ed6954835e,AWS,EC2,eu-west-1,staging,finance,2026-02,345.01,344.27,0.74,0.2,Consider reserved instance
+bill-8f786db0,res-ed6954835e,AWS,EC2,eu-west-1,staging,finance,2026-01,345.01,324.98,20.03,5.8,Consider reserved instance
+bill-1102714e,res-8e93953ee6,AWS,S3,us-east-1,development,backend,2026-03,38.25,32.91,5.34,14.0,Consider reserved instance
+bill-4cd9ddc8,res-8e93953ee6,AWS,S3,us-east-1,development,backend,2026-02,38.25,26.13,12.12,31.7,Monitor
+bill-c9137f7b,res-8e93953ee6,AWS,S3,us-east-1,development,backend,2026-01,38.25,36.65,1.6,4.2,Consider reserved instance
+bill-97cbeb34,res-9ecc8c3895,Azure,VirtualMachine,southeastasia,production,security,2026-03,707.89,46.57,661.32,93.4,Downsize or terminate
+bill-4238f621,res-9ecc8c3895,Azure,VirtualMachine,southeastasia,production,security,2026-02,707.89,94.17,613.72,86.7,Downsize or terminate
+bill-f706c529,res-9ecc8c3895,Azure,VirtualMachine,southeastasia,production,security,2026-01,707.89,107.71,600.18,84.8,Downsize or terminate
+bill-de29ab77,res-5ab86edc27,Azure,AKS,westeurope,staging,ml,2026-03,590.57,405.38,185.19,31.4,Monitor
+bill-4f910e0d,res-5ab86edc27,Azure,AKS,westeurope,staging,ml,2026-02,590.57,541.39,49.18,8.3,Consider reserved instance
+bill-f630c6cc,res-5ab86edc27,Azure,AKS,westeurope,staging,ml,2026-01,590.57,308.68,281.89,47.7,Monitor
+bill-ea178359,res-07bfab7864,Azure,FunctionApp,westeurope,sandbox,platform,2026-03,181.83,20.96,160.87,88.5,Downsize or terminate
+bill-4538e30a,res-07bfab7864,Azure,FunctionApp,westeurope,sandbox,platform,2026-02,181.83,22.89,158.94,87.4,Downsize or terminate
+bill-1e7b2a88,res-07bfab7864,Azure,FunctionApp,westeurope,sandbox,platform,2026-01,181.83,9.17,172.66,95.0,Downsize or terminate
+bill-b716815c,res-54dbf724ce,Azure,SQLDatabase,southeastasia,staging,ml,2026-03,692.16,546.11,146.05,21.1,Monitor
+bill-48cb7511,res-54dbf724ce,Azure,SQLDatabase,southeastasia,staging,ml,2026-02,692.16,389.8,302.36,43.7,Monitor
+bill-42e51a70,res-54dbf724ce,Azure,SQLDatabase,southeastasia,staging,ml,2026-01,692.16,647.05,45.11,6.5,Consider reserved instance
+bill-c2198d38,res-5faf3cfc5a,Azure,SQLDatabase,australiaeast,development,platform,2026-03,776.47,581.17,195.3,25.2,Monitor
+bill-d948f6c5,res-5faf3cfc5a,Azure,SQLDatabase,australiaeast,development,platform,2026-02,776.47,388.26,388.21,50.0,Monitor
+bill-9253523a,res-5faf3cfc5a,Azure,SQLDatabase,australiaeast,development,platform,2026-01,776.47,611.28,165.19,21.3,Monitor
+bill-305b0942,res-a6fbe0b91f,AWS,EKS,us-east-1,development,security,2026-03,787.47,763.1,24.37,3.1,Consider reserved instance
+bill-79900209,res-a6fbe0b91f,AWS,EKS,us-east-1,development,security,2026-02,787.47,413.34,374.13,47.5,Monitor
+bill-6af23c6a,res-a6fbe0b91f,AWS,EKS,us-east-1,development,security,2026-01,787.47,642.62,144.85,18.4,Consider reserved instance
+bill-90fb9ac6,res-0693881731,AWS,CloudFront,us-west-2,production,frontend,2026-03,60.63,36.97,23.66,39.0,Monitor
+bill-783f6494,res-0693881731,AWS,CloudFront,us-west-2,production,frontend,2026-02,60.63,51.66,8.97,14.8,Consider reserved instance
+bill-92313062,res-0693881731,AWS,CloudFront,us-west-2,production,frontend,2026-01,60.63,40.69,19.94,32.9,Monitor
+bill-be813120,res-137824f6dd,GCP,CloudSQL,asia-east1,development,devops,2026-03,264.32,168.52,95.8,36.2,Monitor
+bill-40cbdd0f,res-137824f6dd,GCP,CloudSQL,asia-east1,development,devops,2026-02,264.32,139.14,125.18,47.4,Monitor
+bill-0aa8b13a,res-137824f6dd,GCP,CloudSQL,asia-east1,development,devops,2026-01,264.32,154.85,109.47,41.4,Monitor
+bill-af23a29b,res-e2ffad8b74,GCP,CloudSQL,europe-west1,staging,devops,2026-03,667.81,610.14,57.67,8.6,Consider reserved instance
+bill-228d52e9,res-e2ffad8b74,GCP,CloudSQL,europe-west1,staging,devops,2026-02,667.81,426.88,240.93,36.1,Monitor
+bill-e05d4f4b,res-e2ffad8b74,GCP,CloudSQL,europe-west1,staging,devops,2026-01,667.81,622.57,45.24,6.8,Consider reserved instance
+bill-bb34f09e,res-705884010b,Azure,SQLDatabase,westeurope,sandbox,finance,2026-03,174.89,174.18,0.71,0.4,Consider reserved instance
+bill-d6d79028,res-705884010b,Azure,SQLDatabase,westeurope,sandbox,finance,2026-02,174.89,131.44,43.45,24.8,Monitor
+bill-f9963b81,res-705884010b,Azure,SQLDatabase,westeurope,sandbox,finance,2026-01,174.89,167.85,7.04,4.0,Consider reserved instance
+bill-3d9cde15,res-a2d4262f33,Azure,AppGateway,westeurope,development,data,2026-03,602.15,85.3,516.85,85.8,Downsize or terminate
+bill-8b965eea,res-a2d4262f33,Azure,AppGateway,westeurope,development,data,2026-02,602.15,110.26,491.89,81.7,Downsize or terminate
+bill-c9102f56,res-a2d4262f33,Azure,AppGateway,westeurope,development,data,2026-01,602.15,110.09,492.06,81.7,Downsize or terminate
+bill-6f06f5d4,res-eaffa50f7d,GCP,CloudSQL,europe-west1,production,frontend,2026-03,490.96,45.17,445.79,90.8,Downsize or terminate
+bill-be60fb4c,res-eaffa50f7d,GCP,CloudSQL,europe-west1,production,frontend,2026-02,490.96,28.85,462.11,94.1,Downsize or terminate
+bill-0bffd17d,res-eaffa50f7d,GCP,CloudSQL,europe-west1,production,frontend,2026-01,490.96,60.3,430.66,87.7,Downsize or terminate
+bill-47e650c5,res-e662594bf9,AWS,DynamoDB,ap-southeast-1,sandbox,finance,2026-03,122.32,101.03,21.29,17.4,Consider reserved instance
+bill-2cc3da01,res-e662594bf9,AWS,DynamoDB,ap-southeast-1,sandbox,finance,2026-02,122.32,116.96,5.36,4.4,Consider reserved instance
+bill-eb6f27a0,res-e662594bf9,AWS,DynamoDB,ap-southeast-1,sandbox,finance,2026-01,122.32,92.76,29.56,24.2,Monitor
+bill-910ffa64,res-c0e340b3e4,GCP,ComputeEngine,us-central1,sandbox,platform,2026-03,734.39,426.28,308.11,42.0,Monitor
+bill-c0aeb1f6,res-c0e340b3e4,GCP,ComputeEngine,us-central1,sandbox,platform,2026-02,734.39,463.33,271.06,36.9,Monitor
+bill-5dab74d3,res-c0e340b3e4,GCP,ComputeEngine,us-central1,sandbox,platform,2026-01,734.39,533.4,200.99,27.4,Monitor
+bill-f7aa84b1,res-ef8c4f9e31,AWS,DynamoDB,us-west-2,development,finance,2026-03,576.82,314.39,262.43,45.5,Monitor
+bill-a7d6010b,res-ef8c4f9e31,AWS,DynamoDB,us-west-2,development,finance,2026-02,576.82,575.0,1.82,0.3,Consider reserved instance
+bill-b1d64d94,res-ef8c4f9e31,AWS,DynamoDB,us-west-2,development,finance,2026-01,576.82,309.32,267.5,46.4,Monitor
+bill-26c35e0e,res-1d44706f13,GCP,CloudFunction,us-east1,sandbox,devops,2026-03,672.69,128.64,544.05,80.9,Downsize or terminate
+bill-33656b78,res-1d44706f13,GCP,CloudFunction,us-east1,sandbox,devops,2026-02,672.69,88.35,584.34,86.9,Downsize or terminate
+bill-71cb0f4e,res-1d44706f13,GCP,CloudFunction,us-east1,sandbox,devops,2026-01,672.69,127.6,545.09,81.0,Downsize or terminate
+bill-a08db04b,res-a174febd99,Azure,AKS,australiaeast,sandbox,data,2026-03,191.42,169.64,21.78,11.4,Consider reserved instance
+bill-fd5db35f,res-a174febd99,Azure,AKS,australiaeast,sandbox,data,2026-02,191.42,96.31,95.11,49.7,Monitor
+bill-7afa5e2d,res-a174febd99,Azure,AKS,australiaeast,sandbox,data,2026-01,191.42,102.02,89.4,46.7,Monitor
+bill-f955fb82,res-d1aab9717e,Azure,SQLDatabase,eastus,sandbox,backend,2026-03,56.06,50.07,5.99,10.7,Consider reserved instance
+bill-c873453e,res-d1aab9717e,Azure,SQLDatabase,eastus,sandbox,backend,2026-02,56.06,54.46,1.6,2.9,Consider reserved instance
+bill-9eada0f7,res-d1aab9717e,Azure,SQLDatabase,eastus,sandbox,backend,2026-01,56.06,46.01,10.05,17.9,Consider reserved instance
+bill-341164b0,res-404c02bebc,Azure,SQLDatabase,australiaeast,sandbox,ml,2026-03,469.34,76.48,392.86,83.7,Downsize or terminate
+bill-5d4e5ce5,res-404c02bebc,Azure,SQLDatabase,australiaeast,sandbox,ml,2026-02,469.34,27.62,441.72,94.1,Downsize or terminate
+bill-8b106253,res-404c02bebc,Azure,SQLDatabase,australiaeast,sandbox,ml,2026-01,469.34,31.65,437.69,93.3,Downsize or terminate
+bill-5a35212c,res-ba08980b6f,GCP,ComputeEngine,us-east1,development,ml,2026-03,762.98,80.7,682.28,89.4,Downsize or terminate
+bill-705b7a2f,res-ba08980b6f,GCP,ComputeEngine,us-east1,development,ml,2026-02,762.98,38.27,724.71,95.0,Downsize or terminate
+bill-57653c10,res-ba08980b6f,GCP,ComputeEngine,us-east1,development,ml,2026-01,762.98,58.52,704.46,92.3,Downsize or terminate
+bill-9540ed1b,res-79697580cc,Azure,AKS,westeurope,sandbox,finance,2026-03,272.22,199.24,72.98,26.8,Monitor
+bill-30516ac3,res-79697580cc,Azure,AKS,westeurope,sandbox,finance,2026-02,272.22,245.99,26.23,9.6,Consider reserved instance
+bill-c4eebf5b,res-79697580cc,Azure,AKS,westeurope,sandbox,finance,2026-01,272.22,269.64,2.58,0.9,Consider reserved instance
+bill-65dd9fd0,res-d8b1042c8e,GCP,CloudFunction,europe-west1,production,ml,2026-03,532.08,440.81,91.27,17.2,Consider reserved instance
+bill-52d79066,res-d8b1042c8e,GCP,CloudFunction,europe-west1,production,ml,2026-02,532.08,349.84,182.24,34.3,Monitor
+bill-88567817,res-d8b1042c8e,GCP,CloudFunction,europe-west1,production,ml,2026-01,532.08,379.75,152.33,28.6,Monitor
+bill-642e16bc,res-2493f52775,AWS,CloudFront,us-west-2,development,ml,2026-03,366.49,320.23,46.26,12.6,Consider reserved instance
+bill-fe3c37dc,res-2493f52775,AWS,CloudFront,us-west-2,development,ml,2026-02,366.49,191.24,175.25,47.8,Monitor
+bill-c84a57e6,res-2493f52775,AWS,CloudFront,us-west-2,development,ml,2026-01,366.49,249.71,116.78,31.9,Monitor
+bill-304ab265,res-48ca5aa114,Azure,FunctionApp,southeastasia,sandbox,platform,2026-03,46.41,45.18,1.23,2.7,Consider reserved instance
+bill-e1710d64,res-48ca5aa114,Azure,FunctionApp,southeastasia,sandbox,platform,2026-02,46.41,43.21,3.2,6.9,Consider reserved instance
+bill-360d10c9,res-48ca5aa114,Azure,FunctionApp,southeastasia,sandbox,platform,2026-01,46.41,33.43,12.98,28.0,Monitor
+bill-20553d11,res-9f192dde88,Azure,BlobStorage,eastus,staging,frontend,2026-03,498.96,86.38,412.58,82.7,Downsize or terminate
+bill-e03d2148,res-9f192dde88,Azure,BlobStorage,eastus,staging,frontend,2026-02,498.96,35.14,463.82,93.0,Downsize or terminate
+bill-5fdd84dd,res-9f192dde88,Azure,BlobStorage,eastus,staging,frontend,2026-01,498.96,28.23,470.73,94.3,Downsize or terminate
+bill-65ee35d6,res-8c86a8ee26,AWS,RDS,ap-southeast-1,sandbox,devops,2026-03,138.39,16.52,121.87,88.1,Downsize or terminate
+bill-622d85ee,res-8c86a8ee26,AWS,RDS,ap-southeast-1,sandbox,devops,2026-02,138.39,23.73,114.66,82.9,Downsize or terminate
+bill-d93b3054,res-8c86a8ee26,AWS,RDS,ap-southeast-1,sandbox,devops,2026-01,138.39,19.24,119.15,86.1,Downsize or terminate
+bill-6c421e03,res-3bc1ba6fb8,GCP,CloudRun,us-central1,production,devops,2026-03,726.88,610.76,116.12,16.0,Consider reserved instance
+bill-fca3a6e1,res-3bc1ba6fb8,GCP,CloudRun,us-central1,production,devops,2026-02,726.88,365.11,361.77,49.8,Monitor
+bill-e3a516d4,res-3bc1ba6fb8,GCP,CloudRun,us-central1,production,devops,2026-01,726.88,539.3,187.58,25.8,Monitor
+bill-4ba3bc4a,res-9c806b3222,Azure,FunctionApp,westeurope,production,devops,2026-03,482.33,89.67,392.66,81.4,Downsize or terminate
+bill-e336dac8,res-9c806b3222,Azure,FunctionApp,westeurope,production,devops,2026-02,482.33,84.16,398.17,82.6,Downsize or terminate
+bill-fff9f42a,res-9c806b3222,Azure,FunctionApp,westeurope,production,devops,2026-01,482.33,71.41,410.92,85.2,Downsize or terminate
+bill-9a659706,res-60243f2b1c,AWS,EC2,eu-west-1,production,security,2026-03,338.95,318.15,20.8,6.1,Consider reserved instance
+bill-bf53c17c,res-60243f2b1c,AWS,EC2,eu-west-1,production,security,2026-02,338.95,266.75,72.2,21.3,Monitor
+bill-dbef0e4e,res-60243f2b1c,AWS,EC2,eu-west-1,production,security,2026-01,338.95,222.39,116.56,34.4,Monitor
+bill-8a020647,res-955402ca9e,Azure,VirtualMachine,australiaeast,staging,ml,2026-03,419.79,359.21,60.58,14.4,Consider reserved instance
+bill-349e4b04,res-955402ca9e,Azure,VirtualMachine,australiaeast,staging,ml,2026-02,419.79,356.64,63.15,15.0,Consider reserved instance
+bill-edc37386,res-955402ca9e,Azure,VirtualMachine,australiaeast,staging,ml,2026-01,419.79,257.54,162.25,38.7,Monitor
+bill-4a183878,res-f1bcd08e27,GCP,CloudSQL,us-east1,development,frontend,2026-03,73.9,10.85,63.05,85.3,Downsize or terminate
+bill-56f8ed30,res-f1bcd08e27,GCP,CloudSQL,us-east1,development,frontend,2026-02,73.9,12.53,61.37,83.0,Downsize or terminate
+bill-009484a1,res-f1bcd08e27,GCP,CloudSQL,us-east1,development,frontend,2026-01,73.9,9.48,64.42,87.2,Downsize or terminate
+bill-6f8298a0,res-ca3d4ec0cd,Azure,BlobStorage,australiaeast,development,platform,2026-03,263.39,186.11,77.28,29.3,Monitor
+bill-7b4b4b2a,res-ca3d4ec0cd,Azure,BlobStorage,australiaeast,development,platform,2026-02,263.39,204.83,58.56,22.2,Monitor
+bill-b844fcf8,res-ca3d4ec0cd,Azure,BlobStorage,australiaeast,development,platform,2026-01,263.39,159.79,103.6,39.3,Monitor
+bill-9967d8eb,res-c44ae8a303,Azure,BlobStorage,southeastasia,development,platform,2026-03,156.89,145.71,11.18,7.1,Consider reserved instance
+bill-a50fb456,res-c44ae8a303,Azure,BlobStorage,southeastasia,development,platform,2026-02,156.89,105.48,51.41,32.8,Monitor
+bill-721da5b1,res-c44ae8a303,Azure,BlobStorage,southeastasia,development,platform,2026-01,156.89,125.13,31.76,20.2,Monitor
+bill-99935d72,res-a5a1c789e4,AWS,CloudFront,ap-southeast-1,sandbox,finance,2026-03,18.71,11.97,6.74,36.0,Monitor
+bill-4e97b820,res-a5a1c789e4,AWS,CloudFront,ap-southeast-1,sandbox,finance,2026-02,18.71,13.77,4.94,26.4,Monitor
+bill-257946ea,res-a5a1c789e4,AWS,CloudFront,ap-southeast-1,sandbox,finance,2026-01,18.71,10.44,8.27,44.2,Monitor
+bill-d2293635,res-f1fd88bede,Azure,BlobStorage,australiaeast,sandbox,security,2026-03,598.02,549.08,48.94,8.2,Consider reserved instance
+bill-716071fa,res-f1fd88bede,Azure,BlobStorage,australiaeast,sandbox,security,2026-02,598.02,325.35,272.67,45.6,Monitor
+bill-09467f74,res-f1fd88bede,Azure,BlobStorage,australiaeast,sandbox,security,2026-01,598.02,485.71,112.31,18.8,Consider reserved instance
+bill-21bf9f67,res-6b7d8b019e,Azure,SQLDatabase,australiaeast,staging,data,2026-03,255.86,220.16,35.7,14.0,Consider reserved instance
+bill-35afdd7f,res-6b7d8b019e,Azure,SQLDatabase,australiaeast,staging,data,2026-02,255.86,246.35,9.51,3.7,Consider reserved instance
+bill-ec638543,res-6b7d8b019e,Azure,SQLDatabase,australiaeast,staging,data,2026-01,255.86,252.97,2.89,1.1,Consider reserved instance
+bill-c9c76258,res-37c7fb39ed,GCP,GKE,europe-west1,development,devops,2026-03,666.94,53.57,613.37,92.0,Downsize or terminate
+bill-d1f0f4fb,res-37c7fb39ed,GCP,GKE,europe-west1,development,devops,2026-02,666.94,64.45,602.49,90.3,Downsize or terminate
+bill-16665817,res-37c7fb39ed,GCP,GKE,europe-west1,development,devops,2026-01,666.94,87.21,579.73,86.9,Downsize or terminate
+bill-2c3b15e8,res-c05cb61119,Azure,BlobStorage,southeastasia,staging,devops,2026-03,48.35,29.33,19.02,39.3,Monitor
+bill-0fc37ffd,res-c05cb61119,Azure,BlobStorage,southeastasia,staging,devops,2026-02,48.35,42.8,5.55,11.5,Consider reserved instance
+bill-befcaa79,res-c05cb61119,Azure,BlobStorage,southeastasia,staging,devops,2026-01,48.35,42.87,5.48,11.3,Consider reserved instance
+bill-7e5a8c72,res-ba7aa52644,Azure,AppGateway,westeurope,production,platform,2026-03,378.17,195.8,182.37,48.2,Monitor
+bill-886d6c10,res-ba7aa52644,Azure,AppGateway,westeurope,production,platform,2026-02,378.17,251.92,126.25,33.4,Monitor
+bill-bccfbde9,res-ba7aa52644,Azure,AppGateway,westeurope,production,platform,2026-01,378.17,218.15,160.02,42.3,Monitor
+bill-96ed8f5f,res-9951b62786,Azure,SQLDatabase,westeurope,production,data,2026-03,63.9,56.7,7.2,11.3,Consider reserved instance
+bill-13e54dfb,res-9951b62786,Azure,SQLDatabase,westeurope,production,data,2026-02,63.9,53.16,10.74,16.8,Consider reserved instance
+bill-33b61125,res-9951b62786,Azure,SQLDatabase,westeurope,production,data,2026-01,63.9,44.83,19.07,29.8,Monitor
+bill-960c63c4,res-d22cf6398a,GCP,CloudRun,us-central1,production,frontend,2026-03,612.73,516.1,96.63,15.8,Consider reserved instance
+bill-102718cd,res-d22cf6398a,GCP,CloudRun,us-central1,production,frontend,2026-02,612.73,327.42,285.31,46.6,Monitor
+bill-4ce99ef3,res-d22cf6398a,GCP,CloudRun,us-central1,production,frontend,2026-01,612.73,579.77,32.96,5.4,Consider reserved instance
+bill-85f2c9db,res-719c69e0b0,GCP,GKE,europe-west1,sandbox,devops,2026-03,792.07,64.95,727.12,91.8,Downsize or terminate
+bill-61522b34,res-719c69e0b0,GCP,GKE,europe-west1,sandbox,devops,2026-02,792.07,144.35,647.72,81.8,Downsize or terminate
+bill-c759f521,res-719c69e0b0,GCP,GKE,europe-west1,sandbox,devops,2026-01,792.07,133.54,658.53,83.1,Downsize or terminate
+bill-b0afaf31,res-6862a3516a,Azure,AKS,eastus,staging,frontend,2026-03,69.54,47.29,22.25,32.0,Monitor
+bill-1c80d9d3,res-6862a3516a,Azure,AKS,eastus,staging,frontend,2026-02,69.54,43.67,25.87,37.2,Monitor
+bill-5de2ca20,res-6862a3516a,Azure,AKS,eastus,staging,frontend,2026-01,69.54,61.33,8.21,11.8,Consider reserved instance
+bill-bee4b048,res-f0555b5067,AWS,RDS,us-east-1,sandbox,finance,2026-03,189.02,172.37,16.65,8.8,Consider reserved instance
+bill-15129439,res-f0555b5067,AWS,RDS,us-east-1,sandbox,finance,2026-02,189.02,126.4,62.62,33.1,Monitor
+bill-703f50e1,res-f0555b5067,AWS,RDS,us-east-1,sandbox,finance,2026-01,189.02,181.31,7.71,4.1,Consider reserved instance
+bill-0fa25f68,res-8f0fc6c23c,GCP,CloudSQL,us-east1,development,frontend,2026-03,437.93,311.08,126.85,29.0,Monitor
+bill-00883dc5,res-8f0fc6c23c,GCP,CloudSQL,us-east1,development,frontend,2026-02,437.93,232.21,205.72,47.0,Monitor
+bill-5414c1ad,res-8f0fc6c23c,GCP,CloudSQL,us-east1,development,frontend,2026-01,437.93,407.72,30.21,6.9,Consider reserved instance
+bill-b4ea6eef,res-dde86bf1de,GCP,GCSBucket,asia-east1,staging,devops,2026-03,660.27,653.34,6.93,1.0,Consider reserved instance
+bill-75951251,res-dde86bf1de,GCP,GCSBucket,asia-east1,staging,devops,2026-02,660.27,473.88,186.39,28.2,Monitor
+bill-5c23bbf1,res-dde86bf1de,GCP,GCSBucket,asia-east1,staging,devops,2026-01,660.27,576.2,84.07,12.7,Consider reserved instance
+bill-c69485db,res-883c6b690d,Azure,FunctionApp,eastus,sandbox,devops,2026-03,397.57,287.8,109.77,27.6,Monitor
+bill-756fe132,res-883c6b690d,Azure,FunctionApp,eastus,sandbox,devops,2026-02,397.57,315.73,81.84,20.6,Monitor
+bill-2b9111be,res-883c6b690d,Azure,FunctionApp,eastus,sandbox,devops,2026-01,397.57,242.32,155.25,39.0,Monitor
+bill-112ada1e,res-e6364f31a7,AWS,EC2,ap-southeast-1,production,data,2026-03,541.07,464.71,76.36,14.1,Consider reserved instance
+bill-db59d3ea,res-e6364f31a7,AWS,EC2,ap-southeast-1,production,data,2026-02,541.07,338.54,202.53,37.4,Monitor
+bill-72e82d02,res-e6364f31a7,AWS,EC2,ap-southeast-1,production,data,2026-01,541.07,351.58,189.49,35.0,Monitor
+bill-ea5887d0,res-c825684ca7,GCP,GKE,us-central1,production,backend,2026-03,522.95,403.18,119.77,22.9,Monitor
+bill-f8df345b,res-c825684ca7,GCP,GKE,us-central1,production,backend,2026-02,522.95,312.52,210.43,40.2,Monitor
+bill-0b59d6a8,res-c825684ca7,GCP,GKE,us-central1,production,backend,2026-01,522.95,340.87,182.08,34.8,Monitor
+bill-2f58e115,res-3a9d556215,Azure,BlobStorage,australiaeast,production,finance,2026-03,269.98,158.87,111.11,41.2,Monitor
+bill-c028470a,res-3a9d556215,Azure,BlobStorage,australiaeast,production,finance,2026-02,269.98,243.01,26.97,10.0,Consider reserved instance
+bill-e9d115eb,res-3a9d556215,Azure,BlobStorage,australiaeast,production,finance,2026-01,269.98,186.64,83.34,30.9,Monitor
+bill-48308bb6,res-5534d73b23,GCP,ComputeEngine,europe-west1,development,ml,2026-03,442.33,87.23,355.1,80.3,Downsize or terminate
+bill-8901b352,res-5534d73b23,GCP,ComputeEngine,europe-west1,development,ml,2026-02,442.33,82.35,359.98,81.4,Downsize or terminate
+bill-12d4e4b5,res-5534d73b23,GCP,ComputeEngine,europe-west1,development,ml,2026-01,442.33,86.41,355.92,80.5,Downsize or terminate
+bill-c9a2f644,res-8187c98c7b,Azure,VirtualMachine,southeastasia,sandbox,platform,2026-03,436.36,283.18,153.18,35.1,Monitor
+bill-2eaa536e,res-8187c98c7b,Azure,VirtualMachine,southeastasia,sandbox,platform,2026-02,436.36,417.82,18.54,4.2,Consider reserved instance
+bill-90ce1104,res-8187c98c7b,Azure,VirtualMachine,southeastasia,sandbox,platform,2026-01,436.36,336.04,100.32,23.0,Monitor
+bill-4157b6a6,res-8ea3787196,Azure,VirtualMachine,westeurope,sandbox,platform,2026-03,441.63,293.87,147.76,33.5,Monitor
+bill-62b46080,res-8ea3787196,Azure,VirtualMachine,westeurope,sandbox,platform,2026-02,441.63,232.53,209.1,47.3,Monitor
+bill-87470bd9,res-8ea3787196,Azure,VirtualMachine,westeurope,sandbox,platform,2026-01,441.63,401.07,40.56,9.2,Consider reserved instance
+bill-7a0c6472,res-86cf2d1dc4,Azure,FunctionApp,australiaeast,staging,devops,2026-03,444.04,427.84,16.2,3.6,Consider reserved instance
+bill-666929fb,res-86cf2d1dc4,Azure,FunctionApp,australiaeast,staging,devops,2026-02,444.04,378.47,65.57,14.8,Consider reserved instance
+bill-2e63dbc6,res-86cf2d1dc4,Azure,FunctionApp,australiaeast,staging,devops,2026-01,444.04,309.38,134.66,30.3,Monitor
+bill-b57bfe5b,res-83cc2767a4,AWS,Lambda,us-east-1,staging,finance,2026-03,237.03,27.81,209.22,88.3,Downsize or terminate
+bill-1a00e6ec,res-83cc2767a4,AWS,Lambda,us-east-1,staging,finance,2026-02,237.03,23.78,213.25,90.0,Downsize or terminate
+bill-31701e90,res-83cc2767a4,AWS,Lambda,us-east-1,staging,finance,2026-01,237.03,14.7,222.33,93.8,Downsize or terminate
+bill-9d9a3677,res-2f7e96c024,GCP,CloudSQL,us-east1,sandbox,backend,2026-03,737.89,723.47,14.42,2.0,Consider reserved instance
+bill-9397384a,res-2f7e96c024,GCP,CloudSQL,us-east1,sandbox,backend,2026-02,737.89,427.78,310.11,42.0,Monitor
+bill-9844c47a,res-2f7e96c024,GCP,CloudSQL,us-east1,sandbox,backend,2026-01,737.89,577.24,160.65,21.8,Monitor
+bill-48201b92,res-9b460311aa,GCP,CloudRun,europe-west1,development,devops,2026-03,229.86,36.63,193.23,84.1,Downsize or terminate
+bill-ed578f9f,res-9b460311aa,GCP,CloudRun,europe-west1,development,devops,2026-02,229.86,11.83,218.03,94.9,Downsize or terminate
+bill-07bb6240,res-9b460311aa,GCP,CloudRun,europe-west1,development,devops,2026-01,229.86,12.67,217.19,94.5,Downsize or terminate
+bill-7b57ef2d,res-787c37d8d2,Azure,AKS,australiaeast,sandbox,security,2026-03,611.48,592.19,19.29,3.2,Consider reserved instance
+bill-f9f281e9,res-787c37d8d2,Azure,AKS,australiaeast,sandbox,security,2026-02,611.48,581.61,29.87,4.9,Consider reserved instance
+bill-56ceecab,res-787c37d8d2,Azure,AKS,australiaeast,sandbox,security,2026-01,611.48,404.97,206.51,33.8,Monitor
+bill-64ce7ff9,res-bc31c3205d,Azure,FunctionApp,southeastasia,sandbox,frontend,2026-03,331.57,18.69,312.88,94.4,Downsize or terminate
+bill-7c6defa7,res-bc31c3205d,Azure,FunctionApp,southeastasia,sandbox,frontend,2026-02,331.57,47.86,283.71,85.6,Downsize or terminate
+bill-18cb5e3e,res-bc31c3205d,Azure,FunctionApp,southeastasia,sandbox,frontend,2026-01,331.57,31.97,299.6,90.4,Downsize or terminate
+bill-067e5a5b,res-157fde0687,Azure,AppGateway,australiaeast,sandbox,platform,2026-03,772.46,396.87,375.59,48.6,Monitor
+bill-0da56d19,res-157fde0687,Azure,AppGateway,australiaeast,sandbox,platform,2026-02,772.46,768.64,3.82,0.5,Consider reserved instance
+bill-69ea8e9e,res-157fde0687,Azure,AppGateway,australiaeast,sandbox,platform,2026-01,772.46,425.52,346.94,44.9,Monitor
+bill-e5cc38c9,res-949db16690,Azure,VirtualMachine,australiaeast,production,backend,2026-03,525.55,324.15,201.4,38.3,Monitor
+bill-570286f3,res-949db16690,Azure,VirtualMachine,australiaeast,production,backend,2026-02,525.55,512.69,12.86,2.4,Consider reserved instance
+bill-61a275b8,res-949db16690,Azure,VirtualMachine,australiaeast,production,backend,2026-01,525.55,524.7,0.85,0.2,Consider reserved instance
+bill-0932c324,res-89dea39927,AWS,S3,ap-southeast-1,production,security,2026-03,688.18,82.17,606.01,88.1,Downsize or terminate
+bill-60d28fec,res-89dea39927,AWS,S3,ap-southeast-1,production,security,2026-02,688.18,86.8,601.38,87.4,Downsize or terminate
+bill-7bdacd44,res-89dea39927,AWS,S3,ap-southeast-1,production,security,2026-01,688.18,74.45,613.73,89.2,Downsize or terminate
+bill-51474db0,res-f07d786b44,Azure,SQLDatabase,australiaeast,staging,devops,2026-03,598.68,83.91,514.77,86.0,Downsize or terminate
+bill-d722777f,res-f07d786b44,Azure,SQLDatabase,australiaeast,staging,devops,2026-02,598.68,91.6,507.08,84.7,Downsize or terminate
+bill-79249f25,res-f07d786b44,Azure,SQLDatabase,australiaeast,staging,devops,2026-01,598.68,42.71,555.97,92.9,Downsize or terminate
+bill-76e63198,res-37420626e5,Azure,VirtualMachine,eastus,production,platform,2026-03,49.61,44.78,4.83,9.7,Consider reserved instance
+bill-ba8cba07,res-37420626e5,Azure,VirtualMachine,eastus,production,platform,2026-02,49.61,42.27,7.34,14.8,Consider reserved instance
+bill-1a8d9384,res-37420626e5,Azure,VirtualMachine,eastus,production,platform,2026-01,49.61,35.85,13.76,27.7,Monitor
+bill-a972dcc6,res-4f5380106a,Azure,SQLDatabase,australiaeast,sandbox,backend,2026-03,67.78,47.08,20.7,30.5,Monitor
+bill-5a8116bb,res-4f5380106a,Azure,SQLDatabase,australiaeast,sandbox,backend,2026-02,67.78,57.16,10.62,15.7,Consider reserved instance
+bill-ae31ddc0,res-4f5380106a,Azure,SQLDatabase,australiaeast,sandbox,backend,2026-01,67.78,39.89,27.89,41.1,Monitor
+bill-dd9451cd,res-90e4af06e4,Azure,AKS,westeurope,staging,finance,2026-03,370.36,302.56,67.8,18.3,Consider reserved instance
+bill-2935d367,res-90e4af06e4,Azure,AKS,westeurope,staging,finance,2026-02,370.36,260.39,109.97,29.7,Monitor
+bill-a62dcf88,res-90e4af06e4,Azure,AKS,westeurope,staging,finance,2026-01,370.36,300.17,70.19,19.0,Consider reserved instance
+bill-88efa0ea,res-c7b5585543,GCP,ComputeEngine,us-east1,staging,data,2026-03,279.72,268.44,11.28,4.0,Consider reserved instance
+bill-93aecdc5,res-c7b5585543,GCP,ComputeEngine,us-east1,staging,data,2026-02,279.72,183.93,95.79,34.2,Monitor
+bill-da01adc5,res-c7b5585543,GCP,ComputeEngine,us-east1,staging,data,2026-01,279.72,268.52,11.2,4.0,Consider reserved instance
+bill-dd17c4fa,res-eca998468c,GCP,CloudSQL,us-east1,staging,ml,2026-03,89.79,8.1,81.69,91.0,Downsize or terminate
+bill-c04601c0,res-eca998468c,GCP,CloudSQL,us-east1,staging,ml,2026-02,89.79,17.16,72.63,80.9,Downsize or terminate
+bill-555112e2,res-eca998468c,GCP,CloudSQL,us-east1,staging,ml,2026-01,89.79,13.68,76.11,84.8,Downsize or terminate
+bill-892ce4bd,res-7f522b8ab8,Azure,AKS,southeastasia,production,ml,2026-03,454.91,454.5,0.41,0.1,Consider reserved instance
+bill-67d3a1c9,res-7f522b8ab8,Azure,AKS,southeastasia,production,ml,2026-02,454.91,430.57,24.34,5.4,Consider reserved instance
+bill-9a4bb038,res-7f522b8ab8,Azure,AKS,southeastasia,production,ml,2026-01,454.91,379.14,75.77,16.7,Consider reserved instance
+bill-8cc47035,res-11af606e21,GCP,CloudRun,us-central1,development,frontend,2026-03,285.1,168.53,116.57,40.9,Monitor
+bill-05351bc9,res-11af606e21,GCP,CloudRun,us-central1,development,frontend,2026-02,285.1,271.0,14.1,4.9,Consider reserved instance
+bill-24c1dc88,res-11af606e21,GCP,CloudRun,us-central1,development,frontend,2026-01,285.1,254.44,30.66,10.8,Consider reserved instance
+bill-0f80461a,res-e5abc4f025,GCP,GCSBucket,asia-east1,production,platform,2026-03,355.45,337.69,17.76,5.0,Consider reserved instance
+bill-0bc3bc99,res-e5abc4f025,GCP,GCSBucket,asia-east1,production,platform,2026-02,355.45,241.23,114.22,32.1,Monitor
+bill-2001daa2,res-e5abc4f025,GCP,GCSBucket,asia-east1,production,platform,2026-01,355.45,348.69,6.76,1.9,Consider reserved instance
+bill-238a8bc7,res-cfafaa182f,GCP,CloudSQL,europe-west1,development,ml,2026-03,110.07,55.62,54.45,49.5,Monitor
+bill-a0e0b743,res-cfafaa182f,GCP,CloudSQL,europe-west1,development,ml,2026-02,110.07,102.36,7.71,7.0,Consider reserved instance
+bill-f108b2b2,res-cfafaa182f,GCP,CloudSQL,europe-west1,development,ml,2026-01,110.07,96.84,13.23,12.0,Consider reserved instance
+bill-1d306679,res-39252dca50,GCP,CloudSQL,asia-east1,development,security,2026-03,377.32,58.46,318.86,84.5,Downsize or terminate
+bill-27199ec3,res-39252dca50,GCP,CloudSQL,asia-east1,development,security,2026-02,377.32,21.74,355.58,94.2,Downsize or terminate
+bill-63798de9,res-39252dca50,GCP,CloudSQL,asia-east1,development,security,2026-01,377.32,36.95,340.37,90.2,Downsize or terminate
+bill-5ac8be61,res-9566dad579,AWS,RDS,us-west-2,development,data,2026-03,16.07,1.62,14.45,89.9,Downsize or terminate
+bill-faf20938,res-9566dad579,AWS,RDS,us-west-2,development,data,2026-02,16.07,2.88,13.19,82.1,Downsize or terminate
+bill-b621d9fd,res-9566dad579,AWS,RDS,us-west-2,development,data,2026-01,16.07,3.05,13.02,81.0,Downsize or terminate
+bill-4b4cc4ad,res-72e9889713,GCP,ComputeEngine,us-east1,sandbox,security,2026-03,190.89,181.97,8.92,4.7,Consider reserved instance
+bill-002734f4,res-72e9889713,GCP,ComputeEngine,us-east1,sandbox,security,2026-02,190.89,128.57,62.32,32.6,Monitor
+bill-7bb179bc,res-72e9889713,GCP,ComputeEngine,us-east1,sandbox,security,2026-01,190.89,171.61,19.28,10.1,Consider reserved instance
+bill-ef07cdb7,res-5b767a6834,AWS,ELB,us-west-2,development,ml,2026-03,41.05,34.61,6.44,15.7,Consider reserved instance
+bill-a5028033,res-5b767a6834,AWS,ELB,us-west-2,development,ml,2026-02,41.05,32.6,8.45,20.6,Monitor
+bill-06ac4299,res-5b767a6834,AWS,ELB,us-west-2,development,ml,2026-01,41.05,29.56,11.49,28.0,Monitor
+bill-3ffbbb99,res-fb7a203f55,AWS,EKS,ap-southeast-1,staging,ml,2026-03,538.04,508.61,29.43,5.5,Consider reserved instance
+bill-7a55cba7,res-fb7a203f55,AWS,EKS,ap-southeast-1,staging,ml,2026-02,538.04,360.43,177.61,33.0,Monitor
+bill-f95ef861,res-fb7a203f55,AWS,EKS,ap-southeast-1,staging,ml,2026-01,538.04,386.87,151.17,28.1,Monitor
+bill-60f36cb5,res-bccdd80bb0,GCP,CloudRun,us-east1,sandbox,data,2026-03,494.44,27.97,466.47,94.3,Downsize or terminate
+bill-8bf40f7d,res-bccdd80bb0,GCP,CloudRun,us-east1,sandbox,data,2026-02,494.44,86.63,407.81,82.5,Downsize or terminate
+bill-b2936bac,res-bccdd80bb0,GCP,CloudRun,us-east1,sandbox,data,2026-01,494.44,32.13,462.31,93.5,Downsize or terminate
+bill-22a7ba54,res-092eb9085f,Azure,VirtualMachine,southeastasia,staging,security,2026-03,550.12,396.9,153.22,27.9,Monitor
+bill-fb5aac3e,res-092eb9085f,Azure,VirtualMachine,southeastasia,staging,security,2026-02,550.12,327.67,222.45,40.4,Monitor
+bill-0a434eaf,res-092eb9085f,Azure,VirtualMachine,southeastasia,staging,security,2026-01,550.12,310.58,239.54,43.5,Monitor
+bill-31a9368f,res-03811a9427,GCP,CloudRun,asia-east1,staging,data,2026-03,660.23,91.93,568.3,86.1,Downsize or terminate
+bill-8d8a91b9,res-03811a9427,GCP,CloudRun,asia-east1,staging,data,2026-02,660.23,37.92,622.31,94.3,Downsize or terminate
+bill-6befcbea,res-03811a9427,GCP,CloudRun,asia-east1,staging,data,2026-01,660.23,68.06,592.17,89.7,Downsize or terminate
+bill-5b31003b,res-bb46227117,AWS,Lambda,us-east-1,staging,backend,2026-03,168.14,27.15,140.99,83.9,Downsize or terminate
+bill-4039582b,res-bb46227117,AWS,Lambda,us-east-1,staging,backend,2026-02,168.14,25.41,142.73,84.9,Downsize or terminate
+bill-d835f4cd,res-bb46227117,AWS,Lambda,us-east-1,staging,backend,2026-01,168.14,24.65,143.49,85.3,Downsize or terminate
+bill-a4d2ace7,res-b25f8e4578,GCP,GCSBucket,europe-west1,production,devops,2026-03,120.03,22.45,97.58,81.3,Downsize or terminate
+bill-109d0ba6,res-b25f8e4578,GCP,GCSBucket,europe-west1,production,devops,2026-02,120.03,18.0,102.03,85.0,Downsize or terminate
+bill-0ba18f31,res-b25f8e4578,GCP,GCSBucket,europe-west1,production,devops,2026-01,120.03,20.93,99.1,82.6,Downsize or terminate
+bill-7ac92efd,res-054f04e722,AWS,EKS,us-west-2,staging,platform,2026-03,631.8,331.11,300.69,47.6,Monitor
+bill-a3e73fc7,res-054f04e722,AWS,EKS,us-west-2,staging,platform,2026-02,631.8,626.29,5.51,0.9,Consider reserved instance
+bill-d640e610,res-054f04e722,AWS,EKS,us-west-2,staging,platform,2026-01,631.8,406.83,224.97,35.6,Monitor
+bill-96a36bce,res-4476523a00,GCP,CloudSQL,us-central1,staging,ml,2026-03,597.8,501.42,96.38,16.1,Consider reserved instance
+bill-b4d80f6a,res-4476523a00,GCP,CloudSQL,us-central1,staging,ml,2026-02,597.8,363.53,234.27,39.2,Monitor
+bill-41cfce97,res-4476523a00,GCP,CloudSQL,us-central1,staging,ml,2026-01,597.8,389.78,208.02,34.8,Monitor
+bill-08e4e344,res-e504f66772,Azure,FunctionApp,southeastasia,sandbox,frontend,2026-03,39.48,6.25,33.23,84.2,Downsize or terminate
+bill-eb8a07f8,res-e504f66772,Azure,FunctionApp,southeastasia,sandbox,frontend,2026-02,39.48,3.18,36.3,91.9,Downsize or terminate
+bill-45f2d57a,res-e504f66772,Azure,FunctionApp,southeastasia,sandbox,frontend,2026-01,39.48,7.29,32.19,81.5,Downsize or terminate
+bill-0057771b,res-19d97e4ddf,GCP,GKE,asia-east1,production,finance,2026-03,343.89,23.31,320.58,93.2,Downsize or terminate
+bill-eb1c0b52,res-19d97e4ddf,GCP,GKE,asia-east1,production,finance,2026-02,343.89,31.51,312.38,90.8,Downsize or terminate
+bill-9e74b7b3,res-19d97e4ddf,GCP,GKE,asia-east1,production,finance,2026-01,343.89,23.7,320.19,93.1,Downsize or terminate
+bill-7b5896ad,res-b9d562a6bb,AWS,DynamoDB,ap-southeast-1,development,backend,2026-03,223.64,115.33,108.31,48.4,Monitor
+bill-c2ab6298,res-b9d562a6bb,AWS,DynamoDB,ap-southeast-1,development,backend,2026-02,223.64,135.81,87.83,39.3,Monitor
+bill-828d5c6a,res-b9d562a6bb,AWS,DynamoDB,ap-southeast-1,development,backend,2026-01,223.64,116.92,106.72,47.7,Monitor
+bill-7117bac4,res-def54f3457,GCP,GKE,asia-east1,development,finance,2026-03,347.01,279.62,67.39,19.4,Consider reserved instance
+bill-74ef5637,res-def54f3457,GCP,GKE,asia-east1,development,finance,2026-02,347.01,342.2,4.81,1.4,Consider reserved instance
+bill-c3208175,res-def54f3457,GCP,GKE,asia-east1,development,finance,2026-01,347.01,222.82,124.19,35.8,Monitor
+bill-6bf3d7be,res-49ac50f94d,GCP,ComputeEngine,europe-west1,sandbox,security,2026-03,321.99,19.58,302.41,93.9,Downsize or terminate
+bill-03d1bb62,res-49ac50f94d,GCP,ComputeEngine,europe-west1,sandbox,security,2026-02,321.99,30.58,291.41,90.5,Downsize or terminate
+bill-b2d9f7d3,res-49ac50f94d,GCP,ComputeEngine,europe-west1,sandbox,security,2026-01,321.99,45.73,276.26,85.8,Downsize or terminate
+bill-52a26888,res-bc43a43632,GCP,ComputeEngine,asia-east1,development,backend,2026-03,382.04,208.94,173.1,45.3,Monitor
+bill-8f1a2272,res-bc43a43632,GCP,ComputeEngine,asia-east1,development,backend,2026-02,382.04,233.31,148.73,38.9,Monitor
+bill-cd8ec0a3,res-bc43a43632,GCP,ComputeEngine,asia-east1,development,backend,2026-01,382.04,315.94,66.1,17.3,Consider reserved instance
+bill-88b4a976,res-55ed5b54c0,AWS,S3,us-east-1,staging,platform,2026-03,451.46,424.49,26.97,6.0,Consider reserved instance
+bill-b9b0ee94,res-55ed5b54c0,AWS,S3,us-east-1,staging,platform,2026-02,451.46,364.91,86.55,19.2,Consider reserved instance
+bill-ca5e469b,res-55ed5b54c0,AWS,S3,us-east-1,staging,platform,2026-01,451.46,265.07,186.39,41.3,Monitor
+bill-41c98abc,res-0cec1ae9ba,Azure,AppGateway,eastus,production,devops,2026-03,284.56,219.89,64.67,22.7,Monitor
+bill-d3ce7097,res-0cec1ae9ba,Azure,AppGateway,eastus,production,devops,2026-02,284.56,191.52,93.04,32.7,Monitor
+bill-c358dc3a,res-0cec1ae9ba,Azure,AppGateway,eastus,production,devops,2026-01,284.56,249.0,35.56,12.5,Consider reserved instance
+bill-d778eb31,res-2655060d2f,GCP,GKE,europe-west1,staging,data,2026-03,447.23,426.95,20.28,4.5,Consider reserved instance
+bill-a3e802d6,res-2655060d2f,GCP,GKE,europe-west1,staging,data,2026-02,447.23,377.02,70.21,15.7,Consider reserved instance
+bill-87a3f68b,res-2655060d2f,GCP,GKE,europe-west1,staging,data,2026-01,447.23,299.75,147.48,33.0,Monitor
+bill-6c9596c5,res-641e724298,AWS,EKS,us-west-2,development,platform,2026-03,563.65,294.71,268.94,47.7,Monitor
+bill-b32cd236,res-641e724298,AWS,EKS,us-west-2,development,platform,2026-02,563.65,391.15,172.5,30.6,Monitor
+bill-eaf0c710,res-641e724298,AWS,EKS,us-west-2,development,platform,2026-01,563.65,291.2,272.45,48.3,Monitor
+bill-e684ecb6,res-442b0224f8,Azure,SQLDatabase,southeastasia,sandbox,data,2026-03,508.37,357.78,150.59,29.6,Monitor
+bill-dbec35dc,res-442b0224f8,Azure,SQLDatabase,southeastasia,sandbox,data,2026-02,508.37,377.95,130.42,25.7,Monitor
+bill-270a031d,res-442b0224f8,Azure,SQLDatabase,southeastasia,sandbox,data,2026-01,508.37,493.26,15.11,3.0,Consider reserved instance
+bill-1510692c,res-35fb085a1f,AWS,S3,us-west-2,development,backend,2026-03,578.67,293.11,285.56,49.3,Monitor
+bill-80dea1d7,res-35fb085a1f,AWS,S3,us-west-2,development,backend,2026-02,578.67,294.9,283.77,49.0,Monitor
+bill-602a6b86,res-35fb085a1f,AWS,S3,us-west-2,development,backend,2026-01,578.67,454.6,124.07,21.4,Monitor
+bill-6fdb4d25,res-b25d06f105,GCP,GKE,us-central1,production,data,2026-03,531.24,516.07,15.17,2.9,Consider reserved instance
+bill-515cc18c,res-b25d06f105,GCP,GKE,us-central1,production,data,2026-02,531.24,507.02,24.22,4.6,Consider reserved instance
+bill-456ae615,res-b25d06f105,GCP,GKE,us-central1,production,data,2026-01,531.24,411.05,120.19,22.6,Monitor
+bill-1e986a36,res-9d349136e8,Azure,AKS,australiaeast,production,security,2026-03,230.18,123.57,106.61,46.3,Monitor
+bill-98df6841,res-9d349136e8,Azure,AKS,australiaeast,production,security,2026-02,230.18,159.61,70.57,30.7,Monitor
+bill-3320445d,res-9d349136e8,Azure,AKS,australiaeast,production,security,2026-01,230.18,165.64,64.54,28.0,Monitor
+bill-c8e60762,res-3f29e3e5e1,GCP,GKE,us-east1,production,frontend,2026-03,481.46,303.99,177.47,36.9,Monitor
+bill-886262ab,res-3f29e3e5e1,GCP,GKE,us-east1,production,frontend,2026-02,481.46,428.09,53.37,11.1,Consider reserved instance
+bill-5424d02d,res-3f29e3e5e1,GCP,GKE,us-east1,production,frontend,2026-01,481.46,456.29,25.17,5.2,Consider reserved instance
+bill-15cda5dc,res-9750ddd10a,AWS,Lambda,eu-west-1,development,devops,2026-03,11.15,11.13,0.02,0.2,Consider reserved instance
+bill-a06f535c,res-9750ddd10a,AWS,Lambda,eu-west-1,development,devops,2026-02,11.15,8.37,2.78,24.9,Monitor
+bill-ada4607f,res-9750ddd10a,AWS,Lambda,eu-west-1,development,devops,2026-01,11.15,9.45,1.7,15.2,Consider reserved instance
+bill-85bffb48,res-1424bada8a,GCP,CloudFunction,europe-west1,staging,security,2026-03,690.1,388.29,301.81,43.7,Monitor
+bill-8ef2adfe,res-1424bada8a,GCP,CloudFunction,europe-west1,staging,security,2026-02,690.1,652.06,38.04,5.5,Consider reserved instance
+bill-f300bdc3,res-1424bada8a,GCP,CloudFunction,europe-west1,staging,security,2026-01,690.1,420.2,269.9,39.1,Monitor
+bill-1d608f70,res-43f3036f82,AWS,CloudFront,us-east-1,development,ml,2026-03,569.05,339.68,229.37,40.3,Monitor
+bill-cad73e65,res-43f3036f82,AWS,CloudFront,us-east-1,development,ml,2026-02,569.05,525.88,43.17,7.6,Consider reserved instance
+bill-9ba3deb4,res-43f3036f82,AWS,CloudFront,us-east-1,development,ml,2026-01,569.05,371.8,197.25,34.7,Monitor
+bill-5cabdd7c,res-0508c9f86b,Azure,SQLDatabase,eastus,staging,finance,2026-03,736.22,113.99,622.23,84.5,Downsize or terminate
+bill-508a5929,res-0508c9f86b,Azure,SQLDatabase,eastus,staging,finance,2026-02,736.22,145.76,590.46,80.2,Downsize or terminate
+bill-c35582e9,res-0508c9f86b,Azure,SQLDatabase,eastus,staging,finance,2026-01,736.22,131.99,604.23,82.1,Downsize or terminate
+bill-df7fe324,res-597bf029d3,AWS,CloudFront,us-east-1,production,ml,2026-03,597.91,31.74,566.17,94.7,Downsize or terminate
+bill-154191a5,res-597bf029d3,AWS,CloudFront,us-east-1,production,ml,2026-02,597.91,65.11,532.8,89.1,Downsize or terminate
+bill-45a74e34,res-597bf029d3,AWS,CloudFront,us-east-1,production,ml,2026-01,597.91,71.01,526.9,88.1,Downsize or terminate
+bill-e939ece8,res-f9ffe890f6,AWS,ELB,us-west-2,staging,security,2026-03,766.79,674.3,92.49,12.1,Consider reserved instance
+bill-ad79abed,res-f9ffe890f6,AWS,ELB,us-west-2,staging,security,2026-02,766.79,707.94,58.85,7.7,Consider reserved instance
+bill-7e9c1175,res-f9ffe890f6,AWS,ELB,us-west-2,staging,security,2026-01,766.79,511.52,255.27,33.3,Monitor
+bill-1e987de2,res-e068dbf3f8,GCP,GCSBucket,europe-west1,staging,backend,2026-03,609.37,307.14,302.23,49.6,Monitor
+bill-82ad9c13,res-e068dbf3f8,GCP,GCSBucket,europe-west1,staging,backend,2026-02,609.37,353.64,255.73,42.0,Monitor
+bill-22b47f75,res-e068dbf3f8,GCP,GCSBucket,europe-west1,staging,backend,2026-01,609.37,410.7,198.67,32.6,Monitor
+bill-0a3720eb,res-63e8a8f8da,GCP,ComputeEngine,europe-west1,sandbox,security,2026-03,503.64,26.02,477.62,94.8,Downsize or terminate
+bill-34af8f63,res-63e8a8f8da,GCP,ComputeEngine,europe-west1,sandbox,security,2026-02,503.64,62.44,441.2,87.6,Downsize or terminate
+bill-c4fce754,res-63e8a8f8da,GCP,ComputeEngine,europe-west1,sandbox,security,2026-01,503.64,99.62,404.02,80.2,Downsize or terminate
+bill-b313f4da,res-6d53c9bed0,AWS,DynamoDB,us-east-1,development,platform,2026-03,63.98,42.01,21.97,34.3,Monitor
+bill-e70c65d8,res-6d53c9bed0,AWS,DynamoDB,us-east-1,development,platform,2026-02,63.98,36.15,27.83,43.5,Monitor
+bill-6b0ef480,res-6d53c9bed0,AWS,DynamoDB,us-east-1,development,platform,2026-01,63.98,44.5,19.48,30.4,Monitor
+bill-068e5f0f,res-fb6c156d19,Azure,FunctionApp,eastus,production,data,2026-03,408.12,262.39,145.73,35.7,Monitor
+bill-49046e35,res-fb6c156d19,Azure,FunctionApp,eastus,production,data,2026-02,408.12,297.8,110.32,27.0,Monitor
+bill-8fd62d6d,res-fb6c156d19,Azure,FunctionApp,eastus,production,data,2026-01,408.12,256.05,152.07,37.3,Monitor
+bill-b0def1d0,res-e3a59908fe,Azure,AKS,eastus,development,finance,2026-03,766.39,606.26,160.13,20.9,Monitor
+bill-5510062e,res-e3a59908fe,Azure,AKS,eastus,development,finance,2026-02,766.39,623.74,142.65,18.6,Consider reserved instance
+bill-328f16d4,res-e3a59908fe,Azure,AKS,eastus,development,finance,2026-01,766.39,636.68,129.71,16.9,Consider reserved instance
+bill-56e16e64,res-1e6335ca55,Azure,VirtualMachine,southeastasia,production,frontend,2026-03,792.83,623.43,169.4,21.4,Monitor
+bill-b7b6e686,res-1e6335ca55,Azure,VirtualMachine,southeastasia,production,frontend,2026-02,792.83,705.26,87.57,11.0,Consider reserved instance
+bill-7189a260,res-1e6335ca55,Azure,VirtualMachine,southeastasia,production,frontend,2026-01,792.83,483.16,309.67,39.1,Monitor
+bill-6556fb60,res-91679fc6a0,GCP,GKE,europe-west1,sandbox,ml,2026-03,544.72,45.32,499.4,91.7,Downsize or terminate
+bill-46d61609,res-91679fc6a0,GCP,GKE,europe-west1,sandbox,ml,2026-02,544.72,54.28,490.44,90.0,Downsize or terminate
+bill-17e71d6b,res-91679fc6a0,GCP,GKE,europe-west1,sandbox,ml,2026-01,544.72,35.02,509.7,93.6,Downsize or terminate
+bill-b8570cc4,res-1fdbfd3128,AWS,ELB,us-east-1,development,devops,2026-03,526.97,267.5,259.47,49.2,Monitor
+bill-1da54867,res-1fdbfd3128,AWS,ELB,us-east-1,development,devops,2026-02,526.97,470.97,56.0,10.6,Consider reserved instance
+bill-7a24474b,res-1fdbfd3128,AWS,ELB,us-east-1,development,devops,2026-01,526.97,414.02,112.95,21.4,Monitor
+bill-a1ccb87e,res-deeec03b65,GCP,GCSBucket,asia-east1,development,devops,2026-03,560.29,82.07,478.22,85.4,Downsize or terminate
+bill-5d2137c6,res-deeec03b65,GCP,GCSBucket,asia-east1,development,devops,2026-02,560.29,103.01,457.28,81.6,Downsize or terminate
+bill-9a22fb2e,res-deeec03b65,GCP,GCSBucket,asia-east1,development,devops,2026-01,560.29,98.52,461.77,82.4,Downsize or terminate
+bill-358279e3,res-c2d94bc4fa,Azure,BlobStorage,eastus,development,backend,2026-03,664.02,347.41,316.61,47.7,Monitor
+bill-d6df59fc,res-c2d94bc4fa,Azure,BlobStorage,eastus,development,backend,2026-02,664.02,413.12,250.9,37.8,Monitor
+bill-d8efb86f,res-c2d94bc4fa,Azure,BlobStorage,eastus,development,backend,2026-01,664.02,543.57,120.45,18.1,Consider reserved instance
+bill-3c3fbac2,res-0a11fadf35,GCP,CloudRun,us-central1,development,platform,2026-03,148.31,145.28,3.03,2.0,Consider reserved instance
+bill-05276275,res-0a11fadf35,GCP,CloudRun,us-central1,development,platform,2026-02,148.31,115.37,32.94,22.2,Monitor
+bill-fd00a3ef,res-0a11fadf35,GCP,CloudRun,us-central1,development,platform,2026-01,148.31,104.86,43.45,29.3,Monitor
+bill-08a768bc,res-acdd50874d,AWS,ELB,ap-southeast-1,staging,data,2026-03,631.56,395.76,235.8,37.3,Monitor
+bill-ddcec137,res-acdd50874d,AWS,ELB,ap-southeast-1,staging,data,2026-02,631.56,320.18,311.38,49.3,Monitor
+bill-85f83543,res-acdd50874d,AWS,ELB,ap-southeast-1,staging,data,2026-01,631.56,595.69,35.87,5.7,Consider reserved instance
+bill-1cf9b71b,res-7f6b94c2d3,GCP,GKE,us-central1,sandbox,backend,2026-03,665.92,371.8,294.12,44.2,Monitor
+bill-416f2d39,res-7f6b94c2d3,GCP,GKE,us-central1,sandbox,backend,2026-02,665.92,460.83,205.09,30.8,Monitor
+bill-7e406171,res-7f6b94c2d3,GCP,GKE,us-central1,sandbox,backend,2026-01,665.92,480.82,185.1,27.8,Monitor
+bill-cd05a182,res-d34d65828e,GCP,GCSBucket,us-east1,staging,finance,2026-03,603.15,541.2,61.95,10.3,Consider reserved instance
+bill-a4dff087,res-d34d65828e,GCP,GCSBucket,us-east1,staging,finance,2026-02,603.15,487.43,115.72,19.2,Consider reserved instance
+bill-4aa6fcbf,res-d34d65828e,GCP,GCSBucket,us-east1,staging,finance,2026-01,603.15,303.53,299.62,49.7,Monitor
+bill-0a9e7762,res-af44419855,Azure,BlobStorage,westeurope,staging,security,2026-03,458.48,434.73,23.75,5.2,Consider reserved instance
+bill-56f7d78d,res-af44419855,Azure,BlobStorage,westeurope,staging,security,2026-02,458.48,305.92,152.56,33.3,Monitor
+bill-f1e53f1a,res-af44419855,Azure,BlobStorage,westeurope,staging,security,2026-01,458.48,452.81,5.67,1.2,Consider reserved instance
+bill-d77865b2,res-c8c4152a93,Azure,FunctionApp,southeastasia,sandbox,backend,2026-03,642.0,119.93,522.07,81.3,Downsize or terminate
+bill-d884e408,res-c8c4152a93,Azure,FunctionApp,southeastasia,sandbox,backend,2026-02,642.0,64.27,577.73,90.0,Downsize or terminate
+bill-70605bb6,res-c8c4152a93,Azure,FunctionApp,southeastasia,sandbox,backend,2026-01,642.0,116.5,525.5,81.9,Downsize or terminate
+bill-3ecf79b9,res-fb445d33ce,AWS,EKS,us-east-1,production,data,2026-03,611.68,477.9,133.78,21.9,Monitor
+bill-8014c4dc,res-fb445d33ce,AWS,EKS,us-east-1,production,data,2026-02,611.68,547.44,64.24,10.5,Consider reserved instance
+bill-65c45e32,res-fb445d33ce,AWS,EKS,us-east-1,production,data,2026-01,611.68,471.92,139.76,22.8,Monitor
+bill-7daa480f,res-f3d89cf04e,Azure,FunctionApp,westeurope,sandbox,security,2026-03,334.84,32.98,301.86,90.2,Downsize or terminate
+bill-9fa98c3c,res-f3d89cf04e,Azure,FunctionApp,westeurope,sandbox,security,2026-02,334.84,45.15,289.69,86.5,Downsize or terminate
+bill-441dff9e,res-f3d89cf04e,Azure,FunctionApp,westeurope,sandbox,security,2026-01,334.84,26.09,308.75,92.2,Downsize or terminate
+bill-de6d5443,res-e4c83244b4,Azure,AKS,southeastasia,development,frontend,2026-03,745.01,436.2,308.81,41.5,Monitor
+bill-1260eb01,res-e4c83244b4,Azure,AKS,southeastasia,development,frontend,2026-02,745.01,647.02,97.99,13.2,Consider reserved instance
+bill-cf63011e,res-e4c83244b4,Azure,AKS,southeastasia,development,frontend,2026-01,745.01,659.73,85.28,11.4,Consider reserved instance
+bill-cd0beb45,res-c620ff8504,GCP,CloudRun,asia-east1,development,finance,2026-03,115.34,75.64,39.7,34.4,Monitor
+bill-166b1250,res-c620ff8504,GCP,CloudRun,asia-east1,development,finance,2026-02,115.34,80.46,34.88,30.2,Monitor
+bill-383648d6,res-c620ff8504,GCP,CloudRun,asia-east1,development,finance,2026-01,115.34,70.99,44.35,38.5,Monitor
+bill-09290cf7,res-b978887cf6,GCP,CloudFunction,us-east1,production,devops,2026-03,123.87,114.16,9.71,7.8,Consider reserved instance
+bill-a5157dad,res-b978887cf6,GCP,CloudFunction,us-east1,production,devops,2026-02,123.87,87.89,35.98,29.0,Monitor
+bill-73cf1788,res-b978887cf6,GCP,CloudFunction,us-east1,production,devops,2026-01,123.87,111.74,12.13,9.8,Consider reserved instance
+bill-b9e123e3,res-fde42aa41f,GCP,GKE,us-east1,staging,devops,2026-03,194.56,114.71,79.85,41.0,Monitor
+bill-6d69d357,res-fde42aa41f,GCP,GKE,us-east1,staging,devops,2026-02,194.56,98.1,96.46,49.6,Monitor
+bill-dfd7b73e,res-fde42aa41f,GCP,GKE,us-east1,staging,devops,2026-01,194.56,164.81,29.75,15.3,Consider reserved instance
+bill-e5a4bace,res-65d77cef41,GCP,GKE,us-east1,production,frontend,2026-03,236.56,172.4,64.16,27.1,Monitor
+bill-2f31a263,res-65d77cef41,GCP,GKE,us-east1,production,frontend,2026-02,236.56,160.12,76.44,32.3,Monitor
+bill-745c3cae,res-65d77cef41,GCP,GKE,us-east1,production,frontend,2026-01,236.56,140.34,96.22,40.7,Monitor
+bill-b689cee2,res-427a6265ad,AWS,ELB,us-west-2,production,security,2026-03,423.22,265.75,157.47,37.2,Monitor
+bill-bb286956,res-427a6265ad,AWS,ELB,us-west-2,production,security,2026-02,423.22,419.69,3.53,0.8,Consider reserved instance
+bill-9f68f28a,res-427a6265ad,AWS,ELB,us-west-2,production,security,2026-01,423.22,399.93,23.29,5.5,Consider reserved instance
+bill-81730ab6,res-9983a2c0b5,GCP,GKE,us-central1,production,ml,2026-03,206.65,31.87,174.78,84.6,Downsize or terminate
+bill-3e3ac8b6,res-9983a2c0b5,GCP,GKE,us-central1,production,ml,2026-02,206.65,14.24,192.41,93.1,Downsize or terminate
+bill-64d14b7d,res-9983a2c0b5,GCP,GKE,us-central1,production,ml,2026-01,206.65,38.46,168.19,81.4,Downsize or terminate
+bill-3b2d8c91,res-8e3baf2888,AWS,ELB,us-east-1,development,backend,2026-03,439.08,244.68,194.4,44.3,Monitor
+bill-a9c8d766,res-8e3baf2888,AWS,ELB,us-east-1,development,backend,2026-02,439.08,395.43,43.65,9.9,Consider reserved instance
+bill-f5e3ad69,res-8e3baf2888,AWS,ELB,us-east-1,development,backend,2026-01,439.08,404.36,34.72,7.9,Consider reserved instance
+bill-a94c922d,res-d3238bee1f,GCP,GCSBucket,us-east1,staging,data,2026-03,755.17,462.79,292.38,38.7,Monitor
+bill-3e625e93,res-d3238bee1f,GCP,GCSBucket,us-east1,staging,data,2026-02,755.17,661.5,93.67,12.4,Consider reserved instance
+bill-0bc548f5,res-d3238bee1f,GCP,GCSBucket,us-east1,staging,data,2026-01,755.17,379.9,375.27,49.7,Monitor
+bill-59d9e65d,res-8a0646529c,AWS,EKS,us-west-2,production,security,2026-03,414.73,32.5,382.23,92.2,Downsize or terminate
+bill-90448029,res-8a0646529c,AWS,EKS,us-west-2,production,security,2026-02,414.73,64.31,350.42,84.5,Downsize or terminate
+bill-0cc49993,res-8a0646529c,AWS,EKS,us-west-2,production,security,2026-01,414.73,31.2,383.53,92.5,Downsize or terminate
+bill-aa5f829b,res-e5c631d620,GCP,CloudFunction,asia-east1,development,security,2026-03,43.0,6.32,36.68,85.3,Downsize or terminate
+bill-7c4a7028,res-e5c631d620,GCP,CloudFunction,asia-east1,development,security,2026-02,43.0,6.07,36.93,85.9,Downsize or terminate
+bill-1c4ef539,res-e5c631d620,GCP,CloudFunction,asia-east1,development,security,2026-01,43.0,6.41,36.59,85.1,Downsize or terminate
+bill-de83ee53,res-1711ed7197,GCP,CloudSQL,asia-east1,sandbox,ml,2026-03,716.24,382.3,333.94,46.6,Monitor
+bill-4dbfdbb4,res-1711ed7197,GCP,CloudSQL,asia-east1,sandbox,ml,2026-02,716.24,682.9,33.34,4.7,Consider reserved instance
+bill-e05437cb,res-1711ed7197,GCP,CloudSQL,asia-east1,sandbox,ml,2026-01,716.24,545.93,170.31,23.8,Monitor
+bill-de45e5d0,res-b2228b099b,Azure,SQLDatabase,westeurope,development,devops,2026-03,583.03,40.04,542.99,93.1,Downsize or terminate
+bill-8edccc72,res-b2228b099b,Azure,SQLDatabase,westeurope,development,devops,2026-02,583.03,79.25,503.78,86.4,Downsize or terminate
+bill-1bb376d2,res-b2228b099b,Azure,SQLDatabase,westeurope,development,devops,2026-01,583.03,71.9,511.13,87.7,Downsize or terminate
+bill-29ce5176,res-3c7e62cf2b,AWS,CloudFront,us-west-2,production,data,2026-03,240.03,120.53,119.5,49.8,Monitor
+bill-f5dfdc0a,res-3c7e62cf2b,AWS,CloudFront,us-west-2,production,data,2026-02,240.03,163.95,76.08,31.7,Monitor
+bill-62184206,res-3c7e62cf2b,AWS,CloudFront,us-west-2,production,data,2026-01,240.03,131.35,108.68,45.3,Monitor
+bill-f5a510cc,res-e5beb055c8,Azure,AKS,australiaeast,development,finance,2026-03,696.68,385.41,311.27,44.7,Monitor
+bill-1593fd71,res-e5beb055c8,Azure,AKS,australiaeast,development,finance,2026-02,696.68,387.38,309.3,44.4,Monitor
+bill-6934438b,res-e5beb055c8,Azure,AKS,australiaeast,development,finance,2026-01,696.68,500.4,196.28,28.2,Monitor
+bill-0c3f65d5,res-30406bb8b5,Azure,AKS,australiaeast,production,ml,2026-03,641.87,492.81,149.06,23.2,Monitor
+bill-bd52cbc0,res-30406bb8b5,Azure,AKS,australiaeast,production,ml,2026-02,641.87,427.59,214.28,33.4,Monitor
+bill-e68f49e5,res-30406bb8b5,Azure,AKS,australiaeast,production,ml,2026-01,641.87,497.64,144.23,22.5,Monitor
+bill-0d67c78d,res-996ad334d4,GCP,GCSBucket,us-central1,production,backend,2026-03,623.92,539.79,84.13,13.5,Consider reserved instance
+bill-d29a4e93,res-996ad334d4,GCP,GCSBucket,us-central1,production,backend,2026-02,623.92,586.71,37.21,6.0,Consider reserved instance
+bill-2f1c83f6,res-996ad334d4,GCP,GCSBucket,us-central1,production,backend,2026-01,623.92,489.46,134.46,21.6,Monitor
+bill-3dac1514,res-d3799f0227,Azure,SQLDatabase,australiaeast,sandbox,security,2026-03,611.65,447.65,164.0,26.8,Monitor
+bill-b30b9752,res-d3799f0227,Azure,SQLDatabase,australiaeast,sandbox,security,2026-02,611.65,603.34,8.31,1.4,Consider reserved instance
+bill-93d0bbc7,res-d3799f0227,Azure,SQLDatabase,australiaeast,sandbox,security,2026-01,611.65,357.04,254.61,41.6,Monitor
+bill-27945bf1,res-af43cab0b1,GCP,GCSBucket,asia-east1,staging,data,2026-03,152.91,129.26,23.65,15.5,Consider reserved instance
+bill-ba7aafb4,res-af43cab0b1,GCP,GCSBucket,asia-east1,staging,data,2026-02,152.91,105.64,47.27,30.9,Monitor
+bill-b40ab2e8,res-af43cab0b1,GCP,GCSBucket,asia-east1,staging,data,2026-01,152.91,115.96,36.95,24.2,Monitor
+bill-f7ae1a48,res-5a7b3f320c,GCP,CloudFunction,us-central1,sandbox,frontend,2026-03,232.03,36.27,195.76,84.4,Downsize or terminate
+bill-5b99e5cc,res-5a7b3f320c,GCP,CloudFunction,us-central1,sandbox,frontend,2026-02,232.03,37.72,194.31,83.7,Downsize or terminate
+bill-16752d19,res-5a7b3f320c,GCP,CloudFunction,us-central1,sandbox,frontend,2026-01,232.03,38.51,193.52,83.4,Downsize or terminate
+bill-4d9dd8b4,res-963b91561a,Azure,BlobStorage,eastus,sandbox,backend,2026-03,358.86,67.31,291.55,81.2,Downsize or terminate
+bill-79e03b11,res-963b91561a,Azure,BlobStorage,eastus,sandbox,backend,2026-02,358.86,43.71,315.15,87.8,Downsize or terminate
+bill-6f3f7018,res-963b91561a,Azure,BlobStorage,eastus,sandbox,backend,2026-01,358.86,59.15,299.71,83.5,Downsize or terminate
+bill-6ceee7b0,res-4648429bd3,AWS,ELB,eu-west-1,development,devops,2026-03,570.89,88.43,482.46,84.5,Downsize or terminate
+bill-917bd290,res-4648429bd3,AWS,ELB,eu-west-1,development,devops,2026-02,570.89,102.02,468.87,82.1,Downsize or terminate
+bill-3defd177,res-4648429bd3,AWS,ELB,eu-west-1,development,devops,2026-01,570.89,34.3,536.59,94.0,Downsize or terminate
+bill-adb1c646,res-bf77187a25,GCP,CloudRun,europe-west1,production,frontend,2026-03,193.21,38.04,155.17,80.3,Downsize or terminate
+bill-e44c9b14,res-bf77187a25,GCP,CloudRun,europe-west1,production,frontend,2026-02,193.21,27.3,165.91,85.9,Downsize or terminate
+bill-806eb6a2,res-bf77187a25,GCP,CloudRun,europe-west1,production,frontend,2026-01,193.21,14.14,179.07,92.7,Downsize or terminate
+bill-556fdd55,res-59ca1a3310,Azure,VirtualMachine,southeastasia,sandbox,backend,2026-03,73.54,70.18,3.36,4.6,Consider reserved instance
+bill-27f715d7,res-59ca1a3310,Azure,VirtualMachine,southeastasia,sandbox,backend,2026-02,73.54,54.4,19.14,26.0,Monitor
+bill-30db673b,res-59ca1a3310,Azure,VirtualMachine,southeastasia,sandbox,backend,2026-01,73.54,43.11,30.43,41.4,Monitor
+bill-6f939d9d,res-c73378f9a0,Azure,FunctionApp,australiaeast,production,backend,2026-03,515.66,65.16,450.5,87.4,Downsize or terminate
+bill-92543b41,res-c73378f9a0,Azure,FunctionApp,australiaeast,production,backend,2026-02,515.66,51.44,464.22,90.0,Downsize or terminate
+bill-8fa045d1,res-c73378f9a0,Azure,FunctionApp,australiaeast,production,backend,2026-01,515.66,94.01,421.65,81.8,Downsize or terminate
+bill-67f1960a,res-1c711cc423,Azure,FunctionApp,southeastasia,staging,ml,2026-03,695.23,648.73,46.5,6.7,Consider reserved instance
+bill-602fb23e,res-1c711cc423,Azure,FunctionApp,southeastasia,staging,ml,2026-02,695.23,576.12,119.11,17.1,Consider reserved instance
+bill-6fe0ceb1,res-1c711cc423,Azure,FunctionApp,southeastasia,staging,ml,2026-01,695.23,693.64,1.59,0.2,Consider reserved instance
+bill-7bb78006,res-a22dd5d9bb,AWS,RDS,eu-west-1,staging,security,2026-03,417.52,29.53,387.99,92.9,Downsize or terminate
+bill-48d34261,res-a22dd5d9bb,AWS,RDS,eu-west-1,staging,security,2026-02,417.52,66.12,351.4,84.2,Downsize or terminate
+bill-cd5b3439,res-a22dd5d9bb,AWS,RDS,eu-west-1,staging,security,2026-01,417.52,50.74,366.78,87.8,Downsize or terminate
+bill-96db19da,res-1fb6c86fa4,Azure,VirtualMachine,southeastasia,staging,devops,2026-03,79.28,39.69,39.59,49.9,Monitor
+bill-52503dc7,res-1fb6c86fa4,Azure,VirtualMachine,southeastasia,staging,devops,2026-02,79.28,46.68,32.6,41.1,Monitor
+bill-88107f13,res-1fb6c86fa4,Azure,VirtualMachine,southeastasia,staging,devops,2026-01,79.28,48.11,31.17,39.3,Monitor
+bill-908427ed,res-57982ba25d,GCP,GCSBucket,europe-west1,production,platform,2026-03,759.09,491.34,267.75,35.3,Monitor
+bill-473adf6b,res-57982ba25d,GCP,GCSBucket,europe-west1,production,platform,2026-02,759.09,427.92,331.17,43.6,Monitor
+bill-ce8f8d58,res-57982ba25d,GCP,GCSBucket,europe-west1,production,platform,2026-01,759.09,731.24,27.85,3.7,Consider reserved instance
+bill-44f460c0,res-d7df19e49a,GCP,CloudSQL,europe-west1,sandbox,devops,2026-03,245.16,242.63,2.53,1.0,Consider reserved instance
+bill-e6b86c8f,res-d7df19e49a,GCP,CloudSQL,europe-west1,sandbox,devops,2026-02,245.16,139.16,106.0,43.2,Monitor
+bill-8ca56411,res-d7df19e49a,GCP,CloudSQL,europe-west1,sandbox,devops,2026-01,245.16,238.48,6.68,2.7,Consider reserved instance
+bill-de248718,res-62c866fec8,AWS,CloudFront,eu-west-1,staging,finance,2026-03,374.23,198.18,176.05,47.0,Monitor
+bill-5aa0dab6,res-62c866fec8,AWS,CloudFront,eu-west-1,staging,finance,2026-02,374.23,203.71,170.52,45.6,Monitor
+bill-65cdcb26,res-62c866fec8,AWS,CloudFront,eu-west-1,staging,finance,2026-01,374.23,239.27,134.96,36.1,Monitor
+bill-5bc1f7a4,res-cbae2f56e4,Azure,AKS,westeurope,development,ml,2026-03,299.58,297.69,1.89,0.6,Consider reserved instance
+bill-78fadd37,res-cbae2f56e4,Azure,AKS,westeurope,development,ml,2026-02,299.58,247.88,51.7,17.3,Consider reserved instance
+bill-e0d73c43,res-cbae2f56e4,Azure,AKS,westeurope,development,ml,2026-01,299.58,259.31,40.27,13.4,Consider reserved instance
+bill-e813dfae,res-566d58c818,GCP,ComputeEngine,asia-east1,development,finance,2026-03,81.97,78.88,3.09,3.8,Consider reserved instance
+bill-447da954,res-566d58c818,GCP,ComputeEngine,asia-east1,development,finance,2026-02,81.97,76.24,5.73,7.0,Consider reserved instance
+bill-ebb886b6,res-566d58c818,GCP,ComputeEngine,asia-east1,development,finance,2026-01,81.97,71.63,10.34,12.6,Consider reserved instance
+bill-80a4098a,res-4c4bb0a48f,Azure,FunctionApp,australiaeast,development,security,2026-03,131.68,70.19,61.49,46.7,Monitor
+bill-3f9a2180,res-4c4bb0a48f,Azure,FunctionApp,australiaeast,development,security,2026-02,131.68,129.96,1.72,1.3,Consider reserved instance
+bill-fcf9140a,res-4c4bb0a48f,Azure,FunctionApp,australiaeast,development,security,2026-01,131.68,128.82,2.86,2.2,Consider reserved instance
+bill-4921896b,res-690b602680,GCP,CloudFunction,us-east1,production,ml,2026-03,773.52,610.03,163.49,21.1,Monitor
+bill-81ed931f,res-690b602680,GCP,CloudFunction,us-east1,production,ml,2026-02,773.52,661.57,111.95,14.5,Consider reserved instance
+bill-2dfe8dd6,res-690b602680,GCP,CloudFunction,us-east1,production,ml,2026-01,773.52,657.92,115.6,14.9,Consider reserved instance
+bill-ccc76290,res-c9776b438f,AWS,ELB,us-east-1,sandbox,devops,2026-03,678.5,567.61,110.89,16.3,Consider reserved instance
+bill-edbe11fa,res-c9776b438f,AWS,ELB,us-east-1,sandbox,devops,2026-02,678.5,588.84,89.66,13.2,Consider reserved instance
+bill-41ed58ad,res-c9776b438f,AWS,ELB,us-east-1,sandbox,devops,2026-01,678.5,588.53,89.97,13.3,Consider reserved instance
+bill-6752c192,res-001d03101b,Azure,BlobStorage,southeastasia,development,platform,2026-03,458.37,258.42,199.95,43.6,Monitor
+bill-f68b5992,res-001d03101b,Azure,BlobStorage,southeastasia,development,platform,2026-02,458.37,374.5,83.87,18.3,Consider reserved instance
+bill-ea690015,res-001d03101b,Azure,BlobStorage,southeastasia,development,platform,2026-01,458.37,453.48,4.89,1.1,Consider reserved instance
+bill-7812f69a,res-d7576858e1,AWS,ELB,eu-west-1,sandbox,devops,2026-03,500.48,45.82,454.66,90.8,Downsize or terminate
+bill-9c2d9dc5,res-d7576858e1,AWS,ELB,eu-west-1,sandbox,devops,2026-02,500.48,78.65,421.83,84.3,Downsize or terminate
+bill-ff5ad498,res-d7576858e1,AWS,ELB,eu-west-1,sandbox,devops,2026-01,500.48,36.23,464.25,92.8,Downsize or terminate
+bill-fba27435,res-08dd96d887,GCP,ComputeEngine,europe-west1,development,security,2026-03,163.25,29.04,134.21,82.2,Downsize or terminate
+bill-1b814a92,res-08dd96d887,GCP,ComputeEngine,europe-west1,development,security,2026-02,163.25,11.36,151.89,93.0,Downsize or terminate
+bill-7de1a4ce,res-08dd96d887,GCP,ComputeEngine,europe-west1,development,security,2026-01,163.25,18.91,144.34,88.4,Downsize or terminate
+bill-2d9b81f6,res-fb3718cc6c,GCP,CloudFunction,us-central1,development,finance,2026-03,123.41,83.87,39.54,32.0,Monitor
+bill-5ad774c3,res-fb3718cc6c,GCP,CloudFunction,us-central1,development,finance,2026-02,123.41,119.11,4.3,3.5,Consider reserved instance
+bill-d00fa9cb,res-fb3718cc6c,GCP,CloudFunction,us-central1,development,finance,2026-01,123.41,104.62,18.79,15.2,Consider reserved instance
+bill-07549e83,res-ff00e9db79,GCP,GCSBucket,asia-east1,sandbox,devops,2026-03,408.32,225.24,183.08,44.8,Monitor
+bill-13272fc5,res-ff00e9db79,GCP,GCSBucket,asia-east1,sandbox,devops,2026-02,408.32,280.3,128.02,31.4,Monitor
+bill-e172a38c,res-ff00e9db79,GCP,GCSBucket,asia-east1,sandbox,devops,2026-01,408.32,243.76,164.56,40.3,Monitor

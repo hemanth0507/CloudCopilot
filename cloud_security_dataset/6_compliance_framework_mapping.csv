@@ -1,0 +1,42 @@
+mapping_id,misconfiguration_type,severity,compliance_framework,control_id,control_description,mandatory
+cmp-599c75ec,PUBLIC_ACCESS_ENABLED,Critical,SOC2,SOC2-CC6.1,Control requiring mitigation of public access enabled,True
+cmp-f33a3948,PUBLIC_ACCESS_ENABLED,Critical,ISO27001,ISO27001-A.9.4,Control requiring mitigation of public access enabled,False
+cmp-07118d58,PUBLIC_ACCESS_ENABLED,Critical,PCI,PCI-DSS-7.2,Control requiring mitigation of public access enabled,False
+cmp-45584f29,ENCRYPTION_DISABLED,High,SOC2,SOC2-CC6.7,Control requiring mitigation of encryption disabled,True
+cmp-5332fda8,ENCRYPTION_DISABLED,High,ISO27001,ISO27001-A.10.1,Control requiring mitigation of encryption disabled,False
+cmp-67b4fcf2,ENCRYPTION_DISABLED,High,PCI,PCI-DSS-3.4,Control requiring mitigation of encryption disabled,False
+cmp-a77d4485,ENCRYPTION_DISABLED,High,NIST,NIST-SC-28,Control requiring mitigation of encryption disabled,False
+cmp-a0499adc,MFA_NOT_ENFORCED,High,SOC2,SOC2-CC6.1,Control requiring mitigation of mfa not enforced,True
+cmp-43be44b3,MFA_NOT_ENFORCED,High,NIST,NIST-IA-2,Control requiring mitigation of mfa not enforced,False
+cmp-ba5ce925,MFA_NOT_ENFORCED,High,PCI,PCI-DSS-8.3,Control requiring mitigation of mfa not enforced,False
+cmp-910f2f8d,LOGGING_DISABLED,Medium,SOC2,SOC2-CC7.2,Control requiring mitigation of logging disabled,True
+cmp-ff2ec6db,LOGGING_DISABLED,Medium,ISO27001,ISO27001-A.12.4,Control requiring mitigation of logging disabled,False
+cmp-c181e862,LOGGING_DISABLED,Medium,NIST,NIST-AU-2,Control requiring mitigation of logging disabled,False
+cmp-dc9ca6ba,OPEN_SSH_PORT,Critical,CIS,CIS-5.2,Control requiring mitigation of open ssh port,False
+cmp-6bce516c,OPEN_SSH_PORT,Critical,NIST,NIST-SC-7,Control requiring mitigation of open ssh port,False
+cmp-2c3b3e0c,OPEN_SSH_PORT,Critical,PCI,PCI-DSS-1.3,Control requiring mitigation of open ssh port,False
+cmp-3aa389f2,OPEN_RDP_PORT,Critical,CIS,CIS-5.3,Control requiring mitigation of open rdp port,False
+cmp-3914f42a,OPEN_RDP_PORT,Critical,NIST,NIST-SC-7,Control requiring mitigation of open rdp port,False
+cmp-708a8e2e,OPEN_RDP_PORT,Critical,PCI,PCI-DSS-1.3,Control requiring mitigation of open rdp port,False
+cmp-a772028e,OVERPRIVILEGED_IAM_ROLE,High,SOC2,SOC2-CC6.3,Control requiring mitigation of overprivileged iam role,True
+cmp-273632d6,OVERPRIVILEGED_IAM_ROLE,High,ISO27001,ISO27001-A.9.2,Control requiring mitigation of overprivileged iam role,False
+cmp-d261e75e,OVERPRIVILEGED_IAM_ROLE,High,NIST,NIST-AC-6,Control requiring mitigation of overprivileged iam role,False
+cmp-b7b3c67c,UNRESTRICTED_OUTBOUND,Medium,CIS,CIS-5.4,Control requiring mitigation of unrestricted outbound,False
+cmp-3bc3aa91,UNRESTRICTED_OUTBOUND,Medium,NIST,NIST-SC-7,Control requiring mitigation of unrestricted outbound,False
+cmp-4b295517,NO_BACKUP_POLICY,Medium,SOC2,SOC2-A1.2,Control requiring mitigation of no backup policy,True
+cmp-46c96250,NO_BACKUP_POLICY,Medium,ISO27001,ISO27001-A.12.3,Control requiring mitigation of no backup policy,False
+cmp-2ba24640,OUTDATED_TLS,High,PCI,PCI-DSS-4.1,Control requiring mitigation of outdated tls,False
+cmp-83e01fa1,OUTDATED_TLS,High,NIST,NIST-SC-8,Control requiring mitigation of outdated tls,False
+cmp-91d9b85e,OUTDATED_TLS,High,ISO27001,ISO27001-A.14.1,Control requiring mitigation of outdated tls,False
+cmp-aa9ca4f6,DEFAULT_ADMIN_CREDENTIALS,Critical,CIS,CIS-4.2,Control requiring mitigation of default admin credentials,False
+cmp-5b9d0ee0,DEFAULT_ADMIN_CREDENTIALS,Critical,NIST,NIST-IA-5,Control requiring mitigation of default admin credentials,False
+cmp-ef44cffd,DEFAULT_ADMIN_CREDENTIALS,Critical,PCI,PCI-DSS-2.1,Control requiring mitigation of default admin credentials,False
+cmp-36290356,MISSING_RESOURCE_TAGS,Low,SOC2,SOC2-CC1.4,Control requiring mitigation of missing resource tags,True
+cmp-828f75ac,PUBLIC_SNAPSHOT,Critical,SOC2,SOC2-CC6.1,Control requiring mitigation of public snapshot,True
+cmp-e4e08bb1,PUBLIC_SNAPSHOT,Critical,NIST,NIST-AC-3,Control requiring mitigation of public snapshot,False
+cmp-d1ef8045,PUBLIC_SNAPSHOT,Critical,PCI,PCI-DSS-7.1,Control requiring mitigation of public snapshot,False
+cmp-2a3d1e77,CROSS_ACCOUNT_ACCESS,High,SOC2,SOC2-CC6.6,Control requiring mitigation of cross account access,True
+cmp-186422ea,CROSS_ACCOUNT_ACCESS,High,NIST,NIST-AC-4,Control requiring mitigation of cross account access,False
+cmp-91802750,UNROTATED_KEYS,High,SOC2,SOC2-CC6.1,Control requiring mitigation of unrotated keys,True
+cmp-8295293a,UNROTATED_KEYS,High,NIST,NIST-IA-5,Control requiring mitigation of unrotated keys,False
+cmp-44e3287c,UNROTATED_KEYS,High,PCI,PCI-DSS-8.2,Control requiring mitigation of unrotated keys,False

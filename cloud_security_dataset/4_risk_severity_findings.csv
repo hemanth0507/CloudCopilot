@@ -1,0 +1,883 @@
+finding_id,resource_id,misconfiguration_type,severity,cvss_score,detected_at,status,remediation_guidance,compliance_controls
+find-737649c64b,res-8e7a52848a,ENCRYPTION_DISABLED,High,7.6,2026-03-13T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-f1e73605fb,res-8e7a52848a,LOGGING_DISABLED,Medium,5.5,2026-02-21T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-3b9a5a49b5,res-8e7a52848a,OPEN_SSH_PORT,Critical,8.8,2026-03-14T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-ccace3685c,res-8e7a52848a,OPEN_RDP_PORT,Critical,8.9,2026-03-13T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-e779928455,res-8e7a52848a,OUTDATED_TLS,High,7.2,2026-03-01T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-cd8526416b,res-8e7a52848a,UNROTATED_KEYS,High,7.7,2026-03-06T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-b075346e25,res-2ba0bbb241,ENCRYPTION_DISABLED,High,7.6,2026-02-28T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-d10ef5c55c,res-2ba0bbb241,OPEN_SSH_PORT,Critical,9.2,2026-02-20T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-9bd79e0e38,res-2ba0bbb241,NO_BACKUP_POLICY,Medium,5.3,2026-03-15T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-003828b885,res-2ba0bbb241,OUTDATED_TLS,High,7.2,2026-03-18T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-694173a60f,res-2ba0bbb241,UNROTATED_KEYS,High,7.2,2026-02-20T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-d6115301a6,res-af3191324d,ENCRYPTION_DISABLED,High,7.5,2026-02-27T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-1513090d7b,res-af3191324d,LOGGING_DISABLED,Medium,5.3,2026-03-07T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-29229fd643,res-af3191324d,OPEN_SSH_PORT,Critical,9.0,2026-02-26T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-e9e9d82552,res-af3191324d,OPEN_RDP_PORT,Critical,8.6,2026-03-21T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-a567213b9a,res-af3191324d,MISSING_RESOURCE_TAGS,Low,2.6,2026-02-23T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-e730e7a5ce,res-af3191324d,UNROTATED_KEYS,High,7.2,2026-02-26T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-e4925aba6c,res-60f0ed8701,MFA_NOT_ENFORCED,High,7.0,2026-03-15T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-a0cd4ebc7e,res-60f0ed8701,UNROTATED_KEYS,High,7.2,2026-02-28T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-904a827ef2,res-8981e482f7,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-03-20T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-a2ae039530,res-8981e482f7,ENCRYPTION_DISABLED,High,7.3,2026-03-15T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-04de088af0,res-8981e482f7,MFA_NOT_ENFORCED,High,7.1,2026-02-25T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-1b0703515d,res-8981e482f7,LOGGING_DISABLED,Medium,5.3,2026-03-17T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-77c520c4a8,res-8981e482f7,OPEN_RDP_PORT,Critical,8.9,2026-03-16T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-4fdcae4d20,res-0d6a0ef68f,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-03-10T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-0cb6f100f6,res-0d6a0ef68f,MFA_NOT_ENFORCED,High,6.9,2026-02-23T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-c734882053,res-0d6a0ef68f,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-02-25T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-6ddd75f5bc,res-0d6a0ef68f,NO_BACKUP_POLICY,Medium,4.9,2026-03-08T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-7743e5f350,res-0d6a0ef68f,OUTDATED_TLS,High,6.8,2026-02-23T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-f5979c3a5e,res-0d6a0ef68f,DEFAULT_ADMIN_CREDENTIALS,Critical,9.3,2026-02-27T15:01:58Z,ACKNOWLEDGED,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-eeeb8826f4,res-7c8e5757c5,OPEN_SSH_PORT,Critical,9.0,2026-02-19T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-ecabf480c6,res-7c8e5757c5,MISSING_RESOURCE_TAGS,Low,2.7,2026-02-19T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-923a4abc5d,res-7c8e5757c5,CROSS_ACCOUNT_ACCESS,High,7.9,2026-02-21T15:01:58Z,RESOLVED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-7ef8df5a66,res-7bf8be84c6,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-03-02T15:01:58Z,RESOLVED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-5b3e4b27be,res-7bf8be84c6,LOGGING_DISABLED,Medium,5.4,2026-02-19T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-e7aa78c917,res-7bf8be84c6,OUTDATED_TLS,High,7.0,2026-02-23T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-46fb083c6b,res-7bf8be84c6,MISSING_RESOURCE_TAGS,Low,2.7,2026-03-13T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-1ec35facab,res-e6c78dd1d4,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-02-24T15:01:58Z,RESOLVED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-099d6edccd,res-e6c78dd1d4,ENCRYPTION_DISABLED,High,7.7,2026-03-09T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-d901442247,res-e6c78dd1d4,LOGGING_DISABLED,Medium,5.3,2026-03-07T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-99e642b630,res-e6c78dd1d4,OVERPRIVILEGED_IAM_ROLE,High,8.1,2026-03-18T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-c463919474,res-e6c78dd1d4,NO_BACKUP_POLICY,Medium,5.3,2026-03-20T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-ce9c1401a8,res-e6c78dd1d4,OUTDATED_TLS,High,6.8,2026-02-19T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-283a4a0503,res-e6c78dd1d4,MISSING_RESOURCE_TAGS,Low,2.7,2026-03-09T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-fec44822db,res-27b61e76ab,ENCRYPTION_DISABLED,High,7.7,2026-02-26T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-160818881b,res-27b61e76ab,MFA_NOT_ENFORCED,High,7.4,2026-03-16T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-4512d7e3f2,res-27b61e76ab,OPEN_SSH_PORT,Critical,9.0,2026-03-17T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-a23ab071b6,res-27b61e76ab,NO_BACKUP_POLICY,Medium,4.9,2026-02-22T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-f4d426e9e9,res-27b61e76ab,OUTDATED_TLS,High,7.1,2026-03-14T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-c005e061af,res-27b61e76ab,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-05T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-9896bfa907,res-27b61e76ab,CROSS_ACCOUNT_ACCESS,High,7.6,2026-03-11T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-ccce0d63d4,res-e8e6f9948e,ENCRYPTION_DISABLED,High,7.5,2026-03-20T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-4356e3878d,res-e8e6f9948e,OVERPRIVILEGED_IAM_ROLE,High,7.8,2026-03-15T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-39d04dbb91,res-e8e6f9948e,NO_BACKUP_POLICY,Medium,4.9,2026-02-27T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-b6be47f66c,res-e8e6f9948e,OUTDATED_TLS,High,7.1,2026-03-02T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-580460db34,res-e8e6f9948e,CROSS_ACCOUNT_ACCESS,High,7.6,2026-03-01T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-42e882ddea,res-e8e6f9948e,UNROTATED_KEYS,High,7.4,2026-03-11T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-d87583e845,res-2944eb9249,MFA_NOT_ENFORCED,High,7.2,2026-02-22T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-9af39f4a78,res-2944eb9249,NO_BACKUP_POLICY,Medium,5.0,2026-03-21T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-99569f7d8c,res-2944eb9249,UNROTATED_KEYS,High,7.6,2026-02-27T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-9a282e84b9,res-ffe7d0aee3,MFA_NOT_ENFORCED,High,6.9,2026-03-21T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-4566b91b9d,res-ffe7d0aee3,LOGGING_DISABLED,Medium,5.2,2026-02-26T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-3ea724dd21,res-ffe7d0aee3,OPEN_SSH_PORT,Critical,9.2,2026-03-19T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-c06ab433db,res-ffe7d0aee3,NO_BACKUP_POLICY,Medium,5.2,2026-02-24T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-50058ca580,res-ffe7d0aee3,OUTDATED_TLS,High,6.8,2026-03-04T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-9d235b918e,res-ffe7d0aee3,DEFAULT_ADMIN_CREDENTIALS,Critical,9.6,2026-03-01T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-bf37f8cb03,res-ffe7d0aee3,MISSING_RESOURCE_TAGS,Low,2.6,2026-02-26T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-f18218c03a,res-eb7b954b40,MFA_NOT_ENFORCED,High,7.0,2026-03-09T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-16502c16ea,res-eb7b954b40,OPEN_RDP_PORT,Critical,8.9,2026-03-05T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-fe7769768e,res-eb7b954b40,OUTDATED_TLS,High,7.1,2026-03-13T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-d3b5d2617b,res-eb7b954b40,UNROTATED_KEYS,High,7.2,2026-03-17T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-d6d45e606d,res-245355a4b4,ENCRYPTION_DISABLED,High,7.6,2026-03-06T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-6b77cef27c,res-245355a4b4,MFA_NOT_ENFORCED,High,7.1,2026-02-25T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-a5985dd8cb,res-245355a4b4,LOGGING_DISABLED,Medium,5.1,2026-02-25T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-ebd9249d69,res-245355a4b4,OUTDATED_TLS,High,6.9,2026-03-20T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-31153f1c55,res-245355a4b4,MISSING_RESOURCE_TAGS,Low,2.4,2026-03-05T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-d1233e00f2,res-245355a4b4,UNROTATED_KEYS,High,7.4,2026-03-02T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-d5e1819877,res-b418bdd23c,MFA_NOT_ENFORCED,High,6.9,2026-02-21T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-08e4d80dc8,res-b418bdd23c,NO_BACKUP_POLICY,Medium,4.9,2026-03-11T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-8a6054062d,res-b418bdd23c,OUTDATED_TLS,High,6.8,2026-03-13T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-8d4c64dd0f,res-b418bdd23c,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-03T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-2986933eb9,res-9bf6ab9fd1,ENCRYPTION_DISABLED,High,7.3,2026-02-24T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-6291960bdd,res-9bf6ab9fd1,MFA_NOT_ENFORCED,High,7.1,2026-03-11T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-b88c12f279,res-9bf6ab9fd1,OPEN_SSH_PORT,Critical,8.9,2026-03-12T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-37613c19de,res-9bf6ab9fd1,NO_BACKUP_POLICY,Medium,5.3,2026-03-09T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-fa3d523eec,res-9bf6ab9fd1,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-20T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-eba6ff1758,res-9bf6ab9fd1,CROSS_ACCOUNT_ACCESS,High,7.7,2026-03-15T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-5b9a57a2cc,res-9bf6ab9fd1,UNROTATED_KEYS,High,7.2,2026-03-02T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-16aedf9585,res-8e6abe0bff,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-02-24T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-1acf8db6ca,res-8e6abe0bff,MFA_NOT_ENFORCED,High,7.5,2026-02-25T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-1d9b2f69d8,res-8e6abe0bff,MISSING_RESOURCE_TAGS,Low,2.6,2026-02-20T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-e565fe7f90,res-8e6abe0bff,UNROTATED_KEYS,High,7.4,2026-03-20T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-f6e7ea1fc6,res-731183adf0,ENCRYPTION_DISABLED,High,7.4,2026-03-18T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-f243a26a60,res-731183adf0,OPEN_SSH_PORT,Critical,9.2,2026-03-05T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-cfd46bbdd9,res-731183adf0,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-05T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-979585859e,res-ce612a7fad,ENCRYPTION_DISABLED,High,7.6,2026-02-26T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-1b7a5ed21f,res-ce612a7fad,OPEN_SSH_PORT,Critical,8.9,2026-03-16T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-72c6e0515f,res-ce612a7fad,UNROTATED_KEYS,High,7.4,2026-02-21T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-ad641f4475,res-9339bd1b32,ENCRYPTION_DISABLED,High,7.8,2026-03-09T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-1f0c199cdf,res-9339bd1b32,MFA_NOT_ENFORCED,High,7.3,2026-03-01T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-9237ad3713,res-9339bd1b32,LOGGING_DISABLED,Medium,5.1,2026-03-17T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-049d63ea16,res-9339bd1b32,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-09T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-5159b4e7b6,res-9339bd1b32,UNROTATED_KEYS,High,7.5,2026-03-16T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-ce1970fa86,res-957f15962b,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-02-28T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-c43110d546,res-957f15962b,LOGGING_DISABLED,Medium,5.5,2026-03-16T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-473b860603,res-957f15962b,OUTDATED_TLS,High,6.7,2026-02-25T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-981cd7dea0,res-957f15962b,CROSS_ACCOUNT_ACCESS,High,7.7,2026-02-26T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-a74e364dbd,res-957f15962b,UNROTATED_KEYS,High,7.6,2026-03-18T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-e71c81ec3b,res-e7f1cf49e9,ENCRYPTION_DISABLED,High,7.4,2026-03-19T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-360eed9051,res-e7f1cf49e9,MFA_NOT_ENFORCED,High,7.2,2026-03-09T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-8e2bde02bf,res-e7f1cf49e9,OPEN_RDP_PORT,Critical,8.7,2026-03-09T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-ce66aef60b,res-e7f1cf49e9,OVERPRIVILEGED_IAM_ROLE,High,7.6,2026-03-10T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-5345a37f24,res-e7f1cf49e9,OUTDATED_TLS,High,7.2,2026-03-20T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-bd61b41a5a,res-e7f1cf49e9,UNROTATED_KEYS,High,7.2,2026-02-26T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-a97f31d84f,res-355c3d5096,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-02-28T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-220e11b355,res-355c3d5096,MFA_NOT_ENFORCED,High,7.0,2026-02-22T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-7068319ace,res-355c3d5096,LOGGING_DISABLED,Medium,5.6,2026-03-19T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-84eeb9722e,res-355c3d5096,OVERPRIVILEGED_IAM_ROLE,High,7.8,2026-02-24T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-461bb9be4c,res-355c3d5096,MISSING_RESOURCE_TAGS,Low,2.4,2026-03-03T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-650e82097b,res-938e55f151,ENCRYPTION_DISABLED,High,7.8,2026-02-20T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-45097c636c,res-938e55f151,UNROTATED_KEYS,High,7.7,2026-02-26T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-6ab53b7e9e,res-f93518575b,ENCRYPTION_DISABLED,High,7.3,2026-02-27T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-a1761abdda,res-f93518575b,LOGGING_DISABLED,Medium,5.4,2026-03-13T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-a3a608791e,res-f93518575b,OPEN_SSH_PORT,Critical,8.9,2026-03-07T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-1593df8941,res-f93518575b,OPEN_RDP_PORT,Critical,8.9,2026-02-28T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-9fba0fa108,res-f93518575b,NO_BACKUP_POLICY,Medium,5.2,2026-02-28T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-509c372036,res-f93518575b,OUTDATED_TLS,High,7.1,2026-03-12T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-c34be15944,res-f93518575b,UNROTATED_KEYS,High,7.2,2026-03-15T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-2f0288e087,res-4422b36199,MFA_NOT_ENFORCED,High,7.5,2026-03-15T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-77ac5b3eba,res-4422b36199,LOGGING_DISABLED,Medium,5.6,2026-03-11T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-4c5c78190b,res-4422b36199,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-02-26T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-0c8d63e261,res-4422b36199,NO_BACKUP_POLICY,Medium,4.9,2026-03-18T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-95d8439cdc,res-4422b36199,UNROTATED_KEYS,High,7.2,2026-03-07T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-9059200acc,res-cc6a663d69,OUTDATED_TLS,High,7.0,2026-02-24T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-73493c6b36,res-cc6a663d69,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-15T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-dda6645900,res-dfdc9719b5,LOGGING_DISABLED,Medium,5.2,2026-02-28T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-c38f3d3d83,res-dfdc9719b5,OPEN_SSH_PORT,Critical,8.8,2026-03-09T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-8a8851e073,res-dfdc9719b5,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-03-20T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-a73d973017,res-dfdc9719b5,CROSS_ACCOUNT_ACCESS,High,7.8,2026-02-26T15:01:58Z,RESOLVED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-e47373c50b,res-8a970b9de2,ENCRYPTION_DISABLED,High,7.2,2026-02-25T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-9cc399f5a7,res-8a970b9de2,OPEN_SSH_PORT,Critical,9.1,2026-02-25T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-f3c76f1c14,res-8a970b9de2,OVERPRIVILEGED_IAM_ROLE,High,8.1,2026-03-18T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-09357f238b,res-777b4eac0c,MFA_NOT_ENFORCED,High,7.2,2026-03-08T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-677b3e2fa7,res-777b4eac0c,LOGGING_DISABLED,Medium,5.6,2026-03-05T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-d3d6fb8bdb,res-777b4eac0c,OPEN_RDP_PORT,Critical,9.0,2026-03-16T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-30c2ae2609,res-777b4eac0c,OVERPRIVILEGED_IAM_ROLE,High,7.6,2026-02-24T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-48f87a79ce,res-777b4eac0c,MISSING_RESOURCE_TAGS,Low,2.2,2026-02-25T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-29e3bee9f2,res-d5b669f9c8,OPEN_RDP_PORT,Critical,8.7,2026-02-23T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-05e7be5bdf,res-d5b669f9c8,OUTDATED_TLS,High,7.1,2026-03-14T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-a8d3b2fca7,res-d5b669f9c8,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-01T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-60c9bc67a3,res-d5b669f9c8,UNROTATED_KEYS,High,7.5,2026-03-12T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-5ce86d5a6c,res-8b8ffe3b1e,OPEN_SSH_PORT,Critical,9.2,2026-02-19T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-a3255a2e88,res-8b8ffe3b1e,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-21T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-8ff81854ac,res-d1c7394082,PUBLIC_ACCESS_ENABLED,Critical,9.3,2026-03-09T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-490f15e3d8,res-d1c7394082,MFA_NOT_ENFORCED,High,7.1,2026-03-17T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-8c9a360de3,res-d1c7394082,NO_BACKUP_POLICY,Medium,5.3,2026-03-02T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-17f933cb3b,res-d1c7394082,OUTDATED_TLS,High,6.7,2026-03-05T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-c4180fef5b,res-ed6954835e,OPEN_RDP_PORT,Critical,8.9,2026-03-18T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-e6384072f7,res-ed6954835e,DEFAULT_ADMIN_CREDENTIALS,Critical,9.5,2026-03-09T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-183a06ff46,res-ed6954835e,CROSS_ACCOUNT_ACCESS,High,7.6,2026-03-21T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-fd6b937ad9,res-ed6954835e,UNROTATED_KEYS,High,7.5,2026-03-08T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-723cae1819,res-8e93953ee6,MFA_NOT_ENFORCED,High,7.0,2026-03-16T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-947f5cd8f4,res-8e93953ee6,LOGGING_DISABLED,Medium,5.7,2026-03-05T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-d9f0992f36,res-8e93953ee6,OVERPRIVILEGED_IAM_ROLE,High,7.6,2026-03-13T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-a1abffb9cb,res-8e93953ee6,OUTDATED_TLS,High,6.9,2026-03-19T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-7a1cecdeb8,res-9ecc8c3895,ENCRYPTION_DISABLED,High,7.4,2026-02-26T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-0b7402d144,res-9ecc8c3895,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-05T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-62a847c3c7,res-9ecc8c3895,NO_BACKUP_POLICY,Medium,5.1,2026-03-20T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-35b84aa840,res-9ecc8c3895,OUTDATED_TLS,High,7.2,2026-02-25T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-fd72c4fcf2,res-9ecc8c3895,MISSING_RESOURCE_TAGS,Low,2.7,2026-02-20T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-6e763d807e,res-9ecc8c3895,UNROTATED_KEYS,High,7.3,2026-02-24T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-08ebd25f67,res-07bfab7864,MFA_NOT_ENFORCED,High,7.3,2026-03-18T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-a8368c9c2d,res-07bfab7864,LOGGING_DISABLED,Medium,5.2,2026-02-25T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-a9fa76eff3,res-07bfab7864,OPEN_SSH_PORT,Critical,9.2,2026-02-19T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-c8655b3e59,res-07bfab7864,NO_BACKUP_POLICY,Medium,4.9,2026-03-05T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-e976f8f636,res-07bfab7864,UNROTATED_KEYS,High,7.6,2026-03-09T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-425cd0bf1a,res-54dbf724ce,PUBLIC_ACCESS_ENABLED,Critical,9.3,2026-02-22T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-dfe4ba0c0e,res-54dbf724ce,MFA_NOT_ENFORCED,High,7.4,2026-02-28T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-6d2f6cd976,res-54dbf724ce,UNROTATED_KEYS,High,7.4,2026-02-26T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-342bcd4b5a,res-5faf3cfc5a,MFA_NOT_ENFORCED,High,7.0,2026-02-25T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-66679dddaa,res-5faf3cfc5a,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-10T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-c56d752b40,res-5faf3cfc5a,CROSS_ACCOUNT_ACCESS,High,7.3,2026-03-04T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-7988547401,res-5faf3cfc5a,UNROTATED_KEYS,High,7.2,2026-03-06T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-f78cf1abad,res-a6fbe0b91f,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-02-25T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-9cf74ea872,res-a6fbe0b91f,ENCRYPTION_DISABLED,High,7.5,2026-03-02T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-5e7f14e0fa,res-a6fbe0b91f,NO_BACKUP_POLICY,Medium,4.9,2026-03-13T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-f5e2cc1c69,res-a6fbe0b91f,UNROTATED_KEYS,High,7.3,2026-03-18T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-a42c9bb8c7,res-0693881731,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-21T15:01:58Z,RESOLVED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-0ca75fc1c7,res-0693881731,MFA_NOT_ENFORCED,High,7.4,2026-02-25T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-d051c40c46,res-0693881731,LOGGING_DISABLED,Medium,5.2,2026-03-06T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-7feb862ebf,res-0693881731,OPEN_SSH_PORT,Critical,9.2,2026-02-26T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-5d801f3c11,res-0693881731,OUTDATED_TLS,High,7.2,2026-03-20T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-085cea0f69,res-137824f6dd,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-02T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-dfb4d2ce41,res-137824f6dd,ENCRYPTION_DISABLED,High,7.6,2026-02-28T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-4ce4ddb816,res-137824f6dd,MFA_NOT_ENFORCED,High,7.1,2026-03-21T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-c551b4c076,res-137824f6dd,OPEN_SSH_PORT,Critical,9.1,2026-03-10T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-dca0ead5f3,res-137824f6dd,OPEN_RDP_PORT,Critical,9.1,2026-03-19T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-017c52d734,res-137824f6dd,OUTDATED_TLS,High,7.2,2026-03-16T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-a579051207,res-e2ffad8b74,NO_BACKUP_POLICY,Medium,5.4,2026-03-07T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-0052860dfc,res-e2ffad8b74,OUTDATED_TLS,High,7.3,2026-03-16T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-f538061e02,res-705884010b,PUBLIC_ACCESS_ENABLED,Critical,9.0,2026-03-03T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-3a7c118697,res-705884010b,LOGGING_DISABLED,Medium,5.5,2026-02-25T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-d52fafcaae,res-705884010b,OPEN_SSH_PORT,Critical,9.1,2026-02-22T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-a484921150,res-705884010b,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-04T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-87b72e2943,res-705884010b,NO_BACKUP_POLICY,Medium,5.2,2026-02-26T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-143257c854,res-705884010b,OUTDATED_TLS,High,7.1,2026-02-22T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-edc850f59b,res-a2d4262f33,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-03-12T15:01:58Z,RESOLVED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-7fd67d9278,res-a2d4262f33,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-03T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-3304610f20,res-a2d4262f33,CROSS_ACCOUNT_ACCESS,High,7.5,2026-03-14T15:01:58Z,RESOLVED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-0354379957,res-eaffa50f7d,ENCRYPTION_DISABLED,High,7.3,2026-03-12T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-a7d12d502c,res-eaffa50f7d,MFA_NOT_ENFORCED,High,6.9,2026-03-12T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-4abee58102,res-eaffa50f7d,OPEN_RDP_PORT,Critical,8.8,2026-02-22T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-208eb5d9be,res-eaffa50f7d,OVERPRIVILEGED_IAM_ROLE,High,7.6,2026-03-15T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-246ac48b7a,res-eaffa50f7d,OUTDATED_TLS,High,6.8,2026-02-24T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-1fda8d9d06,res-eaffa50f7d,MISSING_RESOURCE_TAGS,Low,2.7,2026-03-17T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-950ca9a812,res-eaffa50f7d,UNROTATED_KEYS,High,7.6,2026-03-03T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-4314555cc9,res-e662594bf9,ENCRYPTION_DISABLED,High,7.5,2026-03-08T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-43405d3644,res-e662594bf9,MFA_NOT_ENFORCED,High,7.3,2026-03-04T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-4315afccae,res-e662594bf9,OUTDATED_TLS,High,7.0,2026-03-18T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-3e9cf89312,res-e662594bf9,UNROTATED_KEYS,High,7.4,2026-02-21T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-ebb7c5d07a,res-c0e340b3e4,ENCRYPTION_DISABLED,High,7.2,2026-02-26T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-d3a9e975ab,res-c0e340b3e4,OVERPRIVILEGED_IAM_ROLE,High,7.6,2026-02-26T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-96d128429e,res-c0e340b3e4,NO_BACKUP_POLICY,Medium,4.9,2026-03-11T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-89614790fb,res-c0e340b3e4,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-10T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-28c7e2c1aa,res-c0e340b3e4,CROSS_ACCOUNT_ACCESS,High,7.7,2026-03-05T15:01:58Z,RESOLVED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-2c4677a520,res-c0e340b3e4,UNROTATED_KEYS,High,7.2,2026-02-25T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-b1c87d2052,res-ef8c4f9e31,PUBLIC_ACCESS_ENABLED,Critical,8.8,2026-03-12T15:01:58Z,RESOLVED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-aa0e78b297,res-ef8c4f9e31,MFA_NOT_ENFORCED,High,7.4,2026-02-19T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-8549f1b01d,res-1d44706f13,PUBLIC_ACCESS_ENABLED,Critical,9.0,2026-03-17T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-a2b066f5ff,res-1d44706f13,LOGGING_DISABLED,Medium,5.6,2026-03-08T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-9188f9a967,res-1d44706f13,UNROTATED_KEYS,High,7.3,2026-02-22T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-dbadb3053e,res-a174febd99,PUBLIC_ACCESS_ENABLED,Critical,9.3,2026-02-25T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-346f21b028,res-a174febd99,LOGGING_DISABLED,Medium,5.3,2026-03-08T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-b08382cc76,res-a174febd99,OPEN_SSH_PORT,Critical,9.1,2026-03-04T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-44c9e4718f,res-a174febd99,OPEN_RDP_PORT,Critical,8.7,2026-03-08T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-b94dc6003c,res-a174febd99,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-03-15T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-bc44f28472,res-a174febd99,OUTDATED_TLS,High,6.7,2026-03-08T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-7a05f03f52,res-a174febd99,MISSING_RESOURCE_TAGS,Low,2.3,2026-02-21T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-989c3c6735,res-d1aab9717e,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-05T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-ce60b695e3,res-d1aab9717e,NO_BACKUP_POLICY,Medium,5.0,2026-02-20T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-bc0fd3b42c,res-d1aab9717e,OUTDATED_TLS,High,7.2,2026-03-15T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-c427e2cfcd,res-d1aab9717e,UNROTATED_KEYS,High,7.6,2026-03-17T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-62c736a367,res-404c02bebc,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-12T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-5e90ee7fc9,res-404c02bebc,ENCRYPTION_DISABLED,High,7.7,2026-02-21T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-8d81a937a8,res-404c02bebc,MFA_NOT_ENFORCED,High,6.9,2026-02-19T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-20b9df2761,res-404c02bebc,OPEN_SSH_PORT,Critical,8.8,2026-03-21T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-a53ea338b2,res-404c02bebc,OPEN_RDP_PORT,Critical,8.5,2026-03-08T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-79dfb56013,res-404c02bebc,NO_BACKUP_POLICY,Medium,5.2,2026-03-09T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-3c07190a37,res-404c02bebc,OUTDATED_TLS,High,6.7,2026-02-23T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-aa8c3820fc,res-404c02bebc,DEFAULT_ADMIN_CREDENTIALS,Critical,9.8,2026-03-15T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-97249bd4a4,res-ba08980b6f,MFA_NOT_ENFORCED,High,6.9,2026-02-23T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-6292f87570,res-ba08980b6f,NO_BACKUP_POLICY,Medium,5.2,2026-02-23T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-758413707e,res-ba08980b6f,UNROTATED_KEYS,High,7.6,2026-03-19T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-905ac248fe,res-79697580cc,ENCRYPTION_DISABLED,High,7.4,2026-03-01T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-f67044fbbf,res-79697580cc,OPEN_SSH_PORT,Critical,8.9,2026-03-02T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-e7f18849ab,res-79697580cc,OPEN_RDP_PORT,Critical,8.5,2026-03-20T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-3d2850b8c9,res-79697580cc,OUTDATED_TLS,High,7.0,2026-02-22T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-1137b4b432,res-79697580cc,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-03T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-cb84148cd2,res-d8b1042c8e,MFA_NOT_ENFORCED,High,7.5,2026-03-01T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-087d606182,res-d8b1042c8e,OPEN_SSH_PORT,Critical,8.8,2026-03-14T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-804ff2ee8a,res-2493f52775,MFA_NOT_ENFORCED,High,7.3,2026-02-21T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-1ff37bad26,res-2493f52775,NO_BACKUP_POLICY,Medium,5.1,2026-03-12T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-221bb0b202,res-2493f52775,UNROTATED_KEYS,High,7.3,2026-02-19T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-66e65eb7c1,res-48ca5aa114,OVERPRIVILEGED_IAM_ROLE,High,7.8,2026-03-09T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-49d1925a64,res-48ca5aa114,NO_BACKUP_POLICY,Medium,5.3,2026-03-17T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-0e5d3df25c,res-48ca5aa114,OUTDATED_TLS,High,7.1,2026-03-04T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-a3c1604c73,res-48ca5aa114,MISSING_RESOURCE_TAGS,Low,2.7,2026-03-06T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-9aadbe4441,res-9f192dde88,ENCRYPTION_DISABLED,High,7.6,2026-02-20T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-0455693df1,res-9f192dde88,LOGGING_DISABLED,Medium,5.3,2026-03-16T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-dd1160f27c,res-9f192dde88,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-19T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-95f3f5d6e2,res-9f192dde88,CROSS_ACCOUNT_ACCESS,High,7.8,2026-03-09T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-3023e8ebf7,res-8c86a8ee26,NO_BACKUP_POLICY,Medium,5.4,2026-03-13T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-a831e05376,res-8c86a8ee26,UNROTATED_KEYS,High,7.1,2026-03-15T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-78e15de88e,res-3bc1ba6fb8,ENCRYPTION_DISABLED,High,7.5,2026-03-17T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-cb53e98ca2,res-3bc1ba6fb8,OVERPRIVILEGED_IAM_ROLE,High,8.1,2026-02-27T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-ccb6a6904a,res-9c806b3222,ENCRYPTION_DISABLED,High,7.8,2026-02-20T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-de68dff96c,res-9c806b3222,MFA_NOT_ENFORCED,High,7.5,2026-03-04T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-8ecb75134a,res-9c806b3222,NO_BACKUP_POLICY,Medium,5.4,2026-03-15T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-241b581692,res-9c806b3222,UNROTATED_KEYS,High,7.6,2026-03-16T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-71ba7ed84b,res-60243f2b1c,ENCRYPTION_DISABLED,High,7.6,2026-03-16T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-9526e00082,res-60243f2b1c,MFA_NOT_ENFORCED,High,6.9,2026-02-25T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-27389b017e,res-60243f2b1c,LOGGING_DISABLED,Medium,5.4,2026-02-28T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-a715857ada,res-60243f2b1c,OPEN_SSH_PORT,Critical,8.9,2026-03-04T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-38dfae37dc,res-60243f2b1c,OUTDATED_TLS,High,7.0,2026-03-18T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-d2e0a06562,res-955402ca9e,LOGGING_DISABLED,Medium,5.2,2026-02-21T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-98adbbacab,res-955402ca9e,OPEN_SSH_PORT,Critical,9.1,2026-03-13T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-ebe8767517,res-955402ca9e,OPEN_RDP_PORT,Critical,8.9,2026-03-16T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-3e4b6c491f,res-955402ca9e,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-17T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-f9b17b04e6,res-955402ca9e,NO_BACKUP_POLICY,Medium,5.3,2026-03-20T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-1478cf0b07,res-955402ca9e,CROSS_ACCOUNT_ACCESS,High,7.9,2026-03-13T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-38aa840ea4,res-f1bcd08e27,PUBLIC_ACCESS_ENABLED,Critical,9.0,2026-03-07T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-974a72513b,res-f1bcd08e27,ENCRYPTION_DISABLED,High,7.3,2026-03-18T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-99de024c74,res-f1bcd08e27,OPEN_SSH_PORT,Critical,8.9,2026-02-20T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-7f5caff895,res-f1bcd08e27,OUTDATED_TLS,High,6.8,2026-02-24T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-ce35c5b6d1,res-f1bcd08e27,MISSING_RESOURCE_TAGS,Low,2.5,2026-02-20T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-de3abfe512,res-ca3d4ec0cd,MFA_NOT_ENFORCED,High,7.0,2026-03-16T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-d5941abac3,res-ca3d4ec0cd,OUTDATED_TLS,High,7.1,2026-02-21T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-5724af8f1b,res-ca3d4ec0cd,DEFAULT_ADMIN_CREDENTIALS,Critical,9.7,2026-03-16T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-678dc9acc0,res-ca3d4ec0cd,UNROTATED_KEYS,High,7.2,2026-03-05T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-1e85771a54,res-c44ae8a303,OPEN_SSH_PORT,Critical,9.3,2026-03-03T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-6ca0fe21a0,res-c44ae8a303,OVERPRIVILEGED_IAM_ROLE,High,7.8,2026-03-06T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-9478afa54b,res-c44ae8a303,NO_BACKUP_POLICY,Medium,5.3,2026-03-07T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-f77a07438f,res-c44ae8a303,MISSING_RESOURCE_TAGS,Low,2.3,2026-02-23T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-44d988bfbb,res-a5a1c789e4,LOGGING_DISABLED,Medium,5.2,2026-03-14T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-d95f6a3917,res-a5a1c789e4,DEFAULT_ADMIN_CREDENTIALS,Critical,9.7,2026-03-16T15:01:58Z,RESOLVED,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-f862d3e8f9,res-f1fd88bede,ENCRYPTION_DISABLED,High,7.5,2026-03-08T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-1d686484a8,res-f1fd88bede,LOGGING_DISABLED,Medium,5.1,2026-02-25T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-fb3cea7df4,res-f1fd88bede,OVERPRIVILEGED_IAM_ROLE,High,7.8,2026-03-06T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-9fdb47fbbc,res-f1fd88bede,OUTDATED_TLS,High,7.2,2026-02-26T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-1aec5a8ec9,res-f1fd88bede,MISSING_RESOURCE_TAGS,Low,2.6,2026-02-20T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-a96b91505b,res-f1fd88bede,UNROTATED_KEYS,High,7.7,2026-02-27T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-0d170ddad5,res-6b7d8b019e,LOGGING_DISABLED,Medium,5.1,2026-03-06T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-4414b32aee,res-37c7fb39ed,MFA_NOT_ENFORCED,High,7.0,2026-02-25T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-a3522481b0,res-37c7fb39ed,LOGGING_DISABLED,Medium,5.6,2026-03-21T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-5dbafe0478,res-c05cb61119,MFA_NOT_ENFORCED,High,7.1,2026-03-04T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-f9a0b55f8d,res-c05cb61119,OUTDATED_TLS,High,6.8,2026-03-16T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-757e6005f2,res-ba7aa52644,OPEN_SSH_PORT,Critical,8.8,2026-03-11T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-98a33f94b9,res-ba7aa52644,OPEN_RDP_PORT,Critical,8.9,2026-03-09T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-cb80e72ed7,res-ba7aa52644,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-03-21T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-afad91f7d3,res-ba7aa52644,NO_BACKUP_POLICY,Medium,5.3,2026-03-07T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-6774799bd1,res-ba7aa52644,MISSING_RESOURCE_TAGS,Low,2.8,2026-03-09T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-16bda774ea,res-ba7aa52644,UNROTATED_KEYS,High,7.4,2026-03-05T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-0306a52f98,res-9951b62786,MFA_NOT_ENFORCED,High,7.3,2026-03-19T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-d5fee64fd1,res-9951b62786,LOGGING_DISABLED,Medium,5.7,2026-03-03T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-6e7ca956b4,res-9951b62786,OPEN_SSH_PORT,Critical,8.9,2026-03-02T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-d053604696,res-9951b62786,OPEN_RDP_PORT,Critical,9.1,2026-03-04T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-bb10c36f5e,res-9951b62786,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-08T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-16c1b53cf8,res-9951b62786,NO_BACKUP_POLICY,Medium,5.2,2026-02-24T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-531362a6bc,res-9951b62786,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-16T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-46bcd05bdd,res-9951b62786,UNROTATED_KEYS,High,7.2,2026-02-22T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-f02ab9ac82,res-d22cf6398a,OPEN_RDP_PORT,Critical,8.7,2026-03-02T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-4717b8821a,res-d22cf6398a,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-02-23T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-d39f4d983b,res-d22cf6398a,NO_BACKUP_POLICY,Medium,5.1,2026-03-02T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-d003c81f30,res-d22cf6398a,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-12T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-090214f30e,res-d22cf6398a,CROSS_ACCOUNT_ACCESS,High,7.7,2026-03-02T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-4215271184,res-719c69e0b0,MFA_NOT_ENFORCED,High,7.1,2026-03-05T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-c08fc1a07d,res-719c69e0b0,LOGGING_DISABLED,Medium,5.4,2026-03-19T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-d0cc9841b9,res-719c69e0b0,NO_BACKUP_POLICY,Medium,5.0,2026-03-04T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-bf935768e1,res-719c69e0b0,MISSING_RESOURCE_TAGS,Low,2.5,2026-02-25T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-8d94a8b1d8,res-719c69e0b0,UNROTATED_KEYS,High,7.6,2026-03-07T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-66411ace7e,res-6862a3516a,ENCRYPTION_DISABLED,High,7.3,2026-03-14T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-3039ec2e18,res-6862a3516a,LOGGING_DISABLED,Medium,5.6,2026-03-09T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-8063b3d2af,res-6862a3516a,OUTDATED_TLS,High,7.0,2026-02-28T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-c96a5ac479,res-6862a3516a,UNROTATED_KEYS,High,7.2,2026-03-07T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-78c110b565,res-f0555b5067,OPEN_SSH_PORT,Critical,8.9,2026-02-19T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-2d0ba2e19d,res-f0555b5067,OPEN_RDP_PORT,Critical,8.9,2026-02-28T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-d857e6af70,res-f0555b5067,OVERPRIVILEGED_IAM_ROLE,High,8.1,2026-03-04T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-92010c173b,res-f0555b5067,CROSS_ACCOUNT_ACCESS,High,7.6,2026-02-22T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-6248c6d0b7,res-8f0fc6c23c,OPEN_SSH_PORT,Critical,9.1,2026-03-05T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-6795f2b68b,res-8f0fc6c23c,OPEN_RDP_PORT,Critical,8.8,2026-02-23T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-d0ba8219d1,res-8f0fc6c23c,NO_BACKUP_POLICY,Medium,5.3,2026-03-03T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-de229e9262,res-8f0fc6c23c,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-20T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-275c88e0fb,res-8f0fc6c23c,UNROTATED_KEYS,High,7.6,2026-02-28T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-bc8340ef1d,res-dde86bf1de,LOGGING_DISABLED,Medium,5.4,2026-03-16T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-9feafd0ee9,res-dde86bf1de,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-10T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-09ca5166ce,res-dde86bf1de,CROSS_ACCOUNT_ACCESS,High,7.3,2026-03-21T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-7d75dfb117,res-dde86bf1de,UNROTATED_KEYS,High,7.5,2026-02-25T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-6c87531097,res-883c6b690d,PUBLIC_ACCESS_ENABLED,Critical,9.4,2026-03-02T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-e8aa4e6895,res-883c6b690d,OUTDATED_TLS,High,6.9,2026-03-20T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-cda12d20e1,res-883c6b690d,UNROTATED_KEYS,High,7.1,2026-03-13T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-b62b395703,res-e6364f31a7,NO_BACKUP_POLICY,Medium,5.3,2026-02-26T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-0faf220a3c,res-e6364f31a7,DEFAULT_ADMIN_CREDENTIALS,Critical,9.4,2026-03-13T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-55cf8f7e99,res-c825684ca7,ENCRYPTION_DISABLED,High,7.3,2026-03-07T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-b1ea7e0905,res-c825684ca7,NO_BACKUP_POLICY,Medium,5.2,2026-03-10T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-e23165d18c,res-3a9d556215,MFA_NOT_ENFORCED,High,7.4,2026-03-16T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-272881f882,res-3a9d556215,OPEN_SSH_PORT,Critical,9.1,2026-03-17T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-0aa07250ca,res-3a9d556215,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-02-22T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-a56c84929f,res-3a9d556215,OUTDATED_TLS,High,6.9,2026-02-22T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-e4bef9ccd7,res-3a9d556215,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-04T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-c163c8bb87,res-3a9d556215,UNROTATED_KEYS,High,7.7,2026-02-20T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-287738f1e8,res-5534d73b23,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-13T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-4fb7e0b86e,res-5534d73b23,OPEN_SSH_PORT,Critical,8.7,2026-03-11T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-97c3b00c4f,res-5534d73b23,NO_BACKUP_POLICY,Medium,4.9,2026-02-26T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-09afe8e730,res-5534d73b23,MISSING_RESOURCE_TAGS,Low,2.8,2026-02-20T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-1378012f0a,res-5534d73b23,UNROTATED_KEYS,High,7.7,2026-02-19T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-c0be86fd50,res-8187c98c7b,ENCRYPTION_DISABLED,High,7.5,2026-03-03T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-609b275851,res-8187c98c7b,OVERPRIVILEGED_IAM_ROLE,High,7.6,2026-03-11T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-c9a117d72f,res-8187c98c7b,OUTDATED_TLS,High,7.0,2026-03-10T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-a353459d61,res-8ea3787196,MFA_NOT_ENFORCED,High,7.0,2026-02-19T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-155eff3b9c,res-8ea3787196,LOGGING_DISABLED,Medium,5.4,2026-03-09T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-0f6a4d5bfc,res-8ea3787196,OPEN_SSH_PORT,Critical,8.9,2026-03-01T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-8bdf2e8e57,res-8ea3787196,CROSS_ACCOUNT_ACCESS,High,7.6,2026-03-09T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-4bd66cc68d,res-8ea3787196,UNROTATED_KEYS,High,7.7,2026-03-21T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-a5d93733a8,res-86cf2d1dc4,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-02-25T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-3b7185b0c5,res-86cf2d1dc4,LOGGING_DISABLED,Medium,5.5,2026-03-14T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-b06fe4685a,res-86cf2d1dc4,OPEN_SSH_PORT,Critical,8.7,2026-03-02T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-775f73accc,res-86cf2d1dc4,OPEN_RDP_PORT,Critical,8.6,2026-03-05T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-3e1a72db54,res-86cf2d1dc4,OUTDATED_TLS,High,7.2,2026-02-23T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-186a9f1ea7,res-86cf2d1dc4,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-06T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-8678d710c0,res-83cc2767a4,LOGGING_DISABLED,Medium,5.2,2026-02-23T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-d3e5cf1c39,res-83cc2767a4,OPEN_SSH_PORT,Critical,9.1,2026-03-13T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-9ed287cc72,res-83cc2767a4,OPEN_RDP_PORT,Critical,9.0,2026-03-10T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-d0dd672524,res-83cc2767a4,NO_BACKUP_POLICY,Medium,4.9,2026-03-11T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-19a1966087,res-83cc2767a4,CROSS_ACCOUNT_ACCESS,High,7.5,2026-02-23T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-0f3f61293d,res-83cc2767a4,UNROTATED_KEYS,High,7.3,2026-02-26T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-486e60106a,res-2f7e96c024,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-15T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-3eb51f22be,res-2f7e96c024,OPEN_RDP_PORT,Critical,9.0,2026-02-22T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-0beec6c635,res-2f7e96c024,NO_BACKUP_POLICY,Medium,5.4,2026-02-24T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-678eba4d68,res-2f7e96c024,UNROTATED_KEYS,High,7.4,2026-03-20T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-2f2eb78082,res-9b460311aa,PUBLIC_ACCESS_ENABLED,Critical,8.8,2026-02-19T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-bb8d94da72,res-9b460311aa,LOGGING_DISABLED,Medium,5.6,2026-03-01T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-8d1b39963f,res-787c37d8d2,LOGGING_DISABLED,Medium,5.6,2026-02-25T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-3a2f298df7,res-787c37d8d2,NO_BACKUP_POLICY,Medium,5.3,2026-03-10T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-53a2c3152f,res-787c37d8d2,UNROTATED_KEYS,High,7.2,2026-03-05T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-3f2085f566,res-bc31c3205d,MFA_NOT_ENFORCED,High,7.5,2026-03-03T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-13fd1c9ea9,res-bc31c3205d,LOGGING_DISABLED,Medium,5.4,2026-03-02T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-36d2b8fec8,res-bc31c3205d,OPEN_SSH_PORT,Critical,9.1,2026-03-06T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-a1b41a1fd9,res-bc31c3205d,OUTDATED_TLS,High,6.7,2026-03-14T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-93317792b6,res-bc31c3205d,UNROTATED_KEYS,High,7.6,2026-02-22T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-0977a3c7e9,res-157fde0687,PUBLIC_ACCESS_ENABLED,Critical,9.3,2026-02-21T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-fdd845e66d,res-157fde0687,LOGGING_DISABLED,Medium,5.2,2026-02-24T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-7ac3a40f10,res-157fde0687,OPEN_SSH_PORT,Critical,9.2,2026-03-08T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-b5294e3cca,res-157fde0687,OVERPRIVILEGED_IAM_ROLE,High,7.5,2026-02-25T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-fa33c52a97,res-157fde0687,NO_BACKUP_POLICY,Medium,5.2,2026-02-25T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-4945afa876,res-157fde0687,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-12T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-153a9061df,res-949db16690,ENCRYPTION_DISABLED,High,7.7,2026-02-27T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-7c33faf35e,res-949db16690,UNROTATED_KEYS,High,7.3,2026-02-26T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-1f8106c142,res-89dea39927,PUBLIC_ACCESS_ENABLED,Critical,9.3,2026-03-01T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-bcfa08e84b,res-89dea39927,OVERPRIVILEGED_IAM_ROLE,High,7.7,2026-02-19T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-3722a93885,res-89dea39927,NO_BACKUP_POLICY,Medium,5.0,2026-02-24T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-38b0184100,res-89dea39927,OUTDATED_TLS,High,7.1,2026-03-16T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-e2ce6fcbde,res-89dea39927,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-02T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-f9a5e92895,res-f07d786b44,LOGGING_DISABLED,Medium,5.6,2026-02-24T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-bed7ad435c,res-f07d786b44,OPEN_RDP_PORT,Critical,8.9,2026-03-21T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-444c45cbfa,res-f07d786b44,NO_BACKUP_POLICY,Medium,4.9,2026-02-21T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-0564865f68,res-f07d786b44,OUTDATED_TLS,High,6.7,2026-03-12T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-3c461b0fb9,res-f07d786b44,MISSING_RESOURCE_TAGS,Low,2.4,2026-03-01T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-de55079a01,res-37420626e5,ENCRYPTION_DISABLED,High,7.7,2026-03-14T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-dfae93eaf1,res-37420626e5,MFA_NOT_ENFORCED,High,7.0,2026-02-21T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-4162dbadda,res-37420626e5,OPEN_SSH_PORT,Critical,9.3,2026-03-11T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-bb8618699c,res-37420626e5,UNROTATED_KEYS,High,7.6,2026-03-21T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-c4b2b1f304,res-4f5380106a,UNROTATED_KEYS,High,7.3,2026-03-05T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-2a668b0927,res-90e4af06e4,NO_BACKUP_POLICY,Medium,4.9,2026-03-04T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-e17ebdb53a,res-90e4af06e4,OUTDATED_TLS,High,7.1,2026-03-12T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-d9c8441aba,res-90e4af06e4,MISSING_RESOURCE_TAGS,Low,2.4,2026-03-05T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-a26b3904b3,res-c7b5585543,ENCRYPTION_DISABLED,High,7.6,2026-03-02T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-79a179aa4e,res-c7b5585543,LOGGING_DISABLED,Medium,5.7,2026-03-06T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-be41d8e0ae,res-c7b5585543,OPEN_RDP_PORT,Critical,9.1,2026-02-20T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-e254535968,res-c7b5585543,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-01T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-ec194434ea,res-c7b5585543,UNROTATED_KEYS,High,7.6,2026-03-12T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-2c3232216a,res-eca998468c,LOGGING_DISABLED,Medium,5.5,2026-03-21T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-b1c7a6ccc1,res-eca998468c,MISSING_RESOURCE_TAGS,Low,2.3,2026-02-26T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-cfdeac2479,res-7f522b8ab8,ENCRYPTION_DISABLED,High,7.6,2026-03-12T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-358c49b931,res-7f522b8ab8,OUTDATED_TLS,High,6.8,2026-03-05T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-8d2f536601,res-7f522b8ab8,MISSING_RESOURCE_TAGS,Low,2.3,2026-02-27T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-46bedd554a,res-7f522b8ab8,UNROTATED_KEYS,High,7.4,2026-02-26T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-35bcf49898,res-11af606e21,ENCRYPTION_DISABLED,High,7.3,2026-03-17T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-03a761f3de,res-11af606e21,MFA_NOT_ENFORCED,High,7.0,2026-02-23T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-d2ad0fe325,res-11af606e21,LOGGING_DISABLED,Medium,5.5,2026-03-02T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-e1fd3105c5,res-11af606e21,UNROTATED_KEYS,High,7.2,2026-03-21T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-8cdf9fa3d4,res-e5abc4f025,PUBLIC_ACCESS_ENABLED,Critical,9.3,2026-03-08T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-9acafd3f0b,res-e5abc4f025,OVERPRIVILEGED_IAM_ROLE,High,7.7,2026-02-27T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-ec5a64a2ba,res-e5abc4f025,NO_BACKUP_POLICY,Medium,5.1,2026-03-04T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-257aa17935,res-e5abc4f025,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-05T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-f2d3a5ad2c,res-e5abc4f025,CROSS_ACCOUNT_ACCESS,High,7.7,2026-03-16T15:01:58Z,ACKNOWLEDGED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-80df809298,res-e5abc4f025,UNROTATED_KEYS,High,7.6,2026-03-06T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-4caba7f3a0,res-cfafaa182f,NO_BACKUP_POLICY,Medium,5.1,2026-03-10T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-78c1aaffe9,res-cfafaa182f,OUTDATED_TLS,High,7.0,2026-03-17T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-c21310c128,res-39252dca50,NO_BACKUP_POLICY,Medium,5.0,2026-02-19T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-675789345e,res-39252dca50,CROSS_ACCOUNT_ACCESS,High,7.3,2026-03-19T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-f762315d48,res-39252dca50,UNROTATED_KEYS,High,7.4,2026-02-28T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-ff046e3c98,res-9566dad579,OPEN_RDP_PORT,Critical,8.9,2026-02-28T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-576ca5a30b,res-9566dad579,OUTDATED_TLS,High,7.0,2026-03-09T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-ef95c4ce05,res-9566dad579,MISSING_RESOURCE_TAGS,Low,2.2,2026-02-27T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-b009bdb594,res-9566dad579,CROSS_ACCOUNT_ACCESS,High,7.6,2026-03-06T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-c96fc47f59,res-72e9889713,ENCRYPTION_DISABLED,High,7.3,2026-03-15T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-f3dbe3958c,res-72e9889713,OPEN_SSH_PORT,Critical,8.8,2026-02-26T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-ffbcdfaff8,res-72e9889713,NO_BACKUP_POLICY,Medium,4.9,2026-03-03T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-ec9cb0e907,res-72e9889713,OUTDATED_TLS,High,7.3,2026-02-20T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-c6207352c2,res-72e9889713,DEFAULT_ADMIN_CREDENTIALS,Critical,9.2,2026-03-17T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-2217fbf3c8,res-72e9889713,UNROTATED_KEYS,High,7.4,2026-03-02T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-65f5e50306,res-5b767a6834,MFA_NOT_ENFORCED,High,7.0,2026-03-16T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-c47d2841fa,res-5b767a6834,OPEN_SSH_PORT,Critical,9.3,2026-02-24T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-50941033e2,res-5b767a6834,NO_BACKUP_POLICY,Medium,5.0,2026-03-19T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-5671ca81c2,res-5b767a6834,OUTDATED_TLS,High,7.1,2026-03-04T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-e92287280e,res-fb7a203f55,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-11T15:01:58Z,RESOLVED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-0fc6a6c979,res-fb7a203f55,MFA_NOT_ENFORCED,High,7.3,2026-03-14T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-02d4e3debb,res-fb7a203f55,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-04T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-e4c7cf3aa8,res-fb7a203f55,NO_BACKUP_POLICY,Medium,4.9,2026-03-12T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-86e4db6d24,res-fb7a203f55,OUTDATED_TLS,High,6.9,2026-02-26T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-eed563464d,res-bccdd80bb0,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-02-21T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-770dfb1b7d,res-bccdd80bb0,MFA_NOT_ENFORCED,High,7.2,2026-03-09T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-f771cadd4f,res-bccdd80bb0,LOGGING_DISABLED,Medium,5.3,2026-03-03T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-d2cf070f4b,res-bccdd80bb0,OPEN_SSH_PORT,Critical,8.9,2026-03-03T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-b663a83aa8,res-bccdd80bb0,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-02T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-9664af72d1,res-bccdd80bb0,OUTDATED_TLS,High,7.1,2026-02-21T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-bb3c600645,res-bccdd80bb0,UNROTATED_KEYS,High,7.4,2026-02-22T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-c0d0d89a91,res-092eb9085f,OPEN_SSH_PORT,Critical,9.0,2026-03-03T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-971c4ef869,res-092eb9085f,OPEN_RDP_PORT,Critical,8.6,2026-03-20T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-837226d26c,res-092eb9085f,OUTDATED_TLS,High,6.9,2026-03-02T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-c829750aec,res-092eb9085f,UNROTATED_KEYS,High,7.4,2026-03-06T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-8a2e682646,res-03811a9427,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-02-27T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-4348dc4dfc,res-03811a9427,LOGGING_DISABLED,Medium,5.6,2026-03-03T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-aeb2598cd6,res-03811a9427,NO_BACKUP_POLICY,Medium,5.4,2026-03-05T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-4cbb0b202d,res-03811a9427,DEFAULT_ADMIN_CREDENTIALS,Critical,9.3,2026-02-24T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-c90430c684,res-03811a9427,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-17T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-0d6053cb02,res-03811a9427,UNROTATED_KEYS,High,7.6,2026-02-24T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-0b500298aa,res-bb46227117,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-03-15T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-704cf2718b,res-bb46227117,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-13T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-317e253675,res-b25f8e4578,ENCRYPTION_DISABLED,High,7.7,2026-02-24T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-d1666ca8db,res-b25f8e4578,OVERPRIVILEGED_IAM_ROLE,High,8.1,2026-03-05T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-ab91ffdc3b,res-b25f8e4578,DEFAULT_ADMIN_CREDENTIALS,Critical,9.5,2026-03-07T15:01:58Z,RESOLVED,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-c5e46e624b,res-054f04e722,PUBLIC_ACCESS_ENABLED,Critical,9.0,2026-02-26T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-81481d27f8,res-054f04e722,LOGGING_DISABLED,Medium,5.5,2026-02-28T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-edab0786c3,res-054f04e722,OPEN_SSH_PORT,Critical,9.0,2026-03-01T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-f739fd67a0,res-054f04e722,NO_BACKUP_POLICY,Medium,5.1,2026-02-24T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-5bd26d7c50,res-054f04e722,OUTDATED_TLS,High,7.2,2026-02-23T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-5cc43f7dc1,res-4476523a00,MFA_NOT_ENFORCED,High,7.4,2026-03-13T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-c61888bd93,res-4476523a00,OVERPRIVILEGED_IAM_ROLE,High,8.1,2026-03-09T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-446406487b,res-4476523a00,UNROTATED_KEYS,High,7.5,2026-02-22T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-e31fea1d2f,res-e504f66772,ENCRYPTION_DISABLED,High,7.7,2026-03-07T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-00cec7c654,res-e504f66772,MFA_NOT_ENFORCED,High,6.9,2026-03-16T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-a1f6cc8331,res-e504f66772,OVERPRIVILEGED_IAM_ROLE,High,8.1,2026-03-03T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-4c97a13781,res-e504f66772,CROSS_ACCOUNT_ACCESS,High,7.8,2026-03-21T15:01:58Z,RESOLVED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-8c037fe1b3,res-19d97e4ddf,ENCRYPTION_DISABLED,High,7.7,2026-03-16T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-a082f03cee,res-19d97e4ddf,MFA_NOT_ENFORCED,High,7.4,2026-03-03T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-e2d92dc4c8,res-19d97e4ddf,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-03-19T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-b2061fa654,res-19d97e4ddf,MISSING_RESOURCE_TAGS,Low,2.4,2026-03-01T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-391ea781af,res-19d97e4ddf,UNROTATED_KEYS,High,7.6,2026-03-20T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-564af9994d,res-b9d562a6bb,MFA_NOT_ENFORCED,High,7.3,2026-03-21T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-8739c0cddd,res-b9d562a6bb,LOGGING_DISABLED,Medium,5.4,2026-03-19T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-96db7e0eee,res-b9d562a6bb,OUTDATED_TLS,High,6.8,2026-03-19T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-590f492e08,res-b9d562a6bb,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-09T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-927d67f094,res-def54f3457,OPEN_SSH_PORT,Critical,8.7,2026-03-17T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-b72fb3ee6f,res-def54f3457,OPEN_RDP_PORT,Critical,8.6,2026-02-22T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-81ed4db768,res-def54f3457,NO_BACKUP_POLICY,Medium,5.2,2026-03-07T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-2fffe73761,res-def54f3457,MISSING_RESOURCE_TAGS,Low,2.4,2026-03-17T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-9ddda3f873,res-def54f3457,UNROTATED_KEYS,High,7.1,2026-02-26T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-b9ed11bfe6,res-49ac50f94d,NO_BACKUP_POLICY,Medium,5.2,2026-03-09T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-51797c6b89,res-49ac50f94d,OUTDATED_TLS,High,6.9,2026-03-16T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-1026ce431c,res-49ac50f94d,MISSING_RESOURCE_TAGS,Low,2.2,2026-03-20T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-bdcc7afb16,res-49ac50f94d,UNROTATED_KEYS,High,7.4,2026-02-28T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-21377af506,res-bc43a43632,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-03-07T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-ee06d820e6,res-bc43a43632,NO_BACKUP_POLICY,Medium,5.4,2026-03-02T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-0da2ecff91,res-bc43a43632,OUTDATED_TLS,High,7.1,2026-03-12T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-f2aa5e4001,res-bc43a43632,UNROTATED_KEYS,High,7.4,2026-03-11T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-fc01938f63,res-55ed5b54c0,MFA_NOT_ENFORCED,High,7.0,2026-03-16T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-7821b25953,res-55ed5b54c0,LOGGING_DISABLED,Medium,5.4,2026-02-24T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-be793ad28d,res-55ed5b54c0,NO_BACKUP_POLICY,Medium,5.0,2026-03-17T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-369ddbbbe5,res-0cec1ae9ba,PUBLIC_ACCESS_ENABLED,Critical,9.3,2026-03-18T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-78264fdd29,res-0cec1ae9ba,MFA_NOT_ENFORCED,High,7.0,2026-03-04T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-0d6ce40812,res-0cec1ae9ba,LOGGING_DISABLED,Medium,5.5,2026-03-17T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-1a2c575a42,res-0cec1ae9ba,UNROTATED_KEYS,High,7.7,2026-03-03T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-c23c36ef45,res-2655060d2f,OPEN_RDP_PORT,Critical,8.9,2026-03-17T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-914a42ccb4,res-2655060d2f,OUTDATED_TLS,High,7.1,2026-03-21T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-36945ab5e8,res-641e724298,LOGGING_DISABLED,Medium,5.6,2026-02-27T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-98a4959df0,res-641e724298,OPEN_SSH_PORT,Critical,9.2,2026-03-10T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-7aa4e7d68d,res-641e724298,OPEN_RDP_PORT,Critical,8.9,2026-03-19T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-4dc66d6e44,res-641e724298,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-21T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-ee7a06b45a,res-641e724298,NO_BACKUP_POLICY,Medium,5.3,2026-02-28T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-c2a6540f86,res-442b0224f8,OPEN_SSH_PORT,Critical,9.0,2026-02-25T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-bb37ef5204,res-442b0224f8,OPEN_RDP_PORT,Critical,8.9,2026-03-21T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-6410eb7da3,res-442b0224f8,NO_BACKUP_POLICY,Medium,5.3,2026-03-07T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-7e2a957003,res-442b0224f8,OUTDATED_TLS,High,6.8,2026-03-08T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-6b84e4278b,res-442b0224f8,MISSING_RESOURCE_TAGS,Low,2.8,2026-03-04T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-dcd4ac318c,res-442b0224f8,UNROTATED_KEYS,High,7.3,2026-02-20T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-20c9412755,res-35fb085a1f,MFA_NOT_ENFORCED,High,7.0,2026-03-13T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-d6bde1a24d,res-35fb085a1f,LOGGING_DISABLED,Medium,5.7,2026-02-25T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-b7a62c8742,res-35fb085a1f,OPEN_SSH_PORT,Critical,8.8,2026-03-06T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-9d6a119843,res-35fb085a1f,OVERPRIVILEGED_IAM_ROLE,High,8.1,2026-03-10T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-c29276d9bf,res-35fb085a1f,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-04T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-be10c0a596,res-35fb085a1f,UNROTATED_KEYS,High,7.4,2026-03-02T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-121a115bca,res-b25d06f105,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-02-26T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-c702f936de,res-b25d06f105,OPEN_SSH_PORT,Critical,9.3,2026-02-22T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-07c6ebd54a,res-b25d06f105,OPEN_RDP_PORT,Critical,8.9,2026-03-17T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-07dfb1e3a4,res-b25d06f105,OUTDATED_TLS,High,6.8,2026-03-01T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-d3f2deb897,res-9d349136e8,ENCRYPTION_DISABLED,High,7.8,2026-03-11T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-062f4e9882,res-9d349136e8,LOGGING_DISABLED,Medium,5.3,2026-02-23T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-9152a5edb4,res-9d349136e8,OPEN_RDP_PORT,Critical,9.0,2026-03-21T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-de8a26462a,res-9d349136e8,UNROTATED_KEYS,High,7.2,2026-03-12T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-7f9eb636ea,res-3f29e3e5e1,ENCRYPTION_DISABLED,High,7.2,2026-03-21T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-d5f363deaa,res-3f29e3e5e1,MFA_NOT_ENFORCED,High,7.3,2026-03-09T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-0442cdad33,res-3f29e3e5e1,LOGGING_DISABLED,Medium,5.7,2026-02-25T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-f393e74729,res-3f29e3e5e1,OUTDATED_TLS,High,7.1,2026-02-21T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-d33769e864,res-9750ddd10a,ENCRYPTION_DISABLED,High,7.7,2026-03-10T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-e69cc1fff5,res-9750ddd10a,MFA_NOT_ENFORCED,High,7.2,2026-03-10T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-2abeb75f6b,res-9750ddd10a,LOGGING_DISABLED,Medium,5.3,2026-03-16T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-b4a7e0fc04,res-9750ddd10a,OPEN_SSH_PORT,Critical,9.3,2026-02-23T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-de831cbf9b,res-9750ddd10a,OPEN_RDP_PORT,Critical,8.6,2026-03-13T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-3f756eecb8,res-9750ddd10a,OUTDATED_TLS,High,7.0,2026-03-20T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-c6f2ec8864,res-1424bada8a,OVERPRIVILEGED_IAM_ROLE,High,7.8,2026-02-24T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-d556b79512,res-43f3036f82,ENCRYPTION_DISABLED,High,7.7,2026-03-15T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-27defc4363,res-43f3036f82,LOGGING_DISABLED,Medium,5.1,2026-02-24T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-b439215603,res-43f3036f82,OPEN_SSH_PORT,Critical,8.9,2026-03-07T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-05d353088d,res-43f3036f82,NO_BACKUP_POLICY,Medium,5.0,2026-03-19T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-0910231cb0,res-43f3036f82,OUTDATED_TLS,High,7.0,2026-03-20T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-912ce90777,res-43f3036f82,DEFAULT_ADMIN_CREDENTIALS,Critical,9.5,2026-02-24T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-512b493f03,res-43f3036f82,UNROTATED_KEYS,High,7.5,2026-03-18T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-a0a6cdd0c7,res-0508c9f86b,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-02-26T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-7c5de3c059,res-0508c9f86b,LOGGING_DISABLED,Medium,5.2,2026-03-20T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-bd393f340e,res-0508c9f86b,OPEN_RDP_PORT,Critical,8.8,2026-03-20T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-c114d7a101,res-0508c9f86b,OUTDATED_TLS,High,6.9,2026-03-20T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-80a1fc4524,res-0508c9f86b,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-19T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-a4c3c9902f,res-597bf029d3,OPEN_SSH_PORT,Critical,9.3,2026-03-12T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-d6f01a8ef7,res-597bf029d3,OUTDATED_TLS,High,6.9,2026-03-13T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-0290e14fda,res-597bf029d3,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-09T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-a5db86aa96,res-f9ffe890f6,OPEN_RDP_PORT,Critical,8.6,2026-03-21T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-efa2679526,res-f9ffe890f6,NO_BACKUP_POLICY,Medium,4.8,2026-03-10T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-6b56e6446e,res-e068dbf3f8,LOGGING_DISABLED,Medium,5.4,2026-03-10T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-22bf228c8d,res-e068dbf3f8,OPEN_RDP_PORT,Critical,8.8,2026-03-02T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-6cde65d6eb,res-e068dbf3f8,UNROTATED_KEYS,High,7.3,2026-03-18T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-14e3349c01,res-63e8a8f8da,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-02-28T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-d5b13b3fe4,res-63e8a8f8da,NO_BACKUP_POLICY,Medium,5.3,2026-03-02T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-ff126a1ca2,res-63e8a8f8da,MISSING_RESOURCE_TAGS,Low,2.4,2026-02-20T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-70f2a9d7d7,res-63e8a8f8da,UNROTATED_KEYS,High,7.7,2026-02-23T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-7c768d383c,res-6d53c9bed0,OUTDATED_TLS,High,7.0,2026-02-23T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-889f9e5697,res-6d53c9bed0,UNROTATED_KEYS,High,7.2,2026-03-19T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-42475d4dc1,res-fb6c156d19,OPEN_SSH_PORT,Critical,9.0,2026-02-27T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-06f904cf08,res-fb6c156d19,OUTDATED_TLS,High,7.2,2026-03-20T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-5ba9a000cb,res-fb6c156d19,MISSING_RESOURCE_TAGS,Low,2.8,2026-03-08T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-eff7727f29,res-fb6c156d19,UNROTATED_KEYS,High,7.2,2026-03-01T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-1377b56767,res-e3a59908fe,MFA_NOT_ENFORCED,High,7.3,2026-02-24T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-fa840e21cf,res-e3a59908fe,LOGGING_DISABLED,Medium,5.2,2026-03-06T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-0a2fb34af3,res-e3a59908fe,CROSS_ACCOUNT_ACCESS,High,7.7,2026-03-13T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-f2b0e2feaf,res-1e6335ca55,ENCRYPTION_DISABLED,High,7.2,2026-03-13T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-609d1b018f,res-91679fc6a0,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-02-19T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-6b0150bda1,res-91679fc6a0,OPEN_SSH_PORT,Critical,9.0,2026-03-03T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-1c55003b89,res-91679fc6a0,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-01T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-4f9a901c27,res-91679fc6a0,CROSS_ACCOUNT_ACCESS,High,7.7,2026-03-11T15:01:58Z,ACKNOWLEDGED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-c5a2d9d87d,res-91679fc6a0,UNROTATED_KEYS,High,7.2,2026-03-19T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-2219b6a453,res-1fdbfd3128,NO_BACKUP_POLICY,Medium,5.0,2026-03-13T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-a0a9d4bd6a,res-1fdbfd3128,OUTDATED_TLS,High,7.1,2026-02-24T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-f5182f095a,res-1fdbfd3128,UNROTATED_KEYS,High,7.5,2026-03-02T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-9f60f080b2,res-deeec03b65,MFA_NOT_ENFORCED,High,7.4,2026-03-09T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-9fe742cae6,res-deeec03b65,DEFAULT_ADMIN_CREDENTIALS,Critical,9.7,2026-03-06T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-320395f2d1,res-c2d94bc4fa,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-03-15T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-2f7cda85fe,res-c2d94bc4fa,OPEN_RDP_PORT,Critical,8.8,2026-03-18T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-1701ef1e93,res-c2d94bc4fa,OUTDATED_TLS,High,7.2,2026-03-04T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-502feccbe7,res-c2d94bc4fa,MISSING_RESOURCE_TAGS,Low,2.6,2026-02-20T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-c7b59b823a,res-c2d94bc4fa,CROSS_ACCOUNT_ACCESS,High,7.5,2026-03-15T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-3bbb47e782,res-c2d94bc4fa,UNROTATED_KEYS,High,7.4,2026-03-06T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-819410f4fb,res-0a11fadf35,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-03-14T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-29322d4cb3,res-0a11fadf35,MFA_NOT_ENFORCED,High,7.4,2026-03-08T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-1f33edb94b,res-0a11fadf35,LOGGING_DISABLED,Medium,5.2,2026-02-19T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-d3bfcbbc50,res-0a11fadf35,OPEN_RDP_PORT,Critical,8.8,2026-03-12T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-490e79093c,res-0a11fadf35,NO_BACKUP_POLICY,Medium,5.1,2026-03-02T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-ffe05c9627,res-0a11fadf35,OUTDATED_TLS,High,7.0,2026-02-27T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-9501b5ff77,res-0a11fadf35,MISSING_RESOURCE_TAGS,Low,2.7,2026-02-21T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-b2735fb641,res-0a11fadf35,UNROTATED_KEYS,High,7.4,2026-02-28T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-ddc73ca987,res-acdd50874d,ENCRYPTION_DISABLED,High,7.3,2026-03-20T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-6e9afc21e3,res-acdd50874d,MFA_NOT_ENFORCED,High,7.2,2026-03-04T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-f466632844,res-acdd50874d,LOGGING_DISABLED,Medium,5.6,2026-03-08T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-b1b7164bd4,res-acdd50874d,NO_BACKUP_POLICY,Medium,4.8,2026-02-28T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-db2af7f5df,res-acdd50874d,MISSING_RESOURCE_TAGS,Low,2.6,2026-02-28T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-6c343d9a20,res-7f6b94c2d3,ENCRYPTION_DISABLED,High,7.6,2026-02-20T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-b4be1eca34,res-7f6b94c2d3,LOGGING_DISABLED,Medium,5.6,2026-02-24T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-af789d81ee,res-7f6b94c2d3,OVERPRIVILEGED_IAM_ROLE,High,7.6,2026-02-27T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-c435307aad,res-7f6b94c2d3,DEFAULT_ADMIN_CREDENTIALS,Critical,9.7,2026-03-02T15:01:58Z,ACKNOWLEDGED,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-2a1f2ac017,res-7f6b94c2d3,UNROTATED_KEYS,High,7.4,2026-03-03T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-e159e4edf2,res-d34d65828e,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-03-18T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-3518ee9dd2,res-d34d65828e,LOGGING_DISABLED,Medium,5.2,2026-03-21T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-a306ff215d,res-d34d65828e,OPEN_RDP_PORT,Critical,8.9,2026-03-01T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-c31030c7a3,res-d34d65828e,NO_BACKUP_POLICY,Medium,5.2,2026-02-28T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-1f607f8c78,res-d34d65828e,OUTDATED_TLS,High,7.0,2026-02-22T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-d5bde78a8c,res-d34d65828e,MISSING_RESOURCE_TAGS,Low,2.2,2026-03-09T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-b6b0d3045d,res-d34d65828e,UNROTATED_KEYS,High,7.6,2026-03-17T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-23d8af7684,res-af44419855,MFA_NOT_ENFORCED,High,7.0,2026-02-19T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-500af9cf9f,res-af44419855,LOGGING_DISABLED,Medium,5.6,2026-03-05T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-fc6a9aa306,res-af44419855,OUTDATED_TLS,High,7.1,2026-03-07T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-37820461fd,res-af44419855,CROSS_ACCOUNT_ACCESS,High,7.9,2026-02-20T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-737b790a39,res-af44419855,UNROTATED_KEYS,High,7.1,2026-02-24T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-42d87cde01,res-c8c4152a93,PUBLIC_ACCESS_ENABLED,Critical,8.8,2026-03-08T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-69e2bee1f6,res-c8c4152a93,MFA_NOT_ENFORCED,High,7.2,2026-03-19T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-114973ac08,res-c8c4152a93,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-15T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-23ef248aab,res-c8c4152a93,NO_BACKUP_POLICY,Medium,5.0,2026-03-02T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-a5e52dbf37,res-c8c4152a93,MISSING_RESOURCE_TAGS,Low,2.4,2026-02-28T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-dd86b828b2,res-fb445d33ce,ENCRYPTION_DISABLED,High,7.3,2026-02-21T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-6a66713a7a,res-fb445d33ce,OVERPRIVILEGED_IAM_ROLE,High,7.8,2026-03-13T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-43c94cc9ae,res-fb445d33ce,MISSING_RESOURCE_TAGS,Low,2.7,2026-03-08T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-85bdbb9960,res-f3d89cf04e,NO_BACKUP_POLICY,Medium,5.1,2026-03-07T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-f54a07a8ca,res-f3d89cf04e,DEFAULT_ADMIN_CREDENTIALS,Critical,9.6,2026-02-19T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-b92064baca,res-f3d89cf04e,MISSING_RESOURCE_TAGS,Low,2.8,2026-03-06T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-e9c88bc03d,res-e4c83244b4,OPEN_RDP_PORT,Critical,8.9,2026-03-20T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-55014e675f,res-e4c83244b4,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-18T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-4d5f026212,res-e4c83244b4,CROSS_ACCOUNT_ACCESS,High,7.5,2026-02-24T15:01:58Z,ACKNOWLEDGED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-90fb0c0808,res-e4c83244b4,UNROTATED_KEYS,High,7.4,2026-03-08T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-f68b714366,res-c620ff8504,PUBLIC_ACCESS_ENABLED,Critical,8.8,2026-03-01T15:01:58Z,RESOLVED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-2b98ef6119,res-c620ff8504,MFA_NOT_ENFORCED,High,7.0,2026-02-28T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-4a1f7029ad,res-c620ff8504,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-04T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-40bf760fac,res-c620ff8504,NO_BACKUP_POLICY,Medium,4.9,2026-03-10T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-8e73130fa9,res-c620ff8504,OUTDATED_TLS,High,6.8,2026-03-03T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-98a8878677,res-b978887cf6,NO_BACKUP_POLICY,Medium,5.3,2026-02-28T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-81d81dad4d,res-b978887cf6,OUTDATED_TLS,High,7.1,2026-03-01T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-4362ea7e05,res-fde42aa41f,PUBLIC_ACCESS_ENABLED,Critical,8.8,2026-03-08T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-5463442bf9,res-fde42aa41f,MFA_NOT_ENFORCED,High,7.3,2026-03-02T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-3be33239b3,res-fde42aa41f,OVERPRIVILEGED_IAM_ROLE,High,7.7,2026-02-26T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-fcaeaf9935,res-fde42aa41f,OUTDATED_TLS,High,6.9,2026-03-21T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-2461229fee,res-65d77cef41,ENCRYPTION_DISABLED,High,7.4,2026-03-17T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-0bf02a8555,res-65d77cef41,MFA_NOT_ENFORCED,High,6.9,2026-03-04T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-5f3a2cc405,res-65d77cef41,LOGGING_DISABLED,Medium,5.3,2026-03-16T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-03d486bb54,res-65d77cef41,NO_BACKUP_POLICY,Medium,5.4,2026-02-25T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-ce2264aa66,res-65d77cef41,OUTDATED_TLS,High,6.8,2026-03-13T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-b5d83759b9,res-65d77cef41,DEFAULT_ADMIN_CREDENTIALS,Critical,9.5,2026-03-05T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-9f51c03851,res-65d77cef41,UNROTATED_KEYS,High,7.7,2026-02-25T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-78f4c48ae4,res-427a6265ad,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-04T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-db8a2409f4,res-427a6265ad,ENCRYPTION_DISABLED,High,7.6,2026-03-20T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-a58c0d20ce,res-427a6265ad,MFA_NOT_ENFORCED,High,7.4,2026-03-13T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-467c5e14aa,res-427a6265ad,NO_BACKUP_POLICY,Medium,5.0,2026-02-25T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-cb02231515,res-427a6265ad,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-19T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-9dece40dd8,res-9983a2c0b5,ENCRYPTION_DISABLED,High,7.5,2026-03-19T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-b13c9a0d59,res-9983a2c0b5,MFA_NOT_ENFORCED,High,7.0,2026-02-23T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-7633fa7f4a,res-9983a2c0b5,LOGGING_DISABLED,Medium,5.2,2026-02-26T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-9273d51784,res-9983a2c0b5,OPEN_RDP_PORT,Critical,8.6,2026-03-02T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-42a7ea1eea,res-9983a2c0b5,NO_BACKUP_POLICY,Medium,5.2,2026-02-23T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-1a0615a1cd,res-9983a2c0b5,OUTDATED_TLS,High,7.2,2026-03-18T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-e37e465d55,res-9983a2c0b5,DEFAULT_ADMIN_CREDENTIALS,Critical,9.3,2026-03-08T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-3645880605,res-9983a2c0b5,MISSING_RESOURCE_TAGS,Low,2.7,2026-03-14T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-74cc81494f,res-9983a2c0b5,UNROTATED_KEYS,High,7.1,2026-03-04T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-b4bfb2002d,res-8e3baf2888,MFA_NOT_ENFORCED,High,7.2,2026-02-25T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-25c7d49bda,res-8e3baf2888,LOGGING_DISABLED,Medium,5.6,2026-03-16T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-0eadb2851b,res-8e3baf2888,OPEN_RDP_PORT,Critical,8.7,2026-02-25T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-4cc3e546b3,res-8e3baf2888,OVERPRIVILEGED_IAM_ROLE,High,7.7,2026-03-18T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-f11d0acfae,res-8e3baf2888,NO_BACKUP_POLICY,Medium,5.2,2026-03-01T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-31d7546bdc,res-8e3baf2888,OUTDATED_TLS,High,6.7,2026-03-12T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-902e02ec53,res-8e3baf2888,UNROTATED_KEYS,High,7.3,2026-03-08T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-6b28cd9405,res-d3238bee1f,PUBLIC_ACCESS_ENABLED,Critical,9.0,2026-02-25T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-9628a69370,res-d3238bee1f,MFA_NOT_ENFORCED,High,7.3,2026-02-20T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-ed62c8f92e,res-d3238bee1f,OPEN_RDP_PORT,Critical,8.9,2026-03-17T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-47cd98eee0,res-d3238bee1f,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-03T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-2b51b70df0,res-d3238bee1f,UNROTATED_KEYS,High,7.6,2026-03-04T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-844544649f,res-8a0646529c,ENCRYPTION_DISABLED,High,7.5,2026-03-21T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-f5d8042e04,res-8a0646529c,LOGGING_DISABLED,Medium,5.6,2026-03-04T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-312ba11d94,res-8a0646529c,OPEN_SSH_PORT,Critical,8.8,2026-03-07T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-e4f206f6ba,res-8a0646529c,OPEN_RDP_PORT,Critical,8.7,2026-03-18T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-4d97c2757c,res-8a0646529c,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-02T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-3d0971cd1a,res-8a0646529c,DEFAULT_ADMIN_CREDENTIALS,Critical,9.3,2026-03-09T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-e230eb2672,res-e5c631d620,ENCRYPTION_DISABLED,High,7.8,2026-03-02T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-a2a3dbed28,res-e5c631d620,MFA_NOT_ENFORCED,High,7.3,2026-02-20T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-d3ea679363,res-e5c631d620,LOGGING_DISABLED,Medium,5.2,2026-03-09T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-f8cdb255ce,res-e5c631d620,OPEN_SSH_PORT,Critical,9.1,2026-03-12T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-223ae6a90d,res-e5c631d620,OPEN_RDP_PORT,Critical,9.1,2026-03-12T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-26f9d31b12,res-e5c631d620,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-03-11T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-c2c851cb67,res-e5c631d620,NO_BACKUP_POLICY,Medium,5.0,2026-03-11T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-b4c63787f1,res-1711ed7197,OPEN_SSH_PORT,Critical,9.2,2026-03-18T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-5d0510980f,res-1711ed7197,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-02-28T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-bb4d2cbdf1,res-1711ed7197,NO_BACKUP_POLICY,Medium,4.9,2026-02-25T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-1be9ebf23d,res-1711ed7197,OUTDATED_TLS,High,7.0,2026-02-27T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-e6561b8e91,res-1711ed7197,CROSS_ACCOUNT_ACCESS,High,7.9,2026-03-20T15:01:58Z,RESOLVED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-8c589e9312,res-1711ed7197,UNROTATED_KEYS,High,7.3,2026-03-19T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-fb6d5b9696,res-b2228b099b,MFA_NOT_ENFORCED,High,7.2,2026-03-14T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-e9d6ad8c9b,res-b2228b099b,NO_BACKUP_POLICY,Medium,5.3,2026-02-25T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-7a87ee2ac8,res-b2228b099b,DEFAULT_ADMIN_CREDENTIALS,Critical,9.5,2026-03-08T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-fca91337d9,res-b2228b099b,MISSING_RESOURCE_TAGS,Low,2.4,2026-02-27T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-b8af284b1c,res-b2228b099b,UNROTATED_KEYS,High,7.5,2026-03-03T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-96235d09d8,res-3c7e62cf2b,ENCRYPTION_DISABLED,High,7.4,2026-03-20T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-8b540f3583,res-3c7e62cf2b,MFA_NOT_ENFORCED,High,7.1,2026-03-21T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-576db148c9,res-3c7e62cf2b,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-03-12T15:01:58Z,ACKNOWLEDGED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-14c3acefdd,res-3c7e62cf2b,OUTDATED_TLS,High,7.2,2026-03-03T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-3cf6d42508,res-3c7e62cf2b,DEFAULT_ADMIN_CREDENTIALS,Critical,9.4,2026-02-20T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-ab600bfbfa,res-3c7e62cf2b,MISSING_RESOURCE_TAGS,Low,2.4,2026-02-22T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-8bf8a6a800,res-3c7e62cf2b,UNROTATED_KEYS,High,7.3,2026-02-22T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-df173c43a8,res-e5beb055c8,PUBLIC_ACCESS_ENABLED,Critical,9.1,2026-03-06T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-59a7afdf18,res-e5beb055c8,ENCRYPTION_DISABLED,High,7.4,2026-03-08T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-3ae19c7efb,res-e5beb055c8,MFA_NOT_ENFORCED,High,7.1,2026-02-24T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-8fd5b8b970,res-e5beb055c8,OVERPRIVILEGED_IAM_ROLE,High,8.1,2026-02-22T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-8aa70bc2e9,res-e5beb055c8,NO_BACKUP_POLICY,Medium,5.0,2026-03-11T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-717901fd13,res-e5beb055c8,OUTDATED_TLS,High,7.0,2026-03-07T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-8d20203b09,res-30406bb8b5,OPEN_RDP_PORT,Critical,9.0,2026-03-11T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-f4696f3f0e,res-30406bb8b5,NO_BACKUP_POLICY,Medium,5.4,2026-03-05T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-8f57d2e4f5,res-30406bb8b5,OUTDATED_TLS,High,7.2,2026-03-17T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-ce9ce52fae,res-30406bb8b5,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-13T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-fc4ec2a52b,res-996ad334d4,PUBLIC_ACCESS_ENABLED,Critical,9.3,2026-02-24T15:01:58Z,RESOLVED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-7209e6b5aa,res-996ad334d4,LOGGING_DISABLED,Medium,5.2,2026-02-25T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-d7ee77f6a3,res-996ad334d4,OPEN_SSH_PORT,Critical,9.0,2026-03-20T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-e420378f67,res-996ad334d4,OPEN_RDP_PORT,Critical,8.6,2026-03-02T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-c3811ba67d,res-996ad334d4,NO_BACKUP_POLICY,Medium,5.2,2026-03-20T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-e713faadf0,res-996ad334d4,CROSS_ACCOUNT_ACCESS,High,7.3,2026-03-08T15:01:58Z,RESOLVED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-61c1b3cb15,res-d3799f0227,MFA_NOT_ENFORCED,High,7.0,2026-03-16T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-7081f179d4,res-d3799f0227,LOGGING_DISABLED,Medium,5.2,2026-02-25T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-8149c20b24,res-d3799f0227,OPEN_SSH_PORT,Critical,9.2,2026-02-21T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-48e92f953c,res-d3799f0227,OPEN_RDP_PORT,Critical,8.8,2026-03-12T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-7027695221,res-d3799f0227,OUTDATED_TLS,High,6.9,2026-03-02T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-77b1852ab4,res-d3799f0227,MISSING_RESOURCE_TAGS,Low,2.2,2026-03-19T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-96e145f5b8,res-af43cab0b1,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-18T15:01:58Z,ACKNOWLEDGED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-48458d11af,res-af43cab0b1,ENCRYPTION_DISABLED,High,7.3,2026-02-22T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-f781912b80,res-af43cab0b1,MFA_NOT_ENFORCED,High,7.2,2026-03-04T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-d33d3ae6ac,res-af43cab0b1,OPEN_SSH_PORT,Critical,9.2,2026-03-20T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-542510c6c0,res-af43cab0b1,OPEN_RDP_PORT,Critical,8.5,2026-03-04T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-511cd94a4c,res-af43cab0b1,OVERPRIVILEGED_IAM_ROLE,High,7.5,2026-03-05T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-a30be37771,res-af43cab0b1,NO_BACKUP_POLICY,Medium,5.4,2026-03-06T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-8d63b7fb9f,res-af43cab0b1,OUTDATED_TLS,High,7.3,2026-02-22T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-7c12f91cfa,res-af43cab0b1,MISSING_RESOURCE_TAGS,Low,2.2,2026-02-21T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-fc048dae1e,res-af43cab0b1,CROSS_ACCOUNT_ACCESS,High,7.9,2026-02-24T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-a8632baff1,res-af43cab0b1,UNROTATED_KEYS,High,7.6,2026-03-13T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-641441574c,res-5a7b3f320c,ENCRYPTION_DISABLED,High,7.5,2026-03-08T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-7384ae34bd,res-5a7b3f320c,MFA_NOT_ENFORCED,High,7.4,2026-03-01T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-26905d3606,res-5a7b3f320c,DEFAULT_ADMIN_CREDENTIALS,Critical,9.7,2026-02-26T15:01:58Z,OPEN,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-35f463f98f,res-963b91561a,ENCRYPTION_DISABLED,High,7.3,2026-03-15T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-ba4cae300a,res-963b91561a,MFA_NOT_ENFORCED,High,7.2,2026-02-25T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-12eebf4dfd,res-963b91561a,OPEN_SSH_PORT,Critical,9.2,2026-03-08T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-b35d8e7390,res-963b91561a,OUTDATED_TLS,High,6.9,2026-03-09T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-48c2b95d5e,res-963b91561a,CROSS_ACCOUNT_ACCESS,High,7.8,2026-03-07T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-310924292d,res-4648429bd3,LOGGING_DISABLED,Medium,5.4,2026-03-01T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-11c34676fa,res-4648429bd3,OPEN_SSH_PORT,Critical,8.8,2026-02-19T15:01:58Z,RESOLVED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-a60d2730bc,res-4648429bd3,UNROTATED_KEYS,High,7.4,2026-03-18T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-ec1eec11bb,res-bf77187a25,MFA_NOT_ENFORCED,High,7.3,2026-03-14T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-53cdd934b1,res-bf77187a25,LOGGING_DISABLED,Medium,5.4,2026-03-10T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-532a6aa3db,res-bf77187a25,OVERPRIVILEGED_IAM_ROLE,High,8.0,2026-03-13T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-0813a2850f,res-bf77187a25,NO_BACKUP_POLICY,Medium,4.8,2026-03-08T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-e40c26cd94,res-bf77187a25,UNROTATED_KEYS,High,7.3,2026-03-12T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-a0c9249217,res-59ca1a3310,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-03-17T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-3de4b91bc3,res-59ca1a3310,ENCRYPTION_DISABLED,High,7.7,2026-03-19T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-5737c5d55d,res-59ca1a3310,LOGGING_DISABLED,Medium,5.2,2026-03-17T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-99543cb131,res-59ca1a3310,OPEN_RDP_PORT,Critical,9.1,2026-03-12T15:01:58Z,RESOLVED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-7e46941407,res-59ca1a3310,OUTDATED_TLS,High,7.2,2026-02-26T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-9a3d8fb4cb,res-59ca1a3310,MISSING_RESOURCE_TAGS,Low,2.6,2026-02-19T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-5b69a40045,res-c73378f9a0,PUBLIC_ACCESS_ENABLED,Critical,9.2,2026-03-19T15:01:58Z,RESOLVED,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-556f242216,res-c73378f9a0,MFA_NOT_ENFORCED,High,7.2,2026-03-09T15:01:58Z,RESOLVED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-b36b35f06f,res-c73378f9a0,NO_BACKUP_POLICY,Medium,5.3,2026-03-12T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-ac7aec7019,res-c73378f9a0,OUTDATED_TLS,High,7.1,2026-03-16T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-f9221c0283,res-c73378f9a0,MISSING_RESOURCE_TAGS,Low,2.5,2026-02-22T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-af8e285f6e,res-c73378f9a0,UNROTATED_KEYS,High,7.6,2026-02-28T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-10a34dedb1,res-1c711cc423,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-03-06T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-3bd31680c4,res-1c711cc423,MFA_NOT_ENFORCED,High,7.1,2026-03-04T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-d19d9c49f3,res-1c711cc423,NO_BACKUP_POLICY,Medium,4.8,2026-03-02T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-b0172e777a,res-1c711cc423,DEFAULT_ADMIN_CREDENTIALS,Critical,9.7,2026-02-23T15:01:58Z,RESOLVED,Rotate all default credentials immediately; enforce strong password policy.,CIS-4.2|NIST-IA-5|PCI-DSS-2.1
+find-15b4dd71c2,res-1c711cc423,MISSING_RESOURCE_TAGS,Low,2.2,2026-03-01T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-9ef7e60bef,res-a22dd5d9bb,MFA_NOT_ENFORCED,High,7.0,2026-02-24T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-981d98cada,res-a22dd5d9bb,OPEN_SSH_PORT,Critical,9.3,2026-03-04T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-308c13df3c,res-a22dd5d9bb,OVERPRIVILEGED_IAM_ROLE,High,7.8,2026-03-02T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-5f4727f42d,res-a22dd5d9bb,OUTDATED_TLS,High,7.2,2026-03-14T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-fbae1d1405,res-a22dd5d9bb,MISSING_RESOURCE_TAGS,Low,2.7,2026-02-22T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-8366466645,res-1fb6c86fa4,LOGGING_DISABLED,Medium,5.7,2026-03-01T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-2b92c865af,res-1fb6c86fa4,OPEN_RDP_PORT,Critical,8.9,2026-02-27T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-a999ba35f9,res-1fb6c86fa4,NO_BACKUP_POLICY,Medium,5.3,2026-03-05T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-703a8c9e4f,res-1fb6c86fa4,OUTDATED_TLS,High,6.9,2026-02-23T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-e7f7a18c6a,res-1fb6c86fa4,MISSING_RESOURCE_TAGS,Low,2.5,2026-03-13T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-a1c7ae835e,res-57982ba25d,UNROTATED_KEYS,High,7.3,2026-02-19T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-945d786bce,res-d7df19e49a,PUBLIC_ACCESS_ENABLED,Critical,9.0,2026-03-20T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-42edc0e83d,res-d7df19e49a,ENCRYPTION_DISABLED,High,7.7,2026-03-04T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-1c30c50418,res-d7df19e49a,OUTDATED_TLS,High,7.2,2026-03-06T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-ad68a57948,res-d7df19e49a,MISSING_RESOURCE_TAGS,Low,2.6,2026-02-27T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-85e136fa69,res-62c866fec8,MFA_NOT_ENFORCED,High,7.4,2026-03-01T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-18595c4fa6,res-62c866fec8,OPEN_RDP_PORT,Critical,8.9,2026-02-24T15:01:58Z,ACKNOWLEDGED,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-584e45bac7,res-62c866fec8,OVERPRIVILEGED_IAM_ROLE,High,7.9,2026-03-01T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-605827b8a6,res-62c866fec8,NO_BACKUP_POLICY,Medium,5.2,2026-03-07T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-830609eac5,res-62c866fec8,OUTDATED_TLS,High,7.3,2026-03-13T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-2c2991b323,res-62c866fec8,CROSS_ACCOUNT_ACCESS,High,7.8,2026-02-24T15:01:58Z,ACKNOWLEDGED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-4900d94576,res-cbae2f56e4,ENCRYPTION_DISABLED,High,7.6,2026-03-03T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-e188224b06,res-cbae2f56e4,MFA_NOT_ENFORCED,High,7.2,2026-02-21T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-988c445bcd,res-cbae2f56e4,OPEN_SSH_PORT,Critical,9.2,2026-03-20T15:01:58Z,ACKNOWLEDGED,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-f83fec1679,res-cbae2f56e4,OVERPRIVILEGED_IAM_ROLE,High,7.7,2026-03-06T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-4739f97da7,res-cbae2f56e4,OUTDATED_TLS,High,7.0,2026-03-06T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-e356e7fbde,res-cbae2f56e4,MISSING_RESOURCE_TAGS,Low,2.3,2026-02-28T15:01:58Z,RESOLVED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-366bfad793,res-cbae2f56e4,UNROTATED_KEYS,High,7.2,2026-03-20T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-50d506dc40,res-566d58c818,LOGGING_DISABLED,Medium,5.6,2026-03-02T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-663bd3aa48,res-566d58c818,OVERPRIVILEGED_IAM_ROLE,High,7.8,2026-02-27T15:01:58Z,RESOLVED,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-2fe798f717,res-566d58c818,MISSING_RESOURCE_TAGS,Low,2.4,2026-02-21T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-85dc146e14,res-566d58c818,UNROTATED_KEYS,High,7.2,2026-03-14T15:01:58Z,ACKNOWLEDGED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-5e0e9090b5,res-4c4bb0a48f,OPEN_SSH_PORT,Critical,9.1,2026-03-14T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-2b3686090b,res-690b602680,MFA_NOT_ENFORCED,High,7.0,2026-03-17T15:01:58Z,ACKNOWLEDGED,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-1313a0ce50,res-690b602680,OUTDATED_TLS,High,7.3,2026-02-28T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-71ae0cd7e6,res-690b602680,MISSING_RESOURCE_TAGS,Low,2.5,2026-02-20T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-018235f76f,res-690b602680,UNROTATED_KEYS,High,7.6,2026-03-03T15:01:58Z,RESOLVED,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-245bf1171f,res-c9776b438f,PUBLIC_ACCESS_ENABLED,Critical,8.9,2026-02-22T15:01:58Z,OPEN,Disable public access block settings and restrict bucket/blob policy to specific principals.,SOC2-CC6.1|ISO27001-A.9.4|PCI-DSS-7.2
+find-cec29cc1b3,res-c9776b438f,MFA_NOT_ENFORCED,High,7.2,2026-03-03T15:01:58Z,OPEN,Enforce MFA for all IAM users and service principals via policy.,SOC2-CC6.1|NIST-IA-2|PCI-DSS-8.3
+find-a23c5995a6,res-c9776b438f,OPEN_RDP_PORT,Critical,8.8,2026-03-17T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-d4b7ee4a96,res-c9776b438f,NO_BACKUP_POLICY,Medium,4.9,2026-03-21T15:01:58Z,RESOLVED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-c8ef63e385,res-c9776b438f,OUTDATED_TLS,High,6.8,2026-03-21T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-a3a908e843,res-c9776b438f,MISSING_RESOURCE_TAGS,Low,2.2,2026-03-09T15:01:58Z,ACKNOWLEDGED,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-ec37cb3454,res-c9776b438f,CROSS_ACCOUNT_ACCESS,High,7.6,2026-03-20T15:01:58Z,OPEN,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
+find-a2f4ae9319,res-c9776b438f,UNROTATED_KEYS,High,7.6,2026-03-01T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-be43951d22,res-001d03101b,LOGGING_DISABLED,Medium,5.5,2026-02-20T15:01:58Z,RESOLVED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-afdec13cea,res-001d03101b,NO_BACKUP_POLICY,Medium,5.3,2026-03-09T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-e791fbf958,res-001d03101b,OUTDATED_TLS,High,6.8,2026-02-23T15:01:58Z,OPEN,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-0a3f6ddae0,res-d7576858e1,ENCRYPTION_DISABLED,High,7.4,2026-02-24T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-2a74070c8d,res-d7576858e1,LOGGING_DISABLED,Medium,5.2,2026-02-26T15:01:58Z,OPEN,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-073e1fca67,res-d7576858e1,NO_BACKUP_POLICY,Medium,4.9,2026-02-20T15:01:58Z,ACKNOWLEDGED,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-0a1b0e0042,res-08dd96d887,ENCRYPTION_DISABLED,High,7.4,2026-02-19T15:01:58Z,OPEN,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-20a4e65890,res-08dd96d887,MISSING_RESOURCE_TAGS,Low,2.3,2026-03-20T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-291d9a60b3,res-08dd96d887,UNROTATED_KEYS,High,7.6,2026-02-24T15:01:58Z,OPEN,Enable automatic key rotation (90-day policy); revoke stale keys immediately.,SOC2-CC6.1|NIST-IA-5|PCI-DSS-8.2
+find-a1dfaee492,res-fb3718cc6c,ENCRYPTION_DISABLED,High,7.7,2026-03-01T15:01:58Z,RESOLVED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-a3b40adf2f,res-fb3718cc6c,OVERPRIVILEGED_IAM_ROLE,High,7.6,2026-03-08T15:01:58Z,OPEN,Apply least-privilege by scoping IAM policies to required actions and resources only.,SOC2-CC6.3|ISO27001-A.9.2|NIST-AC-6
+find-973ef3c959,res-fb3718cc6c,OUTDATED_TLS,High,7.2,2026-02-23T15:01:58Z,ACKNOWLEDGED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-3868d7dbe5,res-fb3718cc6c,MISSING_RESOURCE_TAGS,Low,2.6,2026-03-21T15:01:58Z,OPEN,"Apply mandatory tags (owner, env, cost-center) via policy enforcement.",SOC2-CC1.4
+find-9cc082b41c,res-ff00e9db79,ENCRYPTION_DISABLED,High,7.3,2026-03-21T15:01:58Z,ACKNOWLEDGED,Enable server-side encryption using a managed or customer-managed key (KMS/CMK).,SOC2-CC6.7|ISO27001-A.10.1|PCI-DSS-3.4|NIST-SC-28
+find-0532ec4228,res-ff00e9db79,LOGGING_DISABLED,Medium,5.4,2026-02-20T15:01:58Z,ACKNOWLEDGED,Enable audit/access logging and route logs to a centralized SIEM or log archive.,SOC2-CC7.2|ISO27001-A.12.4|NIST-AU-2
+find-33124755bd,res-ff00e9db79,OPEN_SSH_PORT,Critical,8.8,2026-02-23T15:01:58Z,OPEN,Restrict SSH (port 22) ingress to specific IP ranges or use a bastion/jump host.,CIS-5.2|NIST-SC-7|PCI-DSS-1.3
+find-a572a88042,res-ff00e9db79,OPEN_RDP_PORT,Critical,8.7,2026-02-26T15:01:58Z,OPEN,Restrict RDP (port 3389) to VPN range only; consider disabling and using session manager.,CIS-5.3|NIST-SC-7|PCI-DSS-1.3
+find-f5cea6b8a9,res-ff00e9db79,NO_BACKUP_POLICY,Medium,5.2,2026-03-19T15:01:58Z,OPEN,Attach a backup policy with defined RPO/RTO; enable automated snapshots.,SOC2-A1.2|ISO27001-A.12.3
+find-28e3c88a54,res-ff00e9db79,OUTDATED_TLS,High,6.9,2026-03-20T15:01:58Z,RESOLVED,"Enforce TLS 1.2+ on all endpoints; disable SSLv3, TLS 1.0, and TLS 1.1.",PCI-DSS-4.1|NIST-SC-8|ISO27001-A.14.1
+find-9e0bca4c00,res-ff00e9db79,CROSS_ACCOUNT_ACCESS,High,7.6,2026-02-28T15:01:58Z,RESOLVED,Review cross-account trust policies; remove unauthorized external account access.,SOC2-CC6.6|NIST-AC-4
